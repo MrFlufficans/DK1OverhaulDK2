@@ -1,13 +1,13 @@
 <Units>
 	<Unit
-		name="Swat"
-		nameUI="Swat"
+		name="SWAT"
+		nameUI="SWAT"
 		description="Swat Boys"
 		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
-			<Class name="Swat Officer" 	numSlots="12" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT Officer" 	numSlots="12" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 		</Classes>
 
 		<TrooperRanks>

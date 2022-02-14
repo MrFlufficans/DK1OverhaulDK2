@@ -118,7 +118,31 @@
 	<Portrait tex="data/textures/portraits/cia44.dds" 		unit="CIA" 		gender="1" 	voicePack="male_very_american"/>
 	<Portrait tex="data/textures/portraits/cia45.dds" 		unit="CIA" 		gender="1" 	voicePack="male_very_american"/>
 	<Portrait tex="data/textures/portraits/cia46.dds" 		unit="CIA" 		gender="1" 	voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia47.dds" 		unit="CIA" 		gender="1" 	voicePack="male_very_american"/>	
+	<Portrait tex="data/textures/portraits/cia47.dds" 		unit="CIA" 		gender="1" 	voicePack="male_very_american"/>
+
+	<Portrait tex="data/textures/portraits/cia44.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia45.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia46.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia47.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia44.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia45.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia46.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia47.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	<!-- NAMES (these can be linked to a unit as well, if unit="name" is specified -->
 	<Name name="FAITH" 			gender="1"/>
