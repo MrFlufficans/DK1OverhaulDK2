@@ -8,7 +8,7 @@
 
 		<Classes>
 			<Class name="Pointman" 	numSlots="8" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="Assaulter" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_support.dds"/>
+			<Class name="AssaulterSW" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_support.dds"/>
 			<Class name="Breacher"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_marksman.dds"/>
 			<Class name="Stealth" numSlots="4" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds"/>
 		</Classes>
