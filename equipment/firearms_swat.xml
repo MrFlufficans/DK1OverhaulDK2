@@ -490,7 +490,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="MK 18" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+	<Firearm name="MK18SWAT" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
 			tooltip="@firearm_mk18_name"
 			description="@firearm_mkl8_desc"
 			img="data/models/weapons/mk18_ui.dds"
@@ -576,7 +576,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="MK 18Sup" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+	<Firearm name="MK18SDSWAT" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_mk18Sup_name"
 			description="@firearm_mk18Sup_desc"
 			img="data/models/weapons/mk18_ui.dds"
