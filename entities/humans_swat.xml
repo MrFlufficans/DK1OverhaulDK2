@@ -1,5 +1,5 @@
 <Entities>
-    <Entity name="Swat Officer" type="Human" editorAutoHeight="false">
+    <Entity name="SWAT Officer" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/cia_01.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
@@ -7,9 +7,9 @@
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="Swat"
-			class="Swat Officer">
+			class="SWAT Officer">
 
-			<Id name="Swat Officer" portrait="data/textures/portraits/ranger56.dds" gender="0" voicePack="male_very_american"/>
+			<Id name="SWAT Officer" portrait="data/textures/portraits/ranger56.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
 			<Brain suppressionRecovery="30.0"/>
 			<Mobility>
