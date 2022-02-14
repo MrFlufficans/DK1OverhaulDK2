@@ -1,6 +1,6 @@
 <Units>
 	<Unit
-		name="NYPD SWAT"
+		name="SWAT"
 		nameUI="Special Weapons And Tactics"
 		description="@unit_rangers_description"
 		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
