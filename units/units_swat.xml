@@ -8,6 +8,10 @@
 
 		<Classes>
 			<Class name="Swat Officer" 	numSlots="12" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="Pointman" numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds" />
+			<Class name="Assaulter" numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="Breacher" numSlots="2" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds" />
+			<Class name="Stealth" numSlots="3" iconTex="data/textures/gui/deploy/class_icon_blackops.dds" />
 		</Classes>
 
 		<TrooperRanks>
