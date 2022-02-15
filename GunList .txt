@@ -10,7 +10,7 @@ Rifles:
   SAR-18
   MK17 X
   Bren A1
-  MCX 300
+  MCX 300 M
 
 SMGS:
   MP5 X
@@ -27,7 +27,7 @@ SMGS:
 
 ShotGuns:
   M870 X
-  M590
+  M590 X/M
   M26 LSS
   S12K
   KSG
