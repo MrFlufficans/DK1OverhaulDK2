@@ -32,7 +32,7 @@
 		</Human>
 	</Entity>
 
-	<Entity name="Pointman" type="Human" editorAutoHeight="false">
+	<Entity name="SWAT_Pointman" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_PlaceHolder.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_helmet.dds" attachSlot="Bip001 Head">
@@ -65,7 +65,7 @@
 		</Human>
 	</Entity>
 
-    <Entity name="SWAT Assaulter" type="Human" editorAutoHeight="false">
+    <Entity name="SWAT_Assaulter" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_PlaceHolder.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_helmet.dds" attachSlot="Bip001 Head">
@@ -100,7 +100,7 @@
 		</Human>
 	</Entity>
 
-    <Entity name="Breacher" type="Human" editorAutoHeight="false">
+    <Entity name="SWAT_Breacher" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/SWAT_PlaceHolder.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/ranger_support_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
@@ -137,7 +137,7 @@
 		</Human>
 	</Entity>
 
-	    <Entity name="Stealth" type="Human" editorAutoHeight="false">
+	    <Entity name="SWAT_Stealth" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/SWAT_PlaceHolder.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/ranger_support_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
