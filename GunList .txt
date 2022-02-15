@@ -1,5 +1,48 @@
 Rifles:
+  M4
+  G36C
+  HK416
+  Commando 553
+  SAR-18
+  MK17
+  Bren A1
+  MCX 300
+
 
 SMGS:
+  MP5
+  MPX
+  UMP45 
+  P90
+  MK19
+  MP7
+  EVO3
+  Vector
+  X635
+  Honey Badger
+
+ShotGuns:
+  M870
+  M590
+  M26 LSS
+  S12K
+  KSG
+  Six 12,Six 12-SD
 
 SideArms:
+  G17
+  M1911
+  P226
+  Map40
+  VP-9
+  Tazer
+  XD4 ported
+  686 plus
+  HK45
+  XD4
+  FS AP
+  Tac .357
+  MAG 44
+  Mark 23
+  Spo1
+  Veterinary pistol
