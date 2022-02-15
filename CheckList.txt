@@ -1,7 +1,7 @@
 ----Work CheckList----
 
 DK1 Wall Style (Done)
-DK1 Music (done)
+DK1 Music (Done)
 SWAT Units (wip)
 
 Equipment
@@ -31,7 +31,7 @@ Models
     Civilian/Hostages
         Unknown
 
-Levels (note lets wait untill we get modern assets)
+Levels (Note: lets wait untill we get more modern assets)
     Campaign
     
     
