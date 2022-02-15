@@ -7,6 +7,7 @@
 
 			animationSet="shotgun_pump"
 		>
+        <ClassBinding name="Breacher"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/m500pp.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m500pp.dds"/>
 		<ModifiableParams
@@ -82,11 +83,7 @@
 
 			animationSet="shotgun_m1014"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Medic"/>
-		<ClassBinding name="Grenadier"/>
+        <ClassBinding name="Breacher"/>
 		<MobilityModifiers moveSpeedModifierPercent="-8" turnSpeedModifierPercent="-2"/>
 		<RenderObject3D model="data/models/weapons/m1014.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m1014.dds"/>
 
