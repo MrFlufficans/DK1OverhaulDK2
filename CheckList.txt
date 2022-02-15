@@ -5,8 +5,10 @@ DK1 Music (Done)
 SWAT Units (wip)
 
 Equipment
-    Rifles
-    Pistols
+   Weapons
+        Rifles
+        Pistols
+        SMGS 
     Launchers
     Various
 
