@@ -1,5 +1,7 @@
 <Entities>
-    <Entity name="SWAT Officer" type="Human" editorAutoHeight="false">
+    
+	<!-- Place Holder for Fluffy Don't Edit-->
+	<Entity name="SWAT_Officer" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/cia_01.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
@@ -7,9 +9,9 @@
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="Swat"
-			class="SWAT Officer">
+			class="SWAT_Officer">
 
-			<Id name="SWAT Officer" portrait="data/textures/portraits/ranger56.dds" gender="0" voicePack="male_very_american"/>
+			<Id name="SWAT_Officer" portrait="data/textures/portraits/ranger56.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
 			<Brain suppressionRecovery="30.0"/>
 			<Mobility>
@@ -32,6 +34,8 @@
 		</Human>
 	</Entity>
 
+	<!-- Actual Classes -->
+
 	<Entity name="SWAT_Pointman" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_PlaceHolder.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
@@ -42,9 +46,9 @@
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="SWAT"
-			class="Pointman">
+			class="SWAT_Pointman">
 
-			<Id name="Pointman" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
+			<Id name="SWAT_Pointman" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
 			<Brain suppressionRecovery="30.0"/>
 			<Mobility>
@@ -75,9 +79,9 @@
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="SWAT"
-			class="SWAT Assaulter">
+			class="SWAT_Assaulter">
 
-			<Id name="SWAT Assaulter" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
+			<Id name="SWAT_Assaulter" portrait="data/textures/portraits/ranger2.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
 			<Brain suppressionRecovery="30.0"/>
 			<Mobility>
@@ -112,9 +116,9 @@
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="SWAT"
-			class="Breacher">
+			class="SWAT_Breacher">
 
-			<Id name="Breacher" portrait="data/textures/portraits/ranger3.dds" gender="0" voicePack="male_very_american"/>
+			<Id name="SWAT_Breacher" portrait="data/textures/portraits/ranger3.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
 			<Brain suppressionRecovery="30.0"/>
 			<Mobility>
@@ -149,9 +153,9 @@
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="SWAT"
-			class="Stealth">
+			class="SWAT_Stealth">
 
-			<Id name="Stealth" portrait="data/textures/portraits/ranger3.dds" gender="0" voicePack="male_very_american"/>
+			<Id name="SWAT_Stealth" portrait="data/textures/portraits/ranger3.dds" gender="0" voicePack="male_very_american"/>
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
 			<Brain suppressionRecovery="30.0"/>
 			<Mobility>
