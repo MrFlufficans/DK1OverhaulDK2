@@ -405,7 +405,7 @@
 	</Button>
 
 
-	<StaticText text="Alpha something" font="header_3" origin="-970 -560" align="c" textColor="40382bdc"/>
+	<StaticText text="Alpha something" font="header_3" origin="-970 -560" align="c" textColor="#d1d1d1"/>
 	<Item name="Extra Buttons" origin="-970 -640" align="lbsv">
 		<StaticImage name="Options Background" origin="0 0">
 			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="332" sizeY="76"/>
@@ -420,7 +420,7 @@
 			<OnClick>
 				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="314" sizeY="58" color="40392b" blendMode="none"/>
 				<ButtonText text="What's New" font="header_3" origin="0 0" align="c" sizeX="0.9" sizeY="0.9" textColor="#d1d1d1"/>
-				<Action type="OpenURL" target="https://steamcommunity.com/app/1239080/allnews/"/>
+				<Action type="OpenURL" target="https://github.com/MrFlufficans/DK1OverhaulDK2"/>
 			</OnClick>
 		</Button>
 	</Item>
@@ -434,11 +434,11 @@
 		<Button origin="0 0" sizeX="670" sizeY="90">
 			<ButtonText origin="0 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40382b" />
 				<ButtonText origin="0 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="#d1d1d1"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" scaleX="0.9" scaleY="0.9"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40382b" scaleX="5.0" scaleY="0.9"/>
 				<ButtonText origin="0 0" text="@menu_m_singlemission" align="l" font="header_3" textColor="#d1d1d1"/>
 				<Action type="Show" target="Menu_MissionSelect_Main"/>
 			</OnClick>
