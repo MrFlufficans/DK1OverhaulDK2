@@ -1,0 +1,2014 @@
+<!--
+		For help, please refer to "help_entities.txt" in this directory.
+-->
+<Entities>
+	<Entity name="Timebomb Trap" type="Timebomb" fogOfWarVisibility="hiddenInitially" tooltip="@entity_ied_tooltip">
+		<PhysicalParams blocksMovement="false"/>
+		<Breakable breakOnDamage="grenade" deleteOnDeath="true"> <!-- we don't delete on death because we want to keep track of them in code. But they will be hidden when dead nonetheless -->
+			<Piece entityName="PS_RpgExplosion"/>
+			<Piece entityName="scorch_mark_large"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/interior/bomb_small.khm" diffuseTex="data/models/environment/interior/bomb_small.dds" />
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="650" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+
+		<!-- time will vary depending on the trooper's FieldSkills ability -->
+		<Timebomb defuseTimeMsec="2000" kaboomTimeMsec="20000"/>
+	</Entity>
+
+	<Entity name="Timebomb" type="Timebomb" fogOfWarVisibility="hiddenInitially" tooltip="@entity_timebomb_tooltip">
+		<PhysicalParams blocksMovement="true"/>
+		<Breakable breakOnDamage="grenade" deleteOnDeath="false"> <!-- we don't delete on death because we want to keep track of them in code. But they will be hidden when dead nonetheless -->
+			<Piece entityName="PS_RpgExplosion"/>
+			<Piece entityName="scorch_mark_large"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/interior/bomb_small.khm" diffuseTex="data/models/environment/interior/bomb_small.dds" />
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="650" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+
+		<!-- time will vary depending on the trooper's FieldSkills ability -->
+		<Timebomb defuseTimeMsec="5000" kaboomTimeMsec="20000"/>
+	</Entity>
+
+	<Entity name="Timebomb Visible" type="Timebomb" fogOfWarVisibility="full" tooltip="@entity_timebomb_tooltip">
+		<PhysicalParams blocksMovement="true"/>
+		<Breakable breakOnDamage="grenade" deleteOnDeath="false">
+			<Piece entityName="PS_RpgExplosion"/>
+			<Piece entityName="scorch_mark_large"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/interior/bomb_small.khm" diffuseTex="data/models/environment/interior/bomb_small.dds" />
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="650" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+
+		<!-- time will vary depending on the trooper's FieldSkills ability -->
+		<Timebomb defuseTimeMsec="5000" kaboomTimeMsec="20000"/>
+	</Entity>
+
+	<Entity name="TimebombLarge" type="Timebomb" fogOfWarVisibility="hiddenInitially" tooltip="@entity_timebomb_tooltip">
+		<PhysicalParams blocksMovement="true"/>
+		<Breakable breakOnDamage="grenade" deleteOnDeath="false">
+			<Piece entityName="PS_LargeBombExplosion"/>
+			<Piece entityName="scorch_mark_large"/>
+			<Piece entityName="scorch_mark_very_large"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/interior/bomb_large.khm" diffuseTex="data/models/environment/interior/bomb_large.dds" />
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="3" sizeY="3" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="650" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+
+		<!-- time will vary depending on the trooper's FieldSkills ability -->
+		<Timebomb defuseTimeMsec="10000" kaboomTimeMsec="60000"/>
+	</Entity>
+
+	<Entity name="TimebombLarge Visible" type="Timebomb" fogOfWarVisibility="full" tooltip="@entity_timebomb_tooltip">
+		<PhysicalParams blocksMovement="true"/>
+		<Breakable breakOnDamage="grenade" deleteOnDeath="false">
+			<Piece entityName="PS_LargeBombExplosion"/>
+			<Piece entityName="scorch_mark_large"/>
+			<Piece entityName="scorch_mark_very_large"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/interior/bomb_large.khm" diffuseTex="data/models/environment/interior/bomb_large.dds" />
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="3" sizeY="3" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="650" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+
+		<!-- time will vary depending on the trooper's FieldSkills ability -->
+		<Timebomb defuseTimeMsec="10000" kaboomTimeMsec="60000"/>
+	</Entity>
+
+	<!--
+		doors
+			type = normal / sliding
+	-->
+	<Entity name="door_wood_01" type="Door" fogOfWarVisibility="hiddenState" hideInEditor="true" tooltip="@entity_door_flimsy_tooltip" editorAutoHeight="false" >
+		<PhysicalParams blocksVision="true"/>
+		<Breakable breakOnDamage="grenade" template="Breakable_Door_Wood"/>
+		<RenderObject3D model="data/models/environment/various/door_wood.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" emissive="1" />
+		
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<!-- door open time represents the time when opened by hand. The open-by-kick time is 35% faster than that -->
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="door_kick"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="door_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_wood_half" type="Door" fogOfWarVisibility="hiddenState" hideInEditor="true" tooltip="@entity_door_flimsy_tooltip" editorAutoHeight="false" >
+		<PhysicalParams blocksVision="true"/>
+		<Breakable breakOnDamage="grenade" template="Breakable_Door_Wood"/>
+		<RenderObject3D model="data/models/environment/various/door_wood_half.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" emissive="1"/>
+		
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="door_kick"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="door_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_flat_01" type="Door" fogOfWarVisibility="hiddenState" hideInEditor="true" tooltip="@entity_door_strong_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable template="Breakable_Door_Flat_Wood"/>
+		<RenderObject3D model="data/models/environment/various/door_flat_01.khm" diffuseTex="data/models/environment/various/door_flat_01.dds" emissive="1"/>
+		
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="door_kick"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="door_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_glass" type="Door" fogOfWarVisibility="hiddenState" hideInEditor="true" tooltip="@entity_door_glass_tooltip" editorAutoHeight="false" >
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Glass" breakOnDamage="bullet"/>
+		<RenderObject3D model="data/models/environment/various/door_glass.khm" diffuseTex="data/models/environment/various/door_glass.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true" />
+		<RenderObject3D model="data/models/environment/various/door_glass_edge.khm" diffuseTex="data/models/environment/various/door_glass.dds" skipGOSSAO="true" skipSSAO="true" />
+		<RenderObject3D model="data/models/environment/various/door_glass_handle.khm" diffuseTex="data/models/environment/various/door_glass.dds" skipGOSSAO="true" skipSSAO="true" disableLighting="true"/>
+		<RenderObject3D model="data/models/environment/various/window_single_02_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<!-- <RenderObject3D model="data/models/environment/various/door_glass_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/> -->
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="glass_break"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="glass_break">
+		</Door>
+	</Entity>
+
+	<Entity name="door_glass_metal" type="Door" fogOfWarVisibility="hiddenState" hideInEditor="true" tooltip="@entity_door_glass_tooltip" editorAutoHeight="false" >
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Glass" breakOnDamage="bullet"/>
+		<RenderObject3D model="data/models/environment/various/door_glass.khm" diffuseTex="data/models/environment/various/door_glass.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true" />
+		<RenderObject3D model="data/models/environment/various/door_glass_edge.khm" diffuseTex="data/models/environment/various/door_glass_metal.dds" skipGOSSAO="true" skipSSAO="true" />
+		<RenderObject3D model="data/models/environment/various/door_glass_handle.khm" diffuseTex="data/models/environment/various/door_glass_metal.dds" skipGOSSAO="true" skipSSAO="true" disableLighting="true"/>
+		<RenderObject3D model="data/models/environment/various/window_single_02_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<!-- <RenderObject3D model="data/models/environment/various/door_glass_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/> -->
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="glass_break"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="glass_break">
+		</Door>
+	</Entity>
+
+	<Entity name="door_glass_narrow" type="Door" fogOfWarVisibility="hiddenState" hideInEditor="true" tooltip="@entity_door_glass_tooltip" editorAutoHeight="false" >
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Glass" breakOnDamage="bullet"/>
+		<RenderObject3D model="data/models/environment/various/door_glass_narrow.khm" diffuseTex="data/models/environment/various/door_glass.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true" />
+		<RenderObject3D model="data/models/environment/various/door_glass_edge_narrow.khm" diffuseTex="data/models/environment/various/door_glass.dds" skipGOSSAO="true" skipSSAO="true" />
+		<RenderObject3D model="data/models/environment/various/door_glass_handle_narrow.khm" diffuseTex="data/models/environment/various/door_glass.dds" skipGOSSAO="true" skipSSAO="true" disableLighting="true"/>
+		<RenderObject3D model="data/models/environment/various/window_single_02_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<!-- <RenderObject3D model="data/models/environment/various/door_wood_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/> -->
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="glass_break"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="glass_break">
+		</Door>
+	</Entity>
+
+	<Entity name="door_wood_imobile" type="BasicEntity" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable template="Breakable_Door_Wood"/>
+		<RenderObject3D model="data/models/environment/various/door_wood.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" emissive="1"/>
+		<RenderObject3D model="data/models/environment/various/door_wood_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+	</Entity>
+
+	<Entity name="door_wood_01_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_flimsy_locked_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable breakOnDamage="grenade" template="Breakable_Door_Wood"/>
+		<RenderObject3D model="data/models/environment/various/door_wood.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" emissive="1"/>
+	
+
+		<!-- "allow" can be 0/1/2, where 0=always allow (default), 1=when unlocked, 2=when locked -->
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade" allow="1"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<CanUseEquipment name="Lockpick" allow="2"/>
+		<CanUseEquipment name="Lockpick Machine" allow="2"/>
+		<CanUseEquipment name="Crowbar" allow="2"/>
+		<CanUseEquipment name="Dynamic Hammer" allow="2"/>
+		<CanUseEquipment name="Breacher Shotgun" allow="2"/>
+		<!--<CanUseEquipment name="BreachingKit" allow="2"/> -->
+		<!--<CanUseEquipment name="Bolt Cutter" allow="2"/>-->
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/door_wood_unlocked_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="2000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="door_kick"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="door_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_flat_01_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_strong_locked_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable template="Breakable_Door_Flat_Wood"/>
+		<RenderObject3D model="data/models/environment/various/door_flat_01.khm" diffuseTex="data/models/environment/various/door_flat_01.dds" emissive="1"/>
+		
+
+		<!-- "allow" can be 0/1/2, where 0=always allow (default), 1=when unlocked, 2=when locked -->
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade" allow="1"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<CanUseEquipment name="Lockpick" allow="2"/>
+		<CanUseEquipment name="Lockpick Machine" allow="2"/>
+		<CanUseEquipment name="Crowbar" allow="2"/>
+		<CanUseEquipment name="Dynamic Hammer" allow="2"/>
+		<CanUseEquipment name="Breacher Shotgun" allow="2"/>
+		<!--<CanUseEquipment name="BreachingKit" allow="2"/> -->
+		<!--<CanUseEquipment name="Bolt Cutter" allow="2"/>-->
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/door_flat_01_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="4000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_open"
+			sfxClose="door_close"
+			sfxKick="door_kick"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="door_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="gate_poor_01" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_gate_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable template="Breakable_Metal"/>
+		<RenderObject3D model="data/models/environment/various/gate_poor_01.khm" diffuseTex="data/models/environment/various/gate_poor.dds" />
+		<RenderObject3D model="data/models/environment/various/gate_poor_01_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="1400"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="gate_poor_01_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_gate_locked_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true"/>
+		<Breakable template="Breakable_Metal"/>
+		<RenderObject3D model="data/models/environment/various/gate_poor_01.khm" diffuseTex="data/models/environment/various/gate_poor.dds" />
+		<RenderObject3D model="data/models/environment/various/gate_poor_01_locked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<!-- "allow" can be 0/1/2, where 0=always allow (default), 1=when unlocked, 2=when locked -->
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade" allow="1"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<CanUseEquipment name="Lockpick" allow="2"/>
+		<CanUseEquipment name="Lockpick Machine" allow="2"/>
+		<CanUseEquipment name="Crowbar" allow="2"/>
+		<CanUseEquipment name="Dynamic Hammer" allow="2"/>
+		<CanUseEquipment name="Breacher Shotgun" allow="2"/>
+		<!--<CanUseEquipment name="BreachingKit" allow="2"/> -->
+		<!--<CanUseEquipment name="Bolt Cutter" allow="2"/>-->
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/gate_poor_01_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="1400"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="4000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_grate_01" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_grating_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/door_grate.khm" diffuseTex="data/models/environment/various/door_grate_01.dds" emissive="1" />
+		<RenderObject3D model="data/models/environment/various/door_grate_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<CanUseEquipment name="Grenade"/>
+		<!--<CanUseEquipment name="Breaching Charge"/> -->
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick">
+		</Door>
+	</Entity>
+
+	<Entity name="door_grate_02" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_grating_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/door_grate_02.khm" diffuseTex="data/models/environment/various/door_grate_02.dds" emissive="1" />
+		<RenderObject3D model="data/models/environment/various/door_grate_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<CanUseEquipment name="Grenade"/>
+		<!--<CanUseEquipment name="Breaching Charge"/> -->
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick">
+		</Door>
+	</Entity>
+
+	<Entity name="gate_metal_short" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_shortgate_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Metal"/>
+		<RenderObject3D model="data/models/environment/various/gate_metal_short.khm" diffuseTex="data/models/environment/exterior/fence_metal_short.dds" emissive="1" />
+		<RenderObject3D model="data/models/environment/various/gate_metal_short_unlocked_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<CanUseEquipment name="Grenade"/>
+		<!--<CanUseEquipment name="Breaching Charge"/> -->
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick">
+		</Door>
+	</Entity>
+
+	<Entity name="gate_metal_sheet" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_gate_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="true" solid="true"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/gate_metal_sheet.khm" diffuseTex="data/models/environment/various/gate_metal_sheet.dds" emissive="1" />
+		<RenderObject3D model="data/models/environment/various/gate_metal_sheet_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" />
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/> <!-- includes SlapCharge/SlapChargeKit/BreachingCharge -->
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="170"
+			openCloseTimeMsec="1000"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick">
+		</Door>
+	</Entity>
+
+
+	<Entity name="door_grate_01_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_grating_locked_tooltip"  editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/door_grate.khm" diffuseTex="data/models/environment/various/door_grate_01.dds" emissive="1"/>
+		
+
+		<!-- "allow" can be 0/1/2, where 0=always allow (default), 1=when unlocked, 2=when locked -->
+		<CanUseEquipment name="Grenade" allow="1"/>
+		<CanUseEquipment name="TEC Torch"/>
+		<CanUseEquipment name="Slap Charge"/>
+		<CanUseEquipment name="Slap Charge Kit"/>
+		<!--<CanUseEquipment name="Breaching Charge"/> -->
+
+		<CanUseEquipment name="Lockpick" allow="2"/>
+		<CanUseEquipment name="Lockpick Machine" allow="2"/>
+		<CanUseEquipment name="Crowbar" allow="2"/>
+		<!--<CanUseEquipment name="Dynamic Hammer" allow="2"/> -->
+		<!--<CanUseEquipment name="BreachingKit" allow="2"/> -->
+		<!--<CanUseEquipment name="Bolt Cutter" allow="2"/>-->
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/door_grate_unlocked_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="9000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_grate_02_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_grating_locked_tooltip"  editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/door_grate_02.khm" diffuseTex="data/models/environment/various/door_grate_02.dds" emissive="1"/>
+		
+
+		<!-- "allow" can be 0/1/2, where 0=always allow (default), 1=when unlocked, 2=when locked -->
+		<CanUseEquipment name="Grenade" allow="1"/>
+		<CanUseEquipment name="TEC Torch"/>
+		<CanUseEquipment name="Slap Charge"/>
+		<CanUseEquipment name="Slap Charge Kit"/>
+		<!--<CanUseEquipment name="Breaching Charge"/> -->
+
+		<CanUseEquipment name="Lockpick" allow="2"/>
+		<CanUseEquipment name="Lockpick Machine" allow="2"/>
+		<CanUseEquipment name="Crowbar" allow="2"/>
+		<!--<CanUseEquipment name="Dynamic Hammer" allow="2"/> -->
+		<!--<CanUseEquipment name="BreachingKit" allow="2"/> -->
+		<!--<CanUseEquipment name="Bolt Cutter" allow="2"/>-->
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/door_grate_unlocked_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="900"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="9000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="gate_metal_sheet_locked" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_gate_locked_tooltip"  editorAutoHeight="false">
+		<PhysicalParams blocksVision="true" solid="true"/>
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/gate_metal_sheet.khm" diffuseTex="data/models/environment/various/gate_metal_sheet.dds" emissive="1"/>
+		
+
+		<!-- "allow" can be 0/1/2, where 0=always allow (default), 1=when unlocked, 2=when locked -->
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="TEC Torch"/>
+		<CanUseEquipment name="Grenade" allow="1"/>
+		<CanUseEquipment name="ExplosiveCharge"/> <!-- includes slaps/slap kit/breaching charge -->
+
+		<CanUseEquipment name="Lockpick" allow="2"/>
+		<CanUseEquipment name="Lockpick Machine" allow="2"/>
+		<CanUseEquipment name="Crowbar" allow="2"/>
+		<CanUseEquipment name="Dynamic Hammer" allow="2"/>
+		<CanUseEquipment name="Breacher Shotgun" allow="2"/>
+		<!--<CanUseEquipment name="BreachingKit" allow="2"/> -->
+		<!--<CanUseEquipment name="Bolt Cutter" allow="2"/>-->
+
+		<Door
+			type="normal"
+
+			locked="true"
+			unlockedSymbolMesh="data/models/environment/various/gate_metal_sheet_symbol.khm"
+			openAngle="170"
+			openCloseTimeMsec="1000"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="10000"
+			hammerHitsNeeded="2"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_glass_sliding_01" type="Door" hideInEditor="true" fogOfWarVisibility="hiddenState" tooltip="@entity_door_sliding_tooltip2" editorAutoHeight="false">
+		<PhysicalParams blocksVision="flase" solid="false"/>
+		<Breakable template="Breakable_Glass" breakOnDamage="bullet"/>
+		<RenderObject3D model="data/models/environment/various/door_glass_narrow.khm" diffuseTex="data/models/environment/various/door_glass.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true" />
+		<RenderObject3D model="data/models/environment/various/door_glass_edge_narrow.khm" diffuseTex="data/models/environment/various/door_glass.dds" skipGOSSAO="true" skipSSAO="true" />
+		<RenderObject3D model="data/models/environment/various/window_single_02_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<!-- <RenderObject3D model="data/models/environment/various/door_01_symbol_sliding.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true" /> -->
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<Door
+			type="sliding"
+
+			locked="0"
+			openCloseTimeMsec="1200"
+
+			lockPickTimeMsec="10000"
+			breachTimeMsec="4000"
+			hammerHitsNeeded="1"
+
+			sfxOpen="doorsl_open"
+			sfxClose="doorsl_close"
+			sfxKick="glass_break"
+			sfxCrowbar="crowbar_use"
+			sfxBreakHammer="glass_break">
+		</Door>
+	</Entity>
+
+	<Entity name="gate_large_double" hideInEditor="false" type="Door" fogOfWarVisibility="hiddenState" tooltip="@entity_door_gate_large_tooltip" editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false" />
+		<Breakable template="Breakable_Door_Grate"/>
+		<RenderObject3D model="data/models/environment/various/gate_large_double.khm" diffuseTex="data/models/environment/various/gate_large.dds" gossaoCastHeight="4">
+		<Specular shininess="4" intensity="3" mask="data/models/environment/various/gate_large_spec.dds"/>
+		</RenderObject3D>
+		<RenderObject3D model="data/models/environment/various/gate_large_double_symbol.khm" diffuseColor="e6d4c0" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+
+		<CanUseEquipment name="Spy Camera"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+
+		<Door
+			type="normal"
+
+			locked="false"
+			openAngle="90"
+			openCloseTimeMsec="1400"
+
+			sfxOpen="door_grate_open"
+			sfxClose="door_grate_close"
+			sfxKick="door_grate_kick"
+			sfxCrowbar="crowbar_use_metal"
+			sfxBreakHammer="door_grate_ram">
+		</Door>
+	</Entity>
+
+	<Entity name="door_frame_wood_01" hideInEditor="true" type="BasicEntity" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/door_frame_wood.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" />
+	</Entity>
+
+	<Entity name="door_frame_wood_half" hideInEditor="true" type="BasicEntity" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/door_frame_wood_half.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" />
+	</Entity>
+
+	<Entity name="door_frame_wood_test" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/door_frame_wood.khm" diffuseTex="data/models/environment/various/door_wood_01.dds"/>
+	</Entity>
+
+	<Entity name="door_frame_grate_01" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/door_frame_grate.khm" diffuseTex="data/models/environment/various/door_grate_01.dds" />
+	</Entity>
+
+	<Entity name="gate_frame_poor_01" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/gate_frame_poor_01.khm" diffuseTex="data/models/environment/various/gate_poor.dds" />
+	</Entity>
+
+	<Entity name="gate_metal_short_frame" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/gate_metal_short_frame.khm" diffuseTex="data/models/environment/exterior/fence_metal_short.dds" />
+	</Entity>
+
+	<Entity name="door_frame_flat_01" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/door_frame_wood.khm" diffuseTex="data/models/environment/various/door_flat_01.dds" />
+	</Entity>
+
+	<Entity name="gate_large_double_frame" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/gate_large_double_frame.khm" diffuseTex="data/models/environment/various/gate_large.dds" />
+	</Entity>
+
+	<Entity name="door_frame_glass" hideInEditor="true" type="BasicEntity" editorAutoHeight="false">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/door_frame_glass_narrow.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" />
+	</Entity>
+
+	<Entity name="door_frame_grate_02" hideInEditor="false" type="BasicEntity" editorAutoHeight="true">
+		<PhysicalParams blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/door_frame_grate_02.khm" diffuseTex="data/models/environment/various/door_grate_02.dds" />
+	</Entity>
+
+	<Entity name="door_threshold_wood_01" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/door_threshold_wood.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+
+	<Entity name="door_threshold_wood_half" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/door_threshold_wood_half.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+
+	<Entity name="door_threshold_grate_01" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/door_threshold_grate.khm" diffuseTex="data/models/environment/various/door_grate_01.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+
+	<Entity name="door_threshold_grate_02" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/door_threshold_grate_02.khm" diffuseTex="data/models/environment/various/door_grate_02.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+
+	<Entity name="door_threshold_flat_01" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/door_threshold_wood.khm" diffuseTex="data/models/environment/various/door_flat_01.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+
+	<Entity name="door_threshold_glass" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/door_threshold_glass.khm" diffuseTex="data/models/environment/various/door_wood_01.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+
+	<Entity name="door_threshold_glass_metal" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/door_threshold_glass.khm" diffuseTex="data/models/environment/various/door_flat_01.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+
+
+
+	<!--
+		windows
+	-->
+
+	<Entity name="window_glass" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/window_single_02_glass.khm" diffuseTex="data/models/environment/various/window_single_02_glass.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true">
+			<Specular shininess="64" intensity="5.0" />
+		</RenderObject3D>
+		<RenderObject3D model="data/models/environment/various/window_single_02_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<Breakable breakOnDamage="bullet" sfx="glass_break">
+			<Piece entityName="window_single_02_glass_break_01"/>
+			<Piece entityName="window_single_02_glass_break_02"/>
+			<Piece entityName="window_single_02_glass_break_03"/>
+			<Piece entityName="window_single_02_glass_break_04"/>
+			<Piece entityName="window_single_02_glass_break_05"/>
+			<Piece entityName="window_single_02_glass_break_06"/>
+			<Piece entityName="window_single_02_glass_break_07"/>
+			<Piece entityName="window_single_02_glass_break_08"/>
+			<Piece entityName="window_single_02_glass_break_09"/>
+			<Piece entityName="window_single_02_glass_break_10"/>
+			<Piece entityName="window_single_02_glass_break_11"/>
+			<Piece entityName="window_single_02_glass_break_12"/>
+			<Piece entityName="window_single_02_glass_break_13"/>
+		</Breakable>
+	</Entity>
+
+	<Entity name="window_glass_broken" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/window_single_02_glass.khm" diffuseTex="data/models/environment/various/window_single_02_glass_broken.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true">
+			<Specular shininess="64" intensity="5.0" />
+		</RenderObject3D>
+		<RenderObject3D model="data/models/environment/various/window_single_02_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<Breakable breakOnDamage="bullet" sfx="glass_break">
+			<Piece entityName="window_single_02_glass_break_01"/>
+			<Piece entityName="window_single_02_glass_break_02"/>
+			<Piece entityName="window_single_02_glass_break_03"/>
+			<Piece entityName="window_single_02_glass_break_04"/>
+			<Piece entityName="window_single_02_glass_break_05"/>
+			<Piece entityName="window_single_02_glass_break_06"/>
+			<Piece entityName="window_single_02_glass_break_07"/>
+			<Piece entityName="window_single_02_glass_break_08"/>
+			<Piece entityName="window_single_02_glass_break_09"/>
+			<Piece entityName="window_single_02_glass_break_10"/>
+			<Piece entityName="window_single_02_glass_break_11"/>
+			<Piece entityName="window_single_02_glass_break_12"/>
+			<Piece entityName="window_single_02_glass_break_13"/>
+		</Breakable>
+	</Entity>
+
+	<Entity name="window_frame" type="Window" hideInEditor="true" tooltip="@entity_window" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="true" usableCover="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<Breakable>
+
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/various/window_single_02.khm" diffuseTex="data/models/environment/various/window_single_02.dds"/>
+	</Entity>
+
+	<Entity name="window_frame_02" type="Window" hideInEditor="true" tooltip="@entity_window" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="true" usableCover="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<Breakable>
+
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/various/window_single_02.khm" diffuseTex="data/models/environment/various/window_single_white.dds"/>
+	</Entity>
+
+	<Entity name="window_frame_03" type="Window" hideInEditor="true" tooltip="@entity_window" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="true" usableCover="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<Breakable>
+
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/various/window_single_02.khm" diffuseTex="data/models/environment/various/window_single_brick.dds"/>
+	</Entity>
+
+	<Entity name="window_glass_double" type="BasicEntity" hideInEditor="true" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="false" blocksVision="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/window_double_02_glass.khm" diffuseTex="data/models/environment/various/window_single_02_glass.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true">
+			<Specular shininess="64" intensity="5.0" />
+		</RenderObject3D>
+		<RenderObject3D model="data/models/environment/various/window_double_02_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<Breakable breakOnDamage="bullet" sfx="glass_break">
+			<Piece entityName="window_single_02_glass_break_01"/>
+			<Piece entityName="window_single_02_glass_break_02"/>
+			<Piece entityName="window_single_02_glass_break_03"/>
+			<Piece entityName="window_single_02_glass_break_04"/>
+			<Piece entityName="window_single_02_glass_break_05"/>
+			<Piece entityName="window_single_02_glass_break_06"/>
+			<Piece entityName="window_single_02_glass_break_07"/>
+			<Piece entityName="window_single_02_glass_break_08"/>
+			<Piece entityName="window_single_02_glass_break_09"/>
+			<Piece entityName="window_single_02_glass_break_10"/>
+			<Piece entityName="window_single_02_glass_break_11"/>
+			<Piece entityName="window_single_02_glass_break_12"/>
+			<Piece entityName="window_single_02_glass_break_13"/>
+		</Breakable>
+	</Entity>
+
+	<Entity name="window_frame_double" type="Window" hideInEditor="true" tooltip="@entity_window" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="true" usableCover="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<Breakable>
+			<Piece entityName="window_single_02_break_01"/>
+			<Piece entityName="window_single_02_break_02"/>
+			<Piece entityName="window_single_02_break_03"/>
+			<Piece entityName="window_single_02_break_04"/>
+			<Piece entityName="window_single_02_break_05"/>
+			<Piece entityName="window_single_02_break_06"/>
+			<Piece entityName="window_single_02_break_07"/>
+			<Piece entityName="window_single_02_break_08"/>
+			<Piece entityName="window_single_02_break_09"/>
+			<Piece entityName="window_single_02_break_10"/>
+			<Piece entityName="window_single_02_break_11"/>
+
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/various/window_double_02.khm" diffuseTex="data/models/environment/various/window_single_02.dds"/>
+	</Entity>
+
+	<Entity name="window_frame_double_brick" type="Window" hideInEditor="true" tooltip="@entity_window" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="true" usableCover="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<Breakable>
+			<Piece entityName="window_single_02_break_01"/>
+			<Piece entityName="window_single_02_break_02"/>
+			<Piece entityName="window_single_02_break_03"/>
+			<Piece entityName="window_single_02_break_04"/>
+			<Piece entityName="window_single_02_break_05"/>
+			<Piece entityName="window_single_02_break_06"/>
+			<Piece entityName="window_single_02_break_07"/>
+			<Piece entityName="window_single_02_break_08"/>
+			<Piece entityName="window_single_02_break_09"/>
+			<Piece entityName="window_single_02_break_10"/>
+			<Piece entityName="window_single_02_break_11"/>
+
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/various/window_double_02.khm" diffuseTex="data/models/environment/various/window_double_brick.dds"/>
+	</Entity>
+
+	<Entity name="window_frame_double_white" type="Window" hideInEditor="true" tooltip="@entity_window" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="true" usableCover="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<Breakable>
+			<Piece entityName="window_single_02_break_01"/>
+			<Piece entityName="window_single_02_break_02"/>
+			<Piece entityName="window_single_02_break_03"/>
+			<Piece entityName="window_single_02_break_04"/>
+			<Piece entityName="window_single_02_break_05"/>
+			<Piece entityName="window_single_02_break_06"/>
+			<Piece entityName="window_single_02_break_07"/>
+			<Piece entityName="window_single_02_break_08"/>
+			<Piece entityName="window_single_02_break_09"/>
+			<Piece entityName="window_single_02_break_10"/>
+			<Piece entityName="window_single_02_break_11"/>
+
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+			<Piece entityName="wall_debris_04"/>
+
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+			<Piece entityName="wall_debris_05"/>
+
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+			<Piece entityName="wall_debris_06"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/various/window_double_02.khm" diffuseTex="data/models/environment/various/window_single_white.dds"/>
+	</Entity>
+
+	<!-- should actually be a BasicEntity, but we don't support custom actions for basic entities yet, and we want the ClearObstacle option to show up
+	<Entity name="wall_glass" type="BasicEntity" hideInEditor="true" editorAutoHeight="false"> -->
+	<Entity name="wall_glass" type="Window" hideInEditor="true" editorAutoHeight="false" tooltip="@entity_glass_wall">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/wall_glass_frame.khm" diffuseTex="data/models/environment/various/wall_glass_frame.dds" reflections="false" skipGOSSAO="true" skipSSAO="true"/>
+		<RenderObject3D model="data/models/environment/various/glass_100.khm" diffuseTex="data/models/environment/various/door_glass.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true">
+			<Specular shininess="64" intensity="5.0" />
+		</RenderObject3D>
+		<RenderObject3D model="data/models/environment/various/wall_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<RenderObject3D model="data/models/environment/various/wall_frame_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<Breakable breakOnDamage="bullet" sfx="glass_break">
+			<Piece entityName="window_single_02_glass_break_01"/>
+			<Piece entityName="window_single_02_glass_break_02"/>
+			<Piece entityName="window_single_02_glass_break_03"/>
+			<Piece entityName="window_single_02_glass_break_04"/>
+			<Piece entityName="window_single_02_glass_break_05"/>
+			<Piece entityName="window_single_02_glass_break_06"/>
+			<Piece entityName="window_single_02_glass_break_07"/>
+			<Piece entityName="window_single_02_glass_break_08"/>
+			<Piece entityName="window_single_02_glass_break_09"/>
+			<Piece entityName="window_single_02_glass_break_10"/>
+			<Piece entityName="window_single_02_glass_break_11"/>
+			<Piece entityName="window_single_02_glass_break_12"/>
+			<Piece entityName="window_single_02_glass_break_13"/>
+		</Breakable>
+	</Entity>
+
+	<Entity name="window_threshold" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/wall_glass_threshold.khm" diffuseTex="data/models/environment/various/wall_glass_frame.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+
+	<!-- should actually be a BasicEntity, but we don't support custom actions for basic entities yet, and we want the ClearObstacle option to show up
+	<Entity name="wall_glass_wood" type="BasicEntity" hideInEditor="true" editorAutoHeight="false"> -->
+	<Entity name="wall_glass_wood" type="Window" hideInEditor="true" editorAutoHeight="false" tooltip="@entity_glass_wall">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/wall_glass_frame.khm" diffuseTex="data/models/environment/various/wall_glass_frame_wood.dds" reflections="false" skipGOSSAO="true" skipSSAO="true"/>
+		<RenderObject3D model="data/models/environment/various/glass_100.khm" diffuseTex="data/models/environment/various/door_glass.dds" blendMode="normal" reflections="true" skipGOSSAO="true" skipSSAO="true">
+			<Specular shininess="64" intensity="5.0" />
+		</RenderObject3D>
+		<RenderObject3D model="data/models/environment/various/wall_glass_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<RenderObject3D model="data/models/environment/various/wall_frame_symbol.khm" diffuseTex="data/models/environment/various/window_symbol.dds" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" disableLighting="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<Breakable breakOnDamage="bullet" sfx="glass_break">
+			<Piece entityName="window_single_02_glass_break_01"/>
+			<Piece entityName="window_single_02_glass_break_02"/>
+			<Piece entityName="window_single_02_glass_break_03"/>
+			<Piece entityName="window_single_02_glass_break_04"/>
+			<Piece entityName="window_single_02_glass_break_05"/>
+			<Piece entityName="window_single_02_glass_break_06"/>
+			<Piece entityName="window_single_02_glass_break_07"/>
+			<Piece entityName="window_single_02_glass_break_08"/>
+			<Piece entityName="window_single_02_glass_break_09"/>
+			<Piece entityName="window_single_02_glass_break_10"/>
+			<Piece entityName="window_single_02_glass_break_11"/>
+			<Piece entityName="window_single_02_glass_break_12"/>
+			<Piece entityName="window_single_02_glass_break_13"/>
+		</Breakable>
+	</Entity>
+
+	<Entity name="window_threshold_wood" type="BasicEntity" hideInEditor="true" >
+		<PhysicalParams physicsEnabled="false" solid="false"/>
+		<RenderObject3D model="data/models/environment/various/wall_glass_threshold.khm" diffuseTex="data/models/environment/various/wall_glass_frame_wood.dds" skipGOSSAO="true" skipSSAO="true" skipCastShadows="true"/>
+	</Entity>
+	<!--
+		walls
+	-->
+
+	<!-- NOTE: Map gen uses this. Don't change its name -->
+	<Entity name="Wall" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="true"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_top.dds" skipSSAO="true" skipCastShadows="false" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.25" heightMeters="2.0" collisionHeight="10" breakTemplate="WallBrokenEdge" debrisDensityPerM="1" groundDebrisTemplate="wall_remnant" groundDebrisSpacing="0.9">
+			<Piece entityName="wall_debris_01" size="0.3"/>
+			<Piece entityName="wall_debris_02" size="0.3"/>
+			<Piece entityName="wall_debris_03" size="0.2"/>
+			<Piece entityName="wall_debris_04" size="0.1"/>
+			<Piece entityName="wall_debris_05" size="0.1"/>
+			<Piece entityName="wall_debris_06" size="0.1"/>
+		</Wall>
+	</Entity>
+
+	<Entity name="Wall White" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="true"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_white.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_top.dds" skipSSAO="true" skipCastShadows="false" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.25" heightMeters="2.0" collisionHeight="10" breakTemplate="WallBrokenEdgeWhite" debrisDensityPerM="1" groundDebrisTemplate="wall_remnant_02" groundDebrisSpacing="0.9">
+			<Piece entityName="wall_debris_08" size="0.3"/>
+			<Piece entityName="wall_debris_09" size="0.3"/>
+			<Piece entityName="wall_debris_10" size="0.2"/>
+			<Piece entityName="wall_debris_11" size="0.1"/>
+			<Piece entityName="wall_debris_12" size="0.1"/>
+			<Piece entityName="wall_debris_12" size="0.1"/>
+		</Wall>
+	</Entity>
+
+	<Entity name="Wall Brick" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="true"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_brick.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_top.dds" skipSSAO="true" skipCastShadows="false" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.25" heightMeters="2.0" collisionHeight="10" breakTemplate="WallBrokenEdgeBrick" debrisDensityPerM="15" groundDebrisTemplate="wall_exterior_remnant_brick" groundDebrisSpacing="0.9">
+			<Piece entityName="debris_brick_01" size="1.5"/>
+			<Piece entityName="debris_brick_01" size="1.5"/>
+			<Piece entityName="debris_brick_01" size="1.5"/>
+			<Piece entityName="debris_brick_01" size="1.5"/>
+			<Piece entityName="debris_brick_01" size="1.5"/>
+			<Piece entityName="debris_brick_01" size="1.5"/>
+			<Piece entityName="debris_brick_01" size="1.5"/>
+			<Piece entityName="debris_brick_01" size="1.5"/>
+		</Wall>
+	</Entity>
+
+<!-- we need WallBrokenEdge variants for these
+	<Entity name="Wall Thin" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="true"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_top.dds" skipSSAO="true" skipCastShadows="false" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.125" heightMeters="2.0" collisionHeight="10" breakTemplate="WallBrokenEdge" debrisDensityPerM="1" groundDebrisTemplate="wall_remnant" groundDebrisSpacing="0.9">
+			<Piece entityName="wall_debris_01" size="0.3"/>
+			<Piece entityName="wall_debris_02" size="0.3"/>
+			<Piece entityName="wall_debris_03" size="0.2"/>
+			<Piece entityName="wall_debris_04" size="0.1"/>
+			<Piece entityName="wall_debris_05" size="0.1"/>
+			<Piece entityName="wall_debris_06" size="0.1"/>
+		</Wall>
+	</Entity>
+
+	<Entity name="Wall Fat" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="true"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_top.dds" skipSSAO="true" skipCastShadows="false" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.5" heightMeters="2.0" collisionHeight="10" breakTemplate="WallBrokenEdge" debrisDensityPerM="1" groundDebrisTemplate="wall_remnant" groundDebrisSpacing="0.9">
+			<Piece entityName="wall_debris_01" size="0.3"/>
+			<Piece entityName="wall_debris_02" size="0.3"/>
+			<Piece entityName="wall_debris_03" size="0.2"/>
+			<Piece entityName="wall_debris_04" size="0.1"/>
+			<Piece entityName="wall_debris_05" size="0.1"/>
+			<Piece entityName="wall_debris_06" size="0.1"/>
+		</Wall>
+	</Entity>
+-->
+
+	<Entity name="fence_stone_01" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="true"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_exterior_01.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_exterior_top_01.dds" skipSSAO="true" skipGOSSAO="false" skipCastShadows="false" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.5" heightMeters="1.6" collisionHeight="1.9" breakTemplate="WallBrokenEdgeExt_01" debrisDensityPerM="1" groundDebrisTemplate="wall_exterior_remnant_01" groundDebrisSpacing="0.9">
+			<Piece entityName="wall_debris_01" size="0.3"/>
+			<Piece entityName="wall_debris_02" size="0.3"/>
+			<Piece entityName="wall_debris_03" size="0.2"/>
+			<Piece entityName="wall_debris_04" size="0.1"/>
+			<Piece entityName="wall_debris_05" size="0.1"/>
+			<Piece entityName="wall_debris_06" size="0.1"/>
+		</Wall>
+	</Entity>
+
+	<Entity name="fence_low_stone_01" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="false" usableCover="true" />
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_exterior_01.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_exterior_top_01.dds"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.5" heightMeters="0.875" collisionHeight="1.2" breakTemplate="WallBrokenEdgeExtLow_01" debrisDensityPerM="1" groundDebrisTemplate="wall_exterior_remnant_01" groundDebrisSpacing="0.9">
+			<Piece entityName="wall_debris_01" size="0.3"/>
+			<Piece entityName="wall_debris_02" size="0.3"/>
+			<Piece entityName="wall_debris_03" size="0.2"/>
+			<Piece entityName="wall_debris_04" size="0.1"/>
+			<Piece entityName="wall_debris_05" size="0.1"/>
+			<Piece entityName="wall_debris_06" size="0.1"/>
+		</Wall>
+	</Entity>
+
+	<Entity name="fence_stone_02" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="true"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_exterior_02.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_exterior_top_02.dds" skipSSAO="true" skipGOSSAO="false" skipCastShadows="false" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.5" heightMeters="1.6" collisionHeight="1.9" breakTemplate="WallBrokenEdgeExt_02" debrisDensityPerM="1" groundDebrisTemplate="wall_exterior_remnant_02" groundDebrisSpacing="0.9">
+			<Piece entityName="wall_debris_07" size="0.3"/>
+			<Piece entityName="wall_debris_08" size="0.3"/>
+			<Piece entityName="wall_debris_09" size="0.2"/>
+			<Piece entityName="wall_debris_10" size="0.1"/>
+			<Piece entityName="wall_debris_11" size="0.1"/>
+			<Piece entityName="wall_debris_12" size="0.1"/>
+		</Wall>
+	</Entity>
+
+	<Entity name="fence_low_stone_02" type="Wall" editorAutoHeight="false">
+		<PhysicalParams blocksMovement="true" blocksVision="false" usableCover="true" />
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_exterior_02.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_exterior_top_02.dds"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<CanUseEquipment name="Breaching Charge"/>
+		<Wall widthMeters="0.5" heightMeters="0.875" collisionHeight="1.9" breakTemplate="WallBrokenEdgeExt_02" debrisDensityPerM="1" groundDebrisTemplate="wall_exterior_remnant_02" groundDebrisSpacing="0.9">
+			<Piece entityName="wall_debris_07" size="0.3"/>
+			<Piece entityName="wall_debris_08" size="0.3"/>
+			<Piece entityName="wall_debris_09" size="0.2"/>
+			<Piece entityName="wall_debris_10" size="0.1"/>
+			<Piece entityName="wall_debris_11" size="0.1"/>
+			<Piece entityName="wall_debris_12" size="0.1"/>
+		</Wall>
+	</Entity>
+
+	<Entity name="Wall Unbreakable" type="Wall" editorAutoHeight="false" >
+		<PhysicalParams blocksMovement="true" blocksVision="true"/>
+		<!-- if we don't define this, it will be unbreakable <Breakable breakOnDamage="explosive"/> -->
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/wall_top.dds" skipSSAO="true" skipCastShadows="false" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<CanUseEquipment name="Grenade"/>
+		<Wall widthMeters="0.25" heightMeters="2.0" collisionHeight="10"/>
+	</Entity>
+
+	<!-- NOTE: Map gen uses this. Don't change its name -->
+	<Entity name="Movement Blocker" type="Wall" editorAutoHeight="false" hideInGame="true" oldName="Map Edge" >
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false" />
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/map_edge_symbol.dds" skipSSAO="true" skipCastShadows="true" skipGOSSAO="true" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" disableDepthTest="true"/>
+		<Wall widthMeters="0.25" heightMeters="0.001" collisionHeight="10"/>
+	</Entity>
+
+	<Entity name="Invisible Wall Rocks" type="Wall" editorAutoHeight="false" hideInGame="true" oldName="Vision Blocker">
+		<PhysicalParams blocksMovement="true" blocksVision="true" solid="false" />
+		<!-- if we don't define this, it will be unbreakable <Breakable breakOnDamage="explosive"/> -->
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/vision_blocker_symbol.dds" skipSSAO="true" skipCastShadows="true" skipGOSSAO="true" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" disableDepthTest="true"/>
+		<Wall widthMeters="0.25" heightMeters="0.001" collisionHeight="10"/>
+	</Entity>
+
+	<Entity name="Invisible Wall" type="Wall" editorAutoHeight="false" hideInGame="true">
+		<PhysicalParams blocksMovement="true" blocksVision="true" solid="true" />
+		<!-- if we don't define this, it will be unbreakable <Breakable breakOnDamage="explosive"/> -->
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/vision_blocker_symbol.dds" skipSSAO="true" skipCastShadows="true" skipGOSSAO="true" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" disableDepthTest="true"/>
+		<Wall widthMeters="0.25" heightMeters="0.001" collisionHeight="10"/>
+	</Entity>
+
+	<Entity name="FOV Blocker" type="Wall" editorAutoHeight="false" hideInGame="true"  fogOfWarVisibility="hiddenInitially" oldName="Vision Shutter" >
+		<PhysicalParams blocksMovement="false" blocksVision="true" solid="false" />
+		<!-- if we don't define this, it will be unbreakable <Breakable breakOnDamage="explosive"/> -->
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/vision_blocker_symbol.dds" skipSSAO="true" skipCastShadows="true" skipGOSSAO="true" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" disableDepthTest="true"/>
+		<Wall widthMeters="0.25" heightMeters="0.001" collisionHeight="10"/>
+	</Entity>
+
+	<Entity name="Custom Cover" type="Wall" editorAutoHeight="false" hideInGame="true"  fogOfWarVisibility="hiddenInitially" >
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="true" usableCover="true"/>
+		<Breakable breakOnDamage="explosive"/>
+		<!-- if we don't define this, it will be unbreakable <Breakable breakOnDamage="explosive"/> -->
+		<RenderObject3D diffuseTex="data/textures/misc/wall.dds"/>
+		<RenderObject3D diffuseTex="data/textures/misc/vision_blocker_symbol.dds" skipSSAO="true" skipCastShadows="true" skipGOSSAO="true" disableLighting="true"/>
+		<RenderObject2D texture="data/textures/editor/wall.dds" blendMode="normal" color="e07b39" sizeX="0.75" sizeY="0.375" disableDepthTest="true"/>
+		<Wall widthMeters="0.2" heightMeters="0.001" collisionHeight="1.1"/>
+	</Entity>
+
+	<Entity name="WallBrokenEdge" type="BasicEntity" editorAutoHeight="false" editorTags="debris">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/wall_broken_edge.khm" diffuseTex="data/models/environment/various/wall_broken_edge.dds" alphaTest="false"/>
+	</Entity>
+
+	<Entity name="WallBrokenEdgeExt_01" type="BasicEntity" editorAutoHeight="false" editorTags="debris">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/wall_broken_edge_ext_01.khm" diffuseTex="data/models/environment/various/wall_broken_edge_ext_01.dds" alphaTest="false"/>
+	</Entity>
+
+	<Entity name="WallBrokenEdgeExt_02" type="BasicEntity" editorAutoHeight="false" editorTags="debris">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/wall_broken_edge_ext_01.khm" diffuseTex="data/models/environment/various/wall_broken_edge_ext_02.dds" alphaTest="false"/>
+	</Entity>
+
+	<Entity name="WallBrokenEdgeBrick" type="BasicEntity" editorAutoHeight="false" editorTags="debris">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/wall_brocken_edge_brick.khm" diffuseTex="data/models/environment/various/wall_broken_edge_brick.dds"/>
+	</Entity>
+
+	<Entity name="WallBrokenEdgeWhite" type="BasicEntity" editorAutoHeight="false" editorTags="debris">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/wall_broken_edge.khm" diffuseTex="data/models/environment/various/wall_broken_edge_white.dds"/>
+	</Entity>
+
+	<Entity name="WallBrokenEdgeExtLow_01" type="BasicEntity" editorAutoHeight="false" editorTags="debris">
+		<PhysicalParams blocksMovement="true" blocksVision="false" solid="false"/>
+		<Breakable/>
+		<RenderObject3D model="data/models/environment/various/wall_broken_edge_ext_low_01.khm" diffuseTex="data/models/environment/various/wall_broken_edge_ext_01.dds" alphaTest="false"/>
+	</Entity>
+
+
+	<!--
+		various other
+	-->
+
+	<Entity name="Deploy Slot" type="DeploySlot" editorAutoHeight="false" initialHeight="0.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/misc/deploy_slot.dds" blendMode="normal" sizeX="1" sizeY="1" hideInGame="true"/>
+	</Entity>
+
+	<!-- NOTE: Map gen uses this. Don't change its name -->
+	<Entity name="Roof" type="Roof" editorAutoHeight="false" initialHeight="2.0">
+		<PhysicalParams solid="true"/>
+		<PolyShape/>
+		<RenderObject2D texture="data/textures/editor/roof.dds" blendMode="normal" color="7d3d25" sizeX="0.75" sizeY="0.375" hideInGame="true" disableDepthTest="true"/>
+		<Roof />
+	</Entity>
+
+	<Entity name="Floor" type="Floor" editorAutoHeight="true" hideInEditor="true">
+		<PhysicalParams solid="true"/>
+	</Entity>
+
+	<Entity name="ActionWaypoint" type="ActionWaypoint" initialHeight="2.1" editorAutoHeight="false" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+	</Entity>
+
+	<Entity name="Waypoints" type="Waypoints" editorAutoHeight="false" initialHeight="0.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/waypoints.dds" blendMode="normal" sizeX="0.75" sizeY="0.75" hideInGame="true"/>
+	</Entity>
+
+	<Entity name="Limit Area" type="AIArea" editorAutoHeight="false" initialHeight="0.1" oldName="AI Area" >
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/brain.dds" blendMode="normal" sizeX="0.75" sizeY="0.75" hideInGame="true" color="22e622ff"/>
+		<PolyShape/>
+		<!-- NOTE: put this here to keep legacy behavior -->
+		<AIArea type="exclusion" />
+	</Entity>
+
+	<Entity name="Civilian Exclusion Area" type="AIArea" editorAutoHeight="false" initialHeight="0.1" hideInGame="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/brain.dds" blendMode="normal" sizeX="0.75" sizeY="0.75" hideInGame="true" color="e6e622ff"/>
+		<PolyShape/>
+		<AIArea type="exclusion" />
+	</Entity>
+
+	<Entity name="Danger Area" type="AIArea" editorAutoHeight="false" initialHeight="0.1" >
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/brain.dds" blendMode="normal" sizeX="0.75" sizeY="0.75" hideInGame="true" color="e62222ff"/>
+		<PolyShape uvSizeX="0.5f" uvSizeY="0.5f" />
+		<RenderObject3D diffuseTex="data/textures/gui_ingame/aoe_killzone.dds" skipCastShadows="true" skipGOSSAO="true" diffuseColor="FFFFFF88" blendMode="normal" disableLighting="true" disableDecals="true" />
+		<AIArea type="danger" />
+	</Entity>
+
+	<Entity name="Alt. Spawn Point" type="AltSpawnPoint" editorAutoHeight="false" initialHeight="0.1" hideInGame="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/altspawnpoint.dds" blendMode="add" color="c8c8c8" sizeX="0.25" sizeY="0.25" hideInGame="true" disableDepthTest="true" billboard="true"/>
+	</Entity>
+
+	<!-- NOTE: Map gen uses this. Don't change its name -->
+	<Entity name="Terrain" type="Terrain" editorAutoHeight="false" initialHeight="0.0">
+		<PhysicalParams solid="false"/>
+		<PolyShape/>
+		<RenderObject2D texture="data/textures/editor/terrain.dds" blendMode="normal" sizeX="0.75" sizeY="0.75" hideInGame="true" disableDepthTest="true"/>
+	</Entity>
+
+	<Entity name="Sniper Position" type="SniperPosition" editorAutoHeight="false" initialHeight="0.0" firearm="SniperRifle">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/sniper_reticle.dds" blendMode="normal" color="c8c8c8" sizeX="0.7" sizeY="0.7" hideInGame="true" disableDepthTest="true"/>
+		<TextureAnimation frameWidth="188" frameHeight="8" startFrame="0" endFrame="29" animationTimeMS="1500" numLoops="-1" randomizeStartTime="false"/>
+	</Entity>
+
+	<Entity name="Interact Sit" type="POIObject" editorAutoHeight="false" editorTags="bedroom">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/sit_down_icon.png" blendMode="add_masked" color="ffffff" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Interactible anim="sit_idle" animOut="sit_up" animIn="sit_down" singleUser="true" look="away"/>
+	</Entity>
+
+	<Entity name="Interact Pee" type="POIObject" editorAutoHeight="false" >
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/sit_down_icon.png" blendMode="add_masked" color="ffffff" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Interactible anim="peeing_idle" animOut="peeing_out" animIn="peeing_in" singleUser="true" look="away"/>
+	</Entity>
+
+	<Entity name="POI invisible" type="POIObject" hideInGame="true" >
+		<RenderObject2D texture="data/textures/editor/waypoint_civilian_poi.dds" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/environment/interior/chair_04.khm" diffuseTex="data/models/environment/interior/chair_04_02.dds" />
+		<Interactible anim="idle" look="around" durationMinMS="3000" durationMaxMS="9000" needsUnequip="false"/>
+		<POI forCivs="true" forEnemies="true" />
+	</Entity>
+
+	<Entity name="POI invisible animation" type="POIObject" hideInGame="true" >
+		<RenderObject2D texture="data/textures/editor/waypoint_civilian_poi_activity.dds" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/environment/interior/chair_04.khm" diffuseTex="data/models/environment/interior/chair_04_02.dds" />
+		<Interactible look="around" durationMinMS="5000" durationMaxMS="12000" needsUnequip="false"/>
+		<POI forCivs="true" forEnemies="true" />
+	</Entity>
+
+	<Entity name="BreachingChargeBody" type="ExplosiveCharge" hideInEditor="false">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/breaching_charge.khm" diffuseTex="data/models/equipment/breaching_charge.dds" coverFOVPreview="true"/>
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="650" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+	</Entity>
+
+	<Entity name="SlapChargeBody" type="ExplosiveCharge" hideInEditor="false">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/slap_charge.khm" diffuseTex="data/models/equipment/slap_charge.dds" coverFOVPreview="true"/>
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="650" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+	</Entity>
+
+	<!-- Destroyables -->
+
+	<Entity name="fusebox_small" type="DestroyableTarget" editorTags="street objects" tooltip="@entity_fusebox" fogOfWarVisibility="full">
+		<PhysicalParams blocksMovement="false" />
+		<Breakable breakOnDamage="grenade" breakMode="strict_no_rand" sfx="fusebox">
+			<Piece entityName="PS_SabotageSmall"/>
+			<Piece entityName="fusebox_small_destroyed"/>
+			<Piece entityName="metal_debris_small_01"/>
+			<Piece entityName="metal_debris_small_02"/>
+			<Piece entityName="metal_debris_small_04"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/exterior/fusebox_small.khm" diffuseTex="data/models/environment/exterior/fusebox_small.dds" skipGOSSAO="true" coverFOVPreview="true" disableLighting="true"/>
+
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<CanUseEquipment name="TEC Torch"/>
+		<DestroyableTarget sabotageTimeMsec="1000" isObjective="false"/>
+	</Entity>
+
+	<Entity name="fusebox_small_destroyed" type="BasicEntity" editorTags="street objects" tooltip="@entity_destroyed_fusebox">
+		<PhysicalParams blocksMovement="false" />
+		<Breakable template="Breakable_Metal"/>
+		<RenderObject3D model="data/models/environment/exterior/fusebox_small_destroyed.khm" diffuseTex="data/models/environment/exterior/fusebox_small_destroyed.dds" skipGOSSAO="true"/>
+	</Entity>
+
+	<Entity name="destroyable_tripod(destroyed)" type="BasicEntity" hideInEditor="false">
+		<PhysicalParams physicsEnabled="false" blocksMovement="true" solid="false"/>
+		<Breakable breakOnDamage="explosive" template="Breakable_Metal"/>
+		<RenderObject3D model="data/models/environment/exterior/atgm_tripod.khm" diffuseTex="data/models/environment/exterior/atgm_damaged.dds" skipGOSSAO="true"/>
+	</Entity>
+
+	<Entity name="destroyable_tripod" type="DestroyableTarget" fogOfWarVisibility="full" tooltip="@tooltip_destroyableasset">
+		<PhysicalParams physicsEnabled="false" blocksMovement="true" solid="false" health="10"/> <!-- health needs to be low in order to get destroyed by slap charges -->
+		<Breakable breakOnDamage="explosive" breakMode="strict_no_rand" sfx="metal_break">
+			<Piece entityName="PS_SabotageSmall"/>
+			<Piece entityName="destroyable_tripod(destroyed)"/>
+			<Piece entityName="metal_debris_small_01"/>
+			<Piece entityName="metal_debris_small_02"/>
+			<Piece entityName="metal_debris_medium_01"/>
+			<Piece entityName="metal_debris_medium_02"/>
+			<Piece entityName="metal_debris_medium_03"/>
+			<Piece entityName="metal_debris_medium_04"/>
+			<Piece entityName="metal_debris_large_01"/>
+			<Piece entityName="metal_debris_large_02"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/exterior/atgm_tripod.khm" diffuseTex="data/models/environment/exterior/atgm.dds" skipGOSSAO="true"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<CanUseEquipment name="TEC Torch"/>
+		<DestroyableTarget sabotageTimeMsec="3000"/>
+	</Entity>
+
+	<Entity name="destroyable_rocket(destroyed)" type="BasicEntity" hideInEditor="false">
+		<PhysicalParams physicsEnabled="false" blocksMovement="true" solid="false"/>
+		<Breakable breakOnDamage="explosive" template="Breakable_Metal"/>
+		<RenderObject3D model="data/models/environment/exterior/atgm_rocket.khm" diffuseTex="data/models/environment/exterior/atgm_damaged.dds" skipGOSSAO="true"/>
+	</Entity>
+
+	<Entity name="destroyable_rocket" type="DestroyableTarget" fogOfWarVisibility="full" tooltip="@tooltip_destroyableasset">
+		<PhysicalParams physicsEnabled="false" blocksMovement="true" solid="false" health="10"/> <!-- health needs to be low in order to get destroyed by slap charges -->
+		<Breakable breakOnDamage="explosive" breakMode="strict_no_rand" sfx="metal_break">
+			<Piece entityName="PS_SabotageSmall"/>
+			<Piece entityName="destroyable_rocket(destroyed)"/>
+			<Piece entityName="metal_debris_small_01"/>
+			<Piece entityName="metal_debris_small_02"/>
+			<Piece entityName="metal_debris_small_03"/>
+			<Piece entityName="metal_debris_small_04"/>
+			<Piece entityName="metal_debris_small_05"/>
+			<Piece entityName="metal_debris_medium_01"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/exterior/atgm_rocket.khm" diffuseTex="data/models/environment/exterior/atgm.dds" skipGOSSAO="true"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<CanUseEquipment name="TEC Torch"/>
+		<DestroyableTarget sabotageTimeMsec="3000"/>
+	</Entity>
+
+	<Entity name="destroyable_rocket_duo(destroyed)" type="BasicEntity" hideInEditor="false">
+		<PhysicalParams physicsEnabled="false" blocksMovement="true" solid="false"/>
+		<Breakable breakOnDamage="explosive" template="Breakable_Metal"/>
+		<RenderObject3D model="data/models/environment/exterior/atgm_rocket_duo.khm" diffuseTex="data/models/environment/exterior/atgm_damaged.dds" skipGOSSAO="true"/>
+	</Entity>
+
+	<Entity name="destroyable_rocket_duo" type="DestroyableTarget" fogOfWarVisibility="full" tooltip="@tooltip_destroyableasset">
+		<PhysicalParams physicsEnabled="false" blocksMovement="true" solid="false" health="10"/> <!-- health needs to be low in order to get destroyed by slap charges -->
+		<Breakable breakOnDamage="explosive" breakMode="strict_no_rand" sfx="metal_break">
+			<Piece entityName="PS_SabotageSmall"/>
+			<Piece entityName="destroyable_rocket(destroyed)"/>
+			<Piece entityName="metal_debris_small_01"/>
+			<Piece entityName="metal_debris_small_02"/>
+			<Piece entityName="metal_debris_small_03"/>
+			<Piece entityName="metal_debris_small_04"/>
+			<Piece entityName="metal_debris_small_05"/>
+			<Piece entityName="metal_debris_medium_01"/>
+			<Piece entityName="metal_debris_medium_02"/>
+		</Breakable>
+		<RenderObject3D model="data/models/environment/exterior/atgm_rocket_duo.khm" diffuseTex="data/models/environment/exterior/atgm.dds" skipGOSSAO="true"/>
+		<CanUseEquipment name="ExplosiveCharge"/>
+		<CanUseEquipment name="TEC Torch"/>
+		<DestroyableTarget sabotageTimeMsec="3000"/>
+	</Entity>
+
+
+	<!--
+		lights
+	-->
+
+	<Entity name="Light Ambiental" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_ambiental.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Ambiental" color0="ffffff" color1="818181"/>
+	</Entity>
+
+	<Entity name="Light Directional" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_directional.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Directional" colorMultiplier="1.2"/>
+	</Entity>
+
+	<Entity name="Light Point" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point"/>
+	</Entity>
+
+	<Entity name="Light Point Breakable" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Breakable breakOnDamage="grenade"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+		<Light type="Point"/>
+	</Entity>
+
+	<Entity name="Light Spot" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_spot.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Spot"/>
+	</Entity>
+
+	<Entity name="Search Light" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/fx/lights/spotlight2.dds" color="b8997fFF" blendMode="add_masked" scaleX="0.02" scaleY="0.02" billboardX="true" disableDepthTest="false"/>
+		<Light type="Spot"/>
+		<RenderObject3D model="data/models/environment/exterior/searchlight_lamp.khm" diffuseTex="data/models/environment/exterior/searchlight_lamp.dds" skipGOSSAO="true" emissive="true" coverFOVPreview="true"/>
+	</Entity>
+
+
+	<Entity name="Light Spot Breakable" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_spot.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Breakable breakOnDamage="grenade"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+		<Light type="Spot"/>
+	</Entity>
+
+	<Entity name="Police Red" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="4" color="FF0000FF" radiusMeters="2" animation="pulse" animRate="2" animAmount="1.5" animRandomStart="true"/>
+	</Entity>
+
+	<Entity name="Police Blue" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="4" color="0000FFFF" radiusMeters="2" animation="pulse" animRate="2" animAmount="1.5" animRandomStart="true"/>
+	</Entity>
+
+	<Entity name="Broken Pink Light" type="Light" editorAutoHeight="false" initialHeight="2.1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="3" color="FFFFFFFF" radiusMeters="3" animation="flicker" animRate="3" animAmount="0.1" animRandomStart="true"/>
+	</Entity>
+
+	<Entity name="ExplosionLight" type="Light" editorAutoHeight="false" initialHeight="1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="5" color="BF7E13FF" radiusMeters="1.0" animation="pulse" animRate="5" animAmount="8" dontLoop="true" deleteWhenAnimStops="true"/>
+	</Entity>
+
+	<Entity name="ShotLightSmall" type="Light" editorAutoHeight="false" initialHeight="1.5">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="6" color="BF7E13FF" radiusMeters="0.6" animation="pulse" animRate="6" animAmount="3" dontLoop="true"/>
+	</Entity>
+
+	<Entity name="ShotLightLarge" type="Light" editorAutoHeight="false" initialHeight="1.5">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="6" color="BF7E13FF" radiusMeters="0.75" animation="pulse" animRate="5" animAmount="3" dontLoop="true"/>
+	</Entity>
+
+	<Entity name="Rocket Red" type="Light" editorAutoHeight="false" initialHeight="1">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="3" color="FC7E00FF" radiusMeters="3" animation="pulse" animRate="7" animAmount="1.4"/>
+	</Entity>
+
+	<Entity name="Light Laser" type="Light" editorAutoHeight="false" initialHeight="2.1" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5" hideInGame="true" disableDepthTest="true"/>
+		<Light type="Point" colorMultiplier="12" color="00FF00" radiusMeters="0.06" animation="flicker" animRate="11" animRandomStart="true"/>
+	</Entity>
+
+	<Entity name="light_radial_warm" type="BasicEntity" editorAutoHeight="false" initialHeight="2" editorTags="lights">
+		<PhysicalParams solid="false"/>
+		<Breakable breakOnDamage="grenade"/>
+		<RenderObject2D texture="data/textures/fx/light_radial.dds"  disableLighting="true" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="screen" color="bb8b6480" sizeX="8" sizeY="8" disableDepthTest="true" billboard="true"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<Entity name="light_radial_cold" type="BasicEntity" editorAutoHeight="false" initialHeight="2"editorTags="lights">
+		<PhysicalParams solid="false"/>
+		<Breakable breakOnDamage="grenade"/>
+		<RenderObject2D texture="data/textures/fx/light_radial.dds"  disableLighting="true" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="screen" color="a5c0c680" sizeX="8" sizeY="8" disableDepthTest="true" billboard="true"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<Entity name="light_radial_neutral" type="BasicEntity" editorAutoHeight="false" initialHeight="2" editorTags="lights">
+		<PhysicalParams solid="false"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject2D texture="data/textures/fx/light_radial.dds"  disableLighting="true" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="screen" color="ccc7b280" sizeX="8" sizeY="8" disableDepthTest="true" billboard="true"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<Entity name="light_warm_small_01" type="BasicEntity" editorAutoHeight="false" initialHeight="1.8" editorTags="lights">
+		<PhysicalParams solid="false"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject2D texture="data/textures/fx/light_flare_01.dds"  disableLighting="true" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="add" color="ffefd1" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<Entity name="light_green_small_01" type="BasicEntity" editorAutoHeight="false" initialHeight="1.8" editorTags="lights">
+		<PhysicalParams solid="false"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject2D texture="data/textures/fx/light_flare_01.dds"  disableLighting="true" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="add" color="b6ff24" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<Entity name="light_red_small_01" type="BasicEntity" editorAutoHeight="false" initialHeight="1.8" editorTags="lights">
+		<PhysicalParams solid="false"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject2D texture="data/textures/fx/light_flare_01.dds"  disableLighting="true" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="add" color="ff3312" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<Entity name="light_cold_small_01" type="BasicEntity" editorAutoHeight="false" initialHeight="1.8" editorTags="lights">
+		<PhysicalParams solid="false"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject2D texture="data/textures/fx/light_flare_01.dds"  disableLighting="true" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="add" color="d1f7ff" sizeX="1" sizeY="1" disableDepthTest="true" billboard="true"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<Entity name="light_cold_long_01" type="BasicEntity" editorAutoHeight="false" initialHeight="1.8" editorTags="lights">
+		<PhysicalParams solid="false"/>
+		<Breakable breakOnDamage="explosive"/>
+		<RenderObject2D texture="data/textures/fx/light_flare_long_01.dds"  disableLighting="true" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="add" color="d1f7ff" sizeX="4" sizeY="2" disableDepthTest="true" billboardX="true"/>
+		<RenderObject3D model="data/models/fx/collision_capsule_2m.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<!--
+		decals
+	-->
+
+	<Entity name="Decal Dust Large 01" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="decal_dust_large_01.png" hideInGame="true"/>
+		<Decal size="1.0"/>
+	</Entity>
+
+	<Entity name="Decal Dust Large 02" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="decal_dust_large_02.png" hideInGame="true"/>
+		<Decal size="1.0"/>
+	</Entity>
+
+	<Entity name="Decal Dust Large 03" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="decal_dust_large_03.png" hideInGame="true"/>
+		<Decal size="1.0"/>
+	</Entity>
+
+	<Entity name="Decal Dust Large 04" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="decal_dust_large_04.png" hideInGame="true"/>
+		<Decal size="1.0"/>
+	</Entity>
+
+	<Entity name="Decal Dust Small 01" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="decal_dust_small_01.png" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Dust Small 02" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="decal_dust_small_02.png" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Dust Small 03" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="decal_dust_small_03.png" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Dust Small 04" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="decal_dust_small_04.png" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal MPopa" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="mpopa.png" hideInGame="true"/>
+		<Decal size="1.0"/>
+	</Entity>
+
+	<Entity name="Decal Blood Splatter 1" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_splatter_01.tga" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Blood Splatter 2" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_splatter_02.tga" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Blood Splatter 3" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_splatter_03.tga" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Blood Splatter 4" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_splatter_04.tga" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Blood Splatter 5" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_splatter_05.tga" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Blood Splatter 6" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_splatter_06.tga" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Blood Splatter 7" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_splatter_07.tga" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Blood Splatter 8" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_splatter_08.tga" hideInGame="true"/>
+		<Decal size="0.5"/>
+	</Entity>
+
+	<Entity name="Decal Blood Directional 1" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_directional_01.tga" hideInGame="true"/>
+		<Decal size="1"/>
+	</Entity>
+
+	<Entity name="Decal Blood Directional 2" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_directional_02.tga" hideInGame="true"/>
+		<Decal size="1"/>
+	</Entity>
+
+	<Entity name="Decal Blood Directional 3" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_directional_03.tga" hideInGame="true"/>
+		<Decal size="1"/>
+	</Entity>
+
+	<Entity name="Decal Blood Directional 4" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="blood_directional_04.tga" hideInGame="true"/>
+		<Decal size="1"/>
+	</Entity>
+
+	<Entity name="Scorch Mark" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="scorch_mark.png" hideInGame="true"/>
+		<Decal size="1.0"/>
+	</Entity>
+
+	<Entity name="Explosion Scorch Mark" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="scorch_mark.png" hideInGame="true"/>
+		<Decal size="3.0"/>
+	</Entity>
+
+	<Entity name="Action Squad 1" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="asquad1.png" hideInGame="true"/>
+		<Decal size="1.0"/>
+	</Entity>
+
+	<Entity name="Action Squad 2" type="Decal" editorAutoHeight="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="asquad2.png" hideInGame="true"/>
+		<Decal size="1.0"/>
+	</Entity>
+
+	<Entity name="Blood Scorch Mark" type="BasicEntity" editorAutoHeight="false" initialHeight="0.03" editorTags="fx">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/environment/exterior/puddle_medium.khm" diffuseTex="data/textures/fx/blood_mark.dds" blendMode="normal" />
+	</Entity>
+
+	<!--
+		Triggers
+	-->
+
+	<Entity name="Trigger" type="Trigger" editorAutoHeight="false" initialHeight="0.03">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/grenade_preview_hotspot.dds" blendMode="normal" sizeX="0.5" sizeY="0.5" disableDepthTest="true" hideInGame="true"/>
+		<!-- <RenderObject3D model="data/models/fx/plane_tessellated_16.khm" blendMode="normal" disableLighting="true" skipGOSSAO="true" diffuseTex="data/textures/gui_ingame/escape_zone_icon.dds"/> -->
+	</Entity>
+
+	<Entity name="ForcePush" type="DamageArea" initialHeight="0.001" editorAutoHeight="false">
+		<DamageArea damage="0" damageType="2" armorPenetration="5" radius="3.0" pushForce="10" oneShot="false"/>
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/grenade_preview_hotspot.dds" blendMode="normal" sizeX="0.25" sizeY="0.25" disableDepthTest="true" hideInGame="true"/>
+	</Entity>
+
+	<!--
+		projectile stuff
+	-->
+
+	<!-- NOTE: This name is important. Don't change it -->
+	<Entity name="GrenadeTarget" type="GrenadeTarget" hideInEditor="true" initialHeight="0.1" editorAutoHeight="false">
+		<PhysicalParams solid="false"/>
+		<!-- using the khm only for the collision model, while the renderobject2d for the icon (so that it shows up on top of the grenade effect -->
+		<RenderObject3D model="data/models/fx/grenade_preview_hotspot.khm" diffuseTex="data/models/fx/grenade_preview_hotspot_hover.dds" skipCastShadows="true" skipSSAO="true" skipGOSSAO="true" disableLighting="true" blendMode="multiply"/>
+		<RenderObject2D texture="data/textures/gui_ingame/grenade_preview_hotspot.dds" blendMode="normal" sizeX="0.32" sizeY="0.32" disableDepthTest="true"/>
+	</Entity>
+	<!-- NOTE: This name is important. Don't change it -->
+	<Entity name="SuppressiveFireTarget" type="GrenadeTarget" hideInEditor="true" initialHeight="0.1" editorAutoHeight="false">
+		<PhysicalParams solid="false"/>
+		<!-- using the khm only for the collision model, while the renderobject2d for the icon (so that it shows up on top of the grenade effect -->
+		<RenderObject3D model="data/models/fx/grenade_preview_hotspot.khm" diffuseTex="data/models/fx/grenade_preview_hotspot_hover.dds" skipCastShadows="true" skipSSAO="true" skipGOSSAO="true" disableLighting="true" blendMode="multiply"/>
+		<RenderObject2D texture="data/textures/gui_ingame/supress_preview_hotspot.dds" blendMode="normal" sizeX="0.32" sizeY="0.32" disableDepthTest="true"/>
+	</Entity>
+
+
+	<Entity name="StingerGrenade" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/stinger.dds" />
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1.0" sizeY="1.0" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="350" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+	</Entity>
+
+	<Entity name="FragGrenade" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
+		<RenderObject2D texture="data/textures/fx/police_light.tga" blendMode="add" color="ff0000" sizeX="1.0" sizeY="1.0" disableDepthTest="true" billboard="true">
+			<TextureAnimation frameWidth="128" frameHeight="128" startFrame="0" endFrame="11" animationTimeMS="350" numLoops="-1" randomizeStartTime="false"/>
+		</RenderObject2D>
+	</Entity>
+
+	<Entity name="FlashbangGrenade" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/flashbang.dds"/>
+	</Entity>
+
+	<Entity name="SmokeGrenade" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/models/equipment/smoke_grenade.khm" skipGOSSAO="true" disableDecals="true" diffuseTex="data/models/equipment/smoke_grenade.dds"/>
+	</Entity>
+
+	<Entity name="InvisibleProjectile" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+	</Entity>
+
+	<Entity name="BulletCasingSmall" type="BulletShell" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/textures/fx/bullet_shell.khm" diffuseTex="data/textures/fx/bullet_shell.dds" skipGOSSAO="true" disableDecals="true" skipSSAO="true"/>
+	</Entity>
+
+	<Entity name="BulletCasingLarge" type="BulletShell" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/textures/fx/bullet_shell_02.khm" diffuseTex="data/textures/fx/bullet_shell_02.dds" skipGOSSAO="true" disableDecals="true" skipSSAO="true"/>
+	</Entity>
+
+	<Entity name="BulletCasingShotgun" type="BulletShell" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/textures/fx/bullet_shell_shotgun.khm" diffuseTex="data/textures/fx/bullet_shell_shotgun.dds" skipGOSSAO="true" disableDecals="true" skipSSAO="true"/>
+	</Entity>
+
+	<Entity name="DiscardedRpg26" type="BasicEntity" hideInEditor="true">
+		<PhysicalParams physicsEnabled="true" solid="false" density="32" />
+		<RenderObject3D model="data/models/weapons/rpg26.khm" diffuseTex="data/models/weapons/rpg26.dds"/>
+	</Entity>
+
+	<Entity name="DiscardedAT4" type="BasicEntity" hideInEditor="true">
+		<PhysicalParams physicsEnabled="true" solid="false" density="32" />
+		<RenderObject3D model="data/models/weapons/at4.khm" diffuseTex="data/models/weapons/at4.dds"/>
+	</Entity>
+
+	<Entity name="Rpg7RocketBody" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D attachSlot="muzzle" model="data/models/weapons/rpg7_rocket_01.khm" diffuseTex="data/models/weapons/rpg7.dds"/>
+		<AnimationSet name="rpg7_rocket" />
+	</Entity>
+
+	<Entity name="M203GrenadeBody" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D model="data/textures/fx/grenade_40mm.khm" diffuseTex="data/textures/fx/grenade_40mm.dds"/>
+		<RenderObject3D model="data/textures/fx/grenade_trail.khm" diffuseTex="data/textures/fx/grenade_trail.dds" skipGOSSAO="true" blendMode="normal"/>
+	</Entity>
+
+	<Entity name="Rpg26RocketBody" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false"/>
+		<RenderObject3D attachSlot="muzzle" model="data/models/weapons/rpg26_rocket.khm" diffuseTex="data/models/weapons/rpg26_rocket.dds"/>
+		<AnimationSet name="rpg26_rocket" />
+	</Entity>
+
+	<Entity name="DroppedPoncho" type="BasicEntity" hideInEditor="true">
+		<PhysicalParams physicsEnabled="true" solid="false" density="32" />
+		<RenderObject3D model="data/models/humans/attachments/cia_poncho_drop.khm" diffuseTex="data/models/humans/attachments/cia_poncho_01.dds" windAnimated="0"/>
+		<AnimationSet name="poncho" />
+	</Entity>
+
+	<!-- Rescue Zones -->
+
+	<Entity name="RescueZone" type="RescueZone" editorAutoHeight="false" initialHeight="0.03">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/escape_zone.dds" sizeX="2" sizeY="2" blendMode="normal"/>
+		<RescueZone type="Hostage" />
+		<!-- <RenderObject3D model="data/models/fx/plane_tessellated_16.khm" blendMode="normal" disableLighting="true" skipGOSSAO="true" diffuseTex="data/textures/gui_ingame/escape_zone_icon.dds"/> -->
+		<RenderObject3D model="data/models/fx/collision_evacuation_zone.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<Entity name="EscapeZone" type="RescueZone" editorAutoHeight="false" initialHeight="0.03">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/escape_zone_icon.dds" sizeX="1" sizeY="1" blendMode="normal" hideInGame="true" color="1F1F1F"/>
+		<!-- <RenderObject3D model="data/models/fx/plane_tessellated_16.khm" blendMode="normal" disableLighting="true" skipGOSSAO="true" diffuseTex="data/textures/gui_ingame/escape_zone_icon.dds"/> -->
+		<RenderObject3D model="data/models/fx/collision_evacuation_zone.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+		<RescueZone type="Civilian" />
+	</Entity>
+
+	<Entity name="EvacZone" type="RescueZone" editorAutoHeight="false" initialHeight="0.03" hideInEditor="false">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/escape_zone.dds" sizeX="2" sizeY="2" blendMode="normal"/>
+		<RescueZone type="Evacuation" />
+		<RenderObject3D model="data/models/fx/collision_evacuation_zone.khm" skipSSAO="true" skipGOSSAO="true" skipCastShadows="true" blendMode="normal" diffuseColor="00000000"/>
+	</Entity>
+
+	<!-- Editor Misc -->
+
+	<Entity name="Dummy" type="BasicEntity" editorAutoHeight="false" initialHeight="0.001">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/grenade_preview_hotspot.dds" blendMode="normal" sizeX="0.25" sizeY="0.25" disableDepthTest="true" hideInGame="true"/>
+	</Entity>
+
+	<Entity name="Random Building Entrance" type="RandControl" editorAutoHeight="false" initialHeight="0.001">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/misc/deploy_slot.dds" blendMode="normal" sizeX="0.5" sizeY="0.5" disableDepthTest="true" hideInGame="true"/>
+	</Entity>
+	<Entity name="Random Building Shape" type="RandControlShape" editorAutoHeight="false" initialHeight="0.1">
+		<PhysicalParams solid="false"/>
+		<PolyShape/>
+		<RenderObject2D texture="data/textures/editor/waypoints.dds" blendMode="normal" sizeX="0.75" sizeY="0.75" hideInGame="true"/>
+	</Entity>
+	<Entity name="Random Tile Anchor" type="RandControl" editorAutoHeight="false" initialHeight="0.001">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/gui_ingame/grenade_preview_hotspot.dds" blendMode="normal" sizeX="0.5" sizeY="0.5" disableDepthTest="true" hideInGame="true"/>
+	</Entity>
+
+
+</Entities>
