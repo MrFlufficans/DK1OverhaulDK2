@@ -383,7 +383,7 @@
 		<RenderObject2D texture="data/textures/gui/wallpaper_16x9.dds" blendMode="normal"/>
 	</StaticImage>
 
-	<StaticImage origin="-590 480">
+	<StaticImage origin="-800 500">
 		<RenderObject2D texture="data/textures/gui/dk2_logo.dds"/>
 	</StaticImage>
 
@@ -405,8 +405,8 @@
 	</Button>
 
 
-	<StaticText text="EARLY ACCESS 11.0" font="header_3" origin="0 -560" align="c" textColor="40382bdc"/>
-	<Item name="Extra Buttons" origin="0 -640" align="lbsv">
+	<StaticText text="EARLY ACCESS 11.0" font="header_3" origin="-800 -560" align="c" textColor="40382bdc"/>
+	<Item name="Extra Buttons" origin="-800 -640" align="lbsv">
 		<StaticImage name="Options Background" origin="0 0">
 			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="332" sizeY="76"/>
 		</StaticImage>
@@ -426,7 +426,7 @@
 	</Item>
 
 	<!-- enclose all butons in a single parent item which is centered on the background -->
-	<Item name="Menu_Main_Buttons" origin="-600 -40">
+	<Item name="Menu_Main_Buttons" origin="-800 100">
 		<StaticImage origin="0 60">
 			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="#d1d1d1"/>
 		</StaticImage>
@@ -443,7 +443,7 @@
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -90" sizeX="670" sizeY="90">
+		<Button origin="0 -100" sizeX="670" sizeY="90">
 			<ButtonText origin="0 0" text="@menu_m_coop" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
@@ -457,7 +457,7 @@
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -180" sizeX="670" sizeY="90">
+		<Button origin="0 -200" sizeX="670" sizeY="90">
 			<ButtonText origin="0 0" text="@menu_m_randommap" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
@@ -471,7 +471,7 @@
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -270" sizeX="670" sizeY="90">
+		<Button origin="0 -300" sizeX="670" sizeY="90">
 			<ButtonText origin="0 0" text="@menu_m_optionseditor_ttip" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
@@ -486,7 +486,7 @@
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -360" sizeX="670" sizeY="90">
+		<Button origin="0 -400" sizeX="670" sizeY="90">
 			<ButtonText origin="0 0" text="@menu_m_quit" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
@@ -499,7 +499,7 @@
 			</OnClick>
 		</Button>
 
-		<StaticImage origin="0 -420">
+		<StaticImage origin="0 -460">
 			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="#d1d1d1" flipY="true"/>
 		</StaticImage>
 	</Item>
