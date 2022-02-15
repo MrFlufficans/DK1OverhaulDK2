@@ -18,7 +18,7 @@ Sounds
 UI
     Deploy
     Customize
-    Main Menu
+    Main Menu (87%)
 
 Models
     SWAT
@@ -52,4 +52,4 @@ MK
 
 Anthony
     doing levels (waiting for more modern assets)
-    Thing 2
+    UI
