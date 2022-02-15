@@ -8,7 +8,7 @@
 		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
-			unit="Swat"
+			unit="SWAT"
 			class="SWAT_Officer">
 
 			<Id name="SWAT_Officer" portrait="data/textures/portraits/ranger56.dds" gender="0" voicePack="male_very_american"/>

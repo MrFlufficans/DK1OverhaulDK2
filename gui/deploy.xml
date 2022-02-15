@@ -417,11 +417,11 @@
 		</StaticImage>
 	</Item>
 
-    <Item name="Swat" origin="-18 42" hidden="true">
+    <Item name="SWAT" origin="-18 42" hidden="true">
 		<OnOpen>
 			<Action type="SetOrigin" target="#deploy_squad_buttons" params="-18 629"/>
 		</OnOpen>
-		<StaticImage name="Swat Officer" origin="0 407">			
+		<StaticImage name="SWAT_Officer" origin="0 407">			
 			<StaticImage origin="8 0">
 				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="148" color="211e1dcc"/>
 				<StaticImage origin="0 0" align="t">
