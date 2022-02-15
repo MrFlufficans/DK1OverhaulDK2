@@ -383,6 +383,10 @@
 		<RenderObject2D texture="data/textures/gui/wallpaper_16x9.dds" blendMode="normal"/>
 	</StaticImage>
 
+	<!-- Section for the Main menu Movie don't Remove it -Fluffy -->
+	<!-- Leave it Commented for Now till I make the DK1 version, Uncomment it if you want to see the DK2 Menu Move :D -Fluffy -->
+	<!--<Movie hidden="false" sizeX="2800" sizeY="1600" file="data/movies/IntroMovieThing.mp4" loop="true"/>-->
+
 	<StaticImage origin="-800 500">
 		<RenderObject2D texture="data/textures/gui/dk2_logo.dds"/>
 	</StaticImage>
