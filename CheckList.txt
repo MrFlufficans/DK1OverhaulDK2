@@ -1,0 +1,7 @@
+----CheckList---- For The Devs (us)
+
+dk1 wall style (done)
+dk1 music (done)
+swat (wip)
+guns
+ui (wip)
