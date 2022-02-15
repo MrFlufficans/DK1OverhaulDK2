@@ -1,0 +1,13 @@
+<Maps>
+
+		
+	<Bundle name="dk1 test1" img="data/movies/mpack_fngs_welcome.ogv">	
+		<Map source="data/maps/pathtosuckless.xml"/>
+	
+	</Bundle>	
+
+	<Bundle name="dk1 test2" img="data/movies/mpack_lead_the_way.ogv">
+			
+	</Bundle>	
+	
+</Maps>
