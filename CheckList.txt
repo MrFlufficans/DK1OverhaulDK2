@@ -1,18 +1,38 @@
-----CheckList---- For The Devs (us)
+----Work CheckList----
 
-dk1 wall style (done)
-dk1 music (done)
-swat (wip)
-guns
-ui (wip)
-models for the swat,badguys,cvil 
+DK1 Wall Style (Done)
+DK1 Music (done)
+SWAT Units (wip)
+
+Equipment
+    Rifles
+    Pistols
+    Launchers
+    Various
+
+Sounds
+    Unknown
+
+UI
+    Deploy
+    Customize
+    Main Menu
+
+Models
+    SWAT
+        Pointman
+        Assaulter
+        Breacher
+        Stealth
+    
+    Bad Guys
+        Unknown
+    
+    Civilian/Hostages
+        Unknown
 
 
-
-
-
-
-Worklist?
+----Workload----
 
 Fluffy
     Thing 1
