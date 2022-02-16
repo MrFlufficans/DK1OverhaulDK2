@@ -343,7 +343,7 @@
 		<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
 	</StaticImage>
 	<StaticImage origin="0 0">
-		<RenderObject2D texture="data/textures/gui/main_menu_bg_blurred.dds" sizeX="4532" sizeY="1600" blendMode="normal"/>
+		<RenderObject2D texture="data/textures/gui/main_menu_bg_blurred.dds"  blendMode="normal"/>
 	</StaticImage>
 </Item>
 
@@ -569,7 +569,7 @@
 
 	<Item name="Extra Buttons" origin="1196 -640" align="bsv">
 		<StaticImage origin="-160 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="80" sizeY="80"/>
 		</StaticImage>
 		<Button origin="-160 0" tooltip="@menu_replays_replays">
 			<RenderObject2D texture="data/textures/gui/menu_replay_normal.dds" blendMode="none"/>
@@ -584,7 +584,7 @@
 		</Button>
 
 		<StaticImage name="Options Background" origin="0 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="80" sizeY="80"/>
 		</StaticImage>
 		<Button name="Options" origin="0 0" sizeX="72" sizeY="72" tooltip="@menu_m_optionsgame_ttip">
 			<RenderObject2D texture="data/textures/gui/menu_options_normal.dds" blendMode="none"/>
@@ -598,7 +598,7 @@
 		</Button>
 
 		<StaticImage name="HowToPlay Background" origin="-80 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="80" sizeY="80"/>
 		</StaticImage>
 		<Button name="HowToPlay" origin="-80 0" sizeX="72" sizeY="72" tooltip="@menu_htp_title">
 				<RenderObject2D texture="data/textures/gui/menu_howto_normal.dds" blendMode="none"/>
