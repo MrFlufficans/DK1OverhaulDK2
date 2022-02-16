@@ -49,8 +49,10 @@ Fluffy
     Helmet Models
 
 MK
-    Thing 1
-    Thing 2
+    Equipment
+    attackTypes
+    Ammo
+    Balancing
 
 Anthony
     doing levels (waiting for more modern assets)

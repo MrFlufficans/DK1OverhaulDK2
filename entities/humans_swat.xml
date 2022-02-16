@@ -1,5 +1,4 @@
 <Entities>
-    
 	<!-- Place Holder for Fluffy Don't Edit-->
 	<Entity name="SWAT_Officer" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/cia_01.dds"/>
@@ -35,7 +34,7 @@
 	</Entity>
 
 	<!-- Actual Classes -->
-
+	
 	<Entity name="SWAT_Pointman" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_PlaceHolder.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
