@@ -435,71 +435,78 @@
 			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="#d1d1d1"/>
 		</StaticImage>
 		
-		<Button origin="0 0" sizeX="670" sizeY="90">
-			<ButtonText origin="0 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="#d1d1d1"/>
+		<!-- 
+			I did the Buttons, I made the Text Black when you Hover since it will show the White Hover so it Contrasts.
+			I moved the Text Origin to 20 so they are a little towards the center of the screen.
+			I don't think these will have to change for a while Unless we want to change the Colour Scheme.
+			
+			-Fluffy
+		-->
+		<Button origin="-330 0" align="l">
+			<ButtonText origin="20 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40382b" />
-				<ButtonText origin="0 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="290"/>
+				<ButtonText origin="20 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40382b" scaleX="5.0" scaleY="0.9"/>
-				<ButtonText origin="0 0" text="@menu_m_singlemission" align="l" font="header_3" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="290"/>
+				<ButtonText origin="20 0" text="@menu_m_singlemission" align="l" font="header_3" textColor="000000"/>
 				<Action type="Show" target="Menu_MissionSelect_Main"/>
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -100" sizeX="670" sizeY="90">
-			<ButtonText origin="0 0" text="@menu_m_coop" align="l" font="header_2" textColor="#d1d1d1"/>
+		<Button origin="-330 -100" align="l">
+			<ButtonText origin="20 0" text="@menu_m_coop" align="l" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
-				<ButtonText origin="0 0" text="@menu_m_coop" align="l" font="header_2" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="380"/>
+				<ButtonText origin="20 0" text="@menu_m_coop" align="l" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" scaleX="0.9" scaleY="0.9"/>
-				<ButtonText origin="0 0" text="@menu_m_coop" align="l" font="header_3" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="380"/>
+				<ButtonText origin="20 0" text="@menu_m_coop" align="l" font="header_3" textColor="000000"/>
 				<Action type="Hide" target="Menu_Main_Buttons"/>
 				<Action type="Show" target="Menu_Main_CoopButtons"/>
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -200" sizeX="670" sizeY="90">
-			<ButtonText origin="0 0" text="@menu_m_randommap" align="l" font="header_2" textColor="#d1d1d1"/>
+		<Button origin="-330 -200" align="l">
+			<ButtonText origin="20 0" text="@menu_m_randommap" align="l" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
-				<ButtonText origin="0 0" text="@menu_m_randommap" align="l" font="header_2" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="570"/>
+				<ButtonText origin="20 0" text="@menu_m_randommap" align="l" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" scaleX="0.9" scaleY="0.9"/>
-				<ButtonText origin="0 0" text="@menu_m_randommap" align="l" font="header_3" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="570"/>
+				<ButtonText origin="20 0" text="@menu_m_randommap" align="l" font="header_3" textColor="000000"/>
 				<Action type="Hide" target="Menu_Main"/>
 				<Action type="Show" target="Menu_RandomMap"/>
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -300" sizeX="670" sizeY="90">
-			<ButtonText origin="0 0" text="@menu_m_optionseditor_ttip" align="l" font="header_2" textColor="#d1d1d1"/>
+		<Button origin="-330 -300" align="l">
+			<ButtonText origin="20 0" text="@menu_m_optionseditor_ttip" align="l" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
-				<ButtonText origin="0 0" text="@menu_m_optionseditor_ttip" align="l" font="header_2" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="230"/>
+				<ButtonText origin="20 0" text="@menu_m_optionseditor_ttip" align="l" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" scaleX="0.9" scaleY="0.9"/>
-				<ButtonText origin="0 0" text="@menu_m_optionseditor_ttip" align="l" font="header_3" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="230"/>
+				<ButtonText origin="20 0" text="@menu_m_optionseditor_ttip" align="l" font="header_3" textColor="000000"/>
 				<Action type="Hide" target="Menu_Main"/>
 				<Action type="Show" target="Menu_Loading"/>
 				<Action type="TriggerEvent" target="GUI_GAME_TOGGLE_EDITOR_MODE"/>
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -400" sizeX="670" sizeY="90">
-			<ButtonText origin="0 0" text="@menu_m_quit" align="l" font="header_2" textColor="#d1d1d1"/>
+		<Button origin="-330 -400" align="l">
+			<ButtonText origin="20 0" text="@menu_m_quit" align="l" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
-				<ButtonText origin="0 0" text="@menu_m_quit" align="l" font="header_2" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="330"/>
+				<ButtonText origin="20 0" text="@menu_m_quit" align="l" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" scaleX="0.9" scaleY="0.9" />
-				<ButtonText origin="0 0" text="@menu_m_quit" align="l" font="header_3" textColor="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="330"/>
+				<ButtonText origin="20 0" text="@menu_m_quit" align="l" font="header_3" textColor="000000"/>
 				<Action type="TriggerEvent" target="GUI_GAME_QUIT"/>
 			</OnClick>
 		</Button>
