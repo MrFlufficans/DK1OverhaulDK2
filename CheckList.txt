@@ -2,7 +2,8 @@
 
 DK1 Wall Style (Done)
 DK1 Music (Done)
-SWAT Units (wip)
+DK1 Main Menu Video (Done)
+SWAT Units (WIP)
 
 Equipment
    Weapons
@@ -43,8 +44,9 @@ Levels (Note: lets wait untill we get more modern assets)
 ----Workload----
 
 Fluffy
-    Thing 1
-    Thing 2
+    Weapon Models
+    Equipment Models
+    Helmet Models
 
 MK
     Thing 1
