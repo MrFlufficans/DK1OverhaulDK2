@@ -220,6 +220,7 @@
 	</Item>
 </Item>
 
+
 <Item name="Menu_Options" origin="0 0" hidden="true">
 	<OnKeyDown key0="27">
 		<Action type="Click" target="Menu_Options_Back"/>
@@ -237,7 +238,7 @@
 	</OnClose>
 
 	<StaticImage origin="0 0">
-		<RenderObject2D texture="data/textures/gui/main_menu_bg_blurred.dds"/>
+		<RenderObject2D texture="data/textures/gui/wallpaper_16x9.dds"/>
 	</StaticImage>
 
 	<StaticImage name="ScreenBg" origin="0 0">

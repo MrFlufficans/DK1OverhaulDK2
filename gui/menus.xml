@@ -414,7 +414,7 @@
 
 
 	
-	<Item name="Extra Buttons" origin="-940-640" align="c">
+	<Item name="Extra Buttons" origin="1000  -640" align="c">
 	<Button name="Send Feedback"  tooltip="Be gentle">
 			<RenderObject2D texture="data/textures/gui/news_box.tga"/>
 			<OnHover>
@@ -567,12 +567,12 @@
 		</StaticImage>
 	</Item>
 
-	<Item name="Extra Buttons" origin="1196 -640" align="bsv">
+	<Item name="Extra Buttons" origin="-900 -640" align="bsv">
 		<StaticImage origin="-160 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="80" sizeY="80"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="100" sizeY="100"/>
 		</StaticImage>
 		<Button origin="-160 0" tooltip="@menu_replays_replays">
-			<RenderObject2D texture="data/textures/gui/menu_replay_normal.dds" blendMode="none"/>
+			<RenderObject2D texture="data/textures/gui/menu_replay_normal.dds"  blendMode="none"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/menu_replay_hover.dds" blendMode="none"/>
 			</OnHover>
@@ -584,9 +584,9 @@
 		</Button>
 
 		<StaticImage name="Options Background" origin="0 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="80" sizeY="80"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="100" sizeY="100"/>
 		</StaticImage>
-		<Button name="Options" origin="0 0" sizeX="72" sizeY="72" tooltip="@menu_m_optionsgame_ttip">
+		<Button name="Options" origin="0 0" sizeX="90" sizeY="90" tooltip="@menu_m_optionsgame_ttip">
 			<RenderObject2D texture="data/textures/gui/menu_options_normal.dds" blendMode="none"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/menu_options_hover.dds" blendMode="none"/>
@@ -598,9 +598,9 @@
 		</Button>
 
 		<StaticImage name="HowToPlay Background" origin="-80 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="80" sizeY="80"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="100" sizeY="100"/>
 		</StaticImage>
-		<Button name="HowToPlay" origin="-80 0" sizeX="72" sizeY="72" tooltip="@menu_htp_title">
+		<Button name="HowToPlay" origin="-80 0" sizeX="90" sizeY="90" tooltip="@menu_htp_title">
 				<RenderObject2D texture="data/textures/gui/menu_howto_normal.dds" blendMode="none"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/menu_howto_hover.dds" blendMode="none"/>
@@ -608,17 +608,6 @@
 			<OnClick>
 				<RenderObject2D texture="data/textures/gui/menu_howto_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
 				<Action type="Show" target="howtoplay_main"/>
-			</OnClick>
-		</Button>
-
-		<Button name="Send Feedback" align="l" origin="-404 100" tooltip="Be gentle">
-			<RenderObject2D texture="data/textures/gui/menu_feedback_normal.dds"/>
-			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_feedback_hover.dds"/>
-			</OnHover>
-			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_feedback_hover.dds" scaleX="0.95" scaleY="0.95"/>
-				<Action type="OpenURL" target="https://inthekillhouse.com/contact"/>
 			</OnClick>
 		</Button>
 	</Item>
