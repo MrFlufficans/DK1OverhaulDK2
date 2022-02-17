@@ -241,6 +241,8 @@
 		<RenderObject2D texture="data/textures/gui/wallpaper_16x9.dds"/>
 	</StaticImage>
 
+	<Movie hidden="false" sizeX="2700" sizeY="1500" file="data/movies/DK1BackgroundTest1.mp4" loop="true"/>
+
 	<StaticImage name="ScreenBg" origin="0 0">
 		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
 		<StaticImage align="l" origin="-128 0">
@@ -250,6 +252,23 @@
 			<RenderObject2D texture="data/textures/gui/bg_edge.tga" flipY="true" />
 		</StaticImage>
 	</StaticImage>
+
+	<Item align="sv" origin="0 90">
+		<StaticImage align="t" name="TitleBg" origin="0 630">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
+
+				<!-- <StaticText origin="-20 0" text="@menu_options_options" font="header_2" textColor="201f1b" align="c"/> -->
+				<Button origin="-20 0" align="c">
+					<ButtonText text="@menu_options_options" font="header_2" textColor="#d4d4d4" align="c"/>
+					<OnClick>
+						<Action type="TriggerEvent" target="GUI_GAME_OPTIONS_ENABLE_DEV"/>
+					</OnClick>
+				</Button>
+
+				<StaticText name="#DevHint" hidden="true" origin="0 0" align="r" text="DEV" font="header_2" textColor="#d4d4d4"/>
+		</StaticImage>
+	</Item>
+
 
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
@@ -298,21 +317,7 @@
 		</Button>
 	</Item>
 
-	<Item sizeX="2000" sizeY="1200" origin="0 90">
-
-			<StaticImage align="t" name="TitleBg" origin="0 40">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
-
-				<!-- <StaticText origin="-20 0" text="@menu_options_options" font="header_2" textColor="201f1b" align="c"/> -->
-				<Button origin="-20 0" align="c">
-					<ButtonText text="@menu_options_options" font="header_2" textColor="#d4d4d4" align="c"/>
-					<OnClick>
-						<Action type="TriggerEvent" target="GUI_GAME_OPTIONS_ENABLE_DEV"/>
-					</OnClick>
-				</Button>
-
-				<StaticText name="#DevHint" hidden="true" origin="40 0" align="r" text="DEV" font="header_2" textColor="#d1d1d1"/>
-			</StaticImage>
+	<Item sizeX="2000" sizeY="1200" origin="0 100">
 
 			<!-- Game Options -->
 			<Item align="t" sizeX="936" sizeY="400" origin="-482 -120">

@@ -88,16 +88,13 @@
 	</OnClose>
 
 	<StaticImage origin="0 0">
-		<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
+		<RenderObject2D texture="data/textures/gui/wallpaper_16x9.dds"/>
 	</StaticImage>
+
+	<Movie hidden="false" sizeX="2700" sizeY="1500" file="data/movies/DK1BackgroundTest1.mp4" loop="true"/>
+
 	<StaticImage name="ScreenBg" origin="0 0">
 		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
-		<StaticImage align="l" origin="-128 0">
-			<RenderObject2D texture="data/textures/gui/bg_edge.tga" flipX="true" />
-		</StaticImage>
-		<StaticImage align="r" origin="128 0">
-			<RenderObject2D texture="data/textures/gui/bg_edge.tga" flipY="true" />
-		</StaticImage>
 	</StaticImage>
 
 
@@ -109,7 +106,7 @@
 		</StaticImage>
 
 		<StaticImage align="t" name="TitleBg" origin="0 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1900" sizeY="100" color="f97b03"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1900" sizeY="100" color="293F4C"/>
 			<StaticText origin="0 0" text="@menu_m_missiongen" font="header_2" textColor="201f1b" align="c"/>
 		</StaticImage>
 
@@ -303,7 +300,7 @@
 
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
 		</StaticImage>
 
 		<!-- back button -->
@@ -517,11 +514,11 @@
 
 	<Item name="Menu_Main_CoopButtons" origin="-800 100">
 		<StaticImage origin="-150 60">
-				<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="#d1d1d1"/>
+				<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="5279a5"/>
 		</StaticImage>
 
 		<Button origin="-330 0" align="l">
-			<ButtonText origin="20 0" text="@menu_m_coop_quickmission" align="l" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText origin="20 0" text="@menu_m_coop_quickmission" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="410" />
 				<ButtonText origin="20 0" text="@menu_m_coop_quickmission" align="l" font="header_2" textColor="000000"/>
@@ -535,7 +532,7 @@
 		</Button>
 
 		<Button origin="-330 -100" align="l">
-			<ButtonText origin="20 0" text="@menu_m_coop_host" align="l" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText origin="20 0" text="@menu_m_coop_host" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="350"  />
 				<ButtonText origin="20 0" text="@menu_m_coop_host" align="l" font="header_2" textColor="000000"/>
@@ -549,7 +546,7 @@
 		</Button>
 
 		<Button origin="-330 -400" align="l">
-			<ButtonText origin="20 0" text="BACK" align="l" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText origin="20 0" text="BACK" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="200"  />
 				<ButtonText origin="20 0" text="BACK" align="l" font="header_2" textColor="000000"/>
@@ -563,7 +560,7 @@
 		</Button>
 
 		<StaticImage origin="-150 -460">
-			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="#d1d1d1" flipY="true"/>
+			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="5279a5" flipY="true"/>
 		</StaticImage>
 	</Item>
 
