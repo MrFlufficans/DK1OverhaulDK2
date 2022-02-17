@@ -253,18 +253,19 @@
 
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
 		</StaticImage>
+
 
 		<!-- back button -->
 		<Button name="Menu_Options_Back" align="lb" origin="-1200 -4">
-			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
-				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="211e1d"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
+				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
 				<Action type="Hide" target="Menu_Options"/>
 			</OnClick>
 		</Button>
@@ -299,18 +300,18 @@
 
 	<Item sizeX="2000" sizeY="1200" origin="0 90">
 
-			<StaticImage align="t" name="TitleBg" origin="0 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1900" sizeY="100" color="00000020"/>
+			<StaticImage align="t" name="TitleBg" origin="0 40">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
 
 				<!-- <StaticText origin="-20 0" text="@menu_options_options" font="header_2" textColor="201f1b" align="c"/> -->
 				<Button origin="-20 0" align="c">
-					<ButtonText text="@menu_options_options" font="header_2" textColor="201f1b" align="c"/>
+					<ButtonText text="@menu_options_options" font="header_2" textColor="#d1d1d1" align="c"/>
 					<OnClick>
 						<Action type="TriggerEvent" target="GUI_GAME_OPTIONS_ENABLE_DEV"/>
 					</OnClick>
 				</Button>
 
-				<StaticText name="#DevHint" hidden="true" origin="-20 0" align="r" text="DEV" font="header_2" textColor="201f1b"/>
+				<StaticText name="#DevHint" hidden="true" origin="-20 0" align="r" text="DEV" font="header_2" textColor="#d1d1d1"/>
 			</StaticImage>
 
 			<!-- Game Options -->
@@ -319,8 +320,8 @@
 				<StaticImage align="t" origin="0 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="570" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="f97b03"/>
-						<StaticText text="@menu_options_game" align="lt" origin="20 0" font="header_3" textColor="201f1b" />
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
+						<StaticText text="@menu_options_game" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
 					</StaticImage>
 				</StaticImage>
 
@@ -510,8 +511,8 @@
 				<StaticImage align="t" origin="0 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="390" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="f97b03"/>
-						<StaticText text="@menu_options_sound" align="lt" origin="20 0" font="header_3" textColor="201f1b" />
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
+						<StaticText text="@menu_options_sound" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
 					</StaticImage>
 				</StaticImage>
 
@@ -622,8 +623,8 @@
 				<StaticImage align="t" origin="0 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="753" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="f97b03"/>
-						<StaticText text="@menu_options_keybindings" align="lt" origin="20 0" font="header_3" textColor="201f1b" />
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
+						<StaticText text="@menu_options_keybindings" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
 					</StaticImage>
 				</StaticImage>
 
@@ -744,8 +745,8 @@
 				<StaticImage align="t" origin="0 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="573" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="f97b03"/>
-						<StaticText text="@menu_options_video" align="lt" origin="20 0" font="header_3" textColor="201f1b" />
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
+						<StaticText text="@menu_options_video" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
 					</StaticImage>
 				</StaticImage>
 
