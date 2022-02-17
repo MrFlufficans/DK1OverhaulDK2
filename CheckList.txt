@@ -28,6 +28,7 @@ UI
     Customize
     Main Menu (95%)
     Settings (95%)
+    Loading Screens
 
 Models
     SWAT
