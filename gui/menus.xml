@@ -431,7 +431,7 @@
 	<!-- enclose all butons in a single parent item which is centered on the background -->
 	<Item name="Menu_Main_Buttons" origin="-800 100">
 		<StaticImage origin="-150 60">
-			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="#d1d1d1"/>
+			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="5279a5"/>
 		</StaticImage>
 		
 		<!-- 
@@ -442,7 +442,7 @@
 			-Fluffy
 		-->
 		<Button origin="-330 0" align="l">
-			<ButtonText origin="20 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText origin="20 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="290"/>
 				<ButtonText origin="20 0" text="@menu_m_singlemission" align="l" font="header_2" textColor="000000"/>
@@ -455,7 +455,7 @@
 		</Button>
 
 		<Button origin="-330 -100" align="l">
-			<ButtonText origin="20 0" text="@menu_m_coop" align="l" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText origin="20 0" text="@menu_m_coop" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="380"/>
 				<ButtonText origin="20 0" text="@menu_m_coop" align="l" font="header_2" textColor="000000"/>
@@ -469,7 +469,7 @@
 		</Button>
 
 		<Button origin="-330 -200" align="l">
-			<ButtonText origin="20 0" text="@menu_m_randommap" align="l" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText origin="20 0" text="@menu_m_randommap" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="570"/>
 				<ButtonText origin="20 0" text="@menu_m_randommap" align="l" font="header_2" textColor="000000"/>
@@ -483,7 +483,7 @@
 		</Button>
 
 		<Button origin="-330 -300" align="l">
-			<ButtonText origin="20 0" text="@menu_m_optionseditor_ttip" align="l" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText origin="20 0" text="@menu_m_optionseditor_ttip" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="230"/>
 				<ButtonText origin="20 0" text="@menu_m_optionseditor_ttip" align="l" font="header_2" textColor="000000"/>
@@ -498,7 +498,7 @@
 		</Button>
 
 		<Button origin="-330 -400" align="l">
-			<ButtonText origin="20 0" text="@menu_m_quit" align="l" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText origin="20 0" text="@menu_m_quit" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="330"/>
 				<ButtonText origin="20 0" text="@menu_m_quit" align="l" font="header_2" textColor="000000"/>
@@ -511,7 +511,7 @@
 		</Button>
 
 		<StaticImage origin="-150 -460">
-			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="#d1d1d1" flipY="true"/>
+			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="5279a5" flipY="true"/>
 		</StaticImage>
 	</Item>
 
