@@ -44,9 +44,11 @@ Levels (Note: lets wait untill we get more modern assets)
 ----Workload----
 
 Fluffy
-    Weapon Models
-    Equipment Models
-    Helmet Models
+    Weapon Models (In Order)
+        KSG
+        Five Seven
+        Honey Badger
+        MP7
 
 MK
     Equipment
