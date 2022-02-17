@@ -26,7 +26,8 @@ Sounds
 UI
     Deploy
     Customize
-    Main Menu (87%)
+    Main Menu (95%)
+    Settings (95%)
 
 Models
     SWAT
