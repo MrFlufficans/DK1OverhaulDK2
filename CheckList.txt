@@ -1,3 +1,10 @@
+---color palette----
+293F4C85
+
+
+
+
+
 ----Work CheckList----
 
 DK1 Wall Style (Done)
