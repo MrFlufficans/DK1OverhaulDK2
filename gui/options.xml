@@ -265,20 +265,20 @@
 				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="false"/>
 				<Action type="Hide" target="Menu_Options"/>
 			</OnClick>
 		</Button>
 
 		<!-- Apply button -->
 		<Button name="Menu_Options_Apply" align="rb" origin="1200 -4">
-			<ButtonText align="r" origin="-20 0" text="@menu_options_apply" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="r" origin="-20 0" text="@menu_options_apply" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="true"/>
-				<ButtonText align="r" origin="-20 0" text="@menu_options_apply" font="header_2" textColor="211e1d"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="true"/>
+				<ButtonText align="r" origin="-20 0" text="@menu_options_apply" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="true"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="true"/>
 				<Action type="Hide" target="Menu_Options"/>
 				<Action type="TriggerEvent" target="GUI_GAME_OPTIONS_APPLY"/>
 			</OnClick>
@@ -286,13 +286,13 @@
 
 		<!-- Credits button -->
 		<Button origin="0 -4" align="cb" acceptInput="true" hidden="false">
-			<ButtonText origin="0 0" text="@menu_options_credits" align="c" font="header_2" textColor="f0e3cc"/>
+			<ButtonText origin="0 0" text="@menu_options_credits" align="c" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="f0e3cc" />
-				<ButtonText origin="0 0" text="@menu_options_credits" align="c" font="header_2" textColor="40382b"/>
+				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="d1d1d1" />
+				<ButtonText origin="0 0" text="@menu_options_credits" align="c" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
+				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="293F4C85" />
 				<Action type="Show" target="Menu_Credits_Main"/>
 			</OnClick>
 		</Button>
@@ -305,13 +305,13 @@
 
 				<!-- <StaticText origin="-20 0" text="@menu_options_options" font="header_2" textColor="201f1b" align="c"/> -->
 				<Button origin="-20 0" align="c">
-					<ButtonText text="@menu_options_options" font="header_2" textColor="#d1d1d1" align="c"/>
+					<ButtonText text="@menu_options_options" font="header_2" textColor="#d4d4d4" align="c"/>
 					<OnClick>
 						<Action type="TriggerEvent" target="GUI_GAME_OPTIONS_ENABLE_DEV"/>
 					</OnClick>
 				</Button>
 
-				<StaticText name="#DevHint" hidden="true" origin="-20 0" align="r" text="DEV" font="header_2" textColor="#d1d1d1"/>
+				<StaticText name="#DevHint" hidden="true" origin="40 0" align="r" text="DEV" font="header_2" textColor="#d1d1d1"/>
 			</StaticImage>
 
 			<!-- Game Options -->
@@ -321,7 +321,7 @@
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="570" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
-						<StaticText text="@menu_options_game" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
+						<StaticText text="@menu_options_game" align="lt" origin="20 0" font="header_3" textColor="#d4d4d4" />
 					</StaticImage>
 				</StaticImage>
 
@@ -339,13 +339,13 @@
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="60" color="00000050"/>
 					</StaticImage>
 					<StaticText origin="0 0" text="@menu_options_language" align="l" font="paragraph_2" textColor="7f7f7f"/>
-					<StaticText origin="0 -60" text="@menu_options_gore_slider" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -120" text="@menu_options_scroll_speed" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -180" text="@menu_options_keepplan" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -240" text="@menu_options_colored_plans" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -300" text="@menu_options_reset_game_progress" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -360" text="@menu_options_enablergb" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -420" text="@menu_options_lockmouse_to_screen" align="l" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText origin="0 -60" text="@menu_options_gore_slider" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -120" text="@menu_options_scroll_speed" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -180" text="@menu_options_keepplan" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -240" text="@menu_options_colored_plans" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -300" text="@menu_options_reset_game_progress" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -360" text="@menu_options_enablergb" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -420" text="@menu_options_lockmouse_to_screen" align="l" font="paragraph_2" textColor="7D9FBB"/>
 				</Item>
 
 				<Item align="t" origin="265 -120">
@@ -512,7 +512,7 @@
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="390" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
-						<StaticText text="@menu_options_sound" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
+						<StaticText text="@menu_options_sound" align="lt" origin="20 0" font="header_3" textColor="#d4d4d4" />
 					</StaticImage>
 				</StaticImage>
 
@@ -526,11 +526,11 @@
 					<StaticImage origin="447 -240">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="60" color="00000050"/>
 					</StaticImage>
-					<StaticText origin="0 0" text="@menu_options_master_slider" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -60" text="@menu_options_music_slider" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -120" text="@menu_options_game_slider" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -180" text="@menu_options_dynreverb" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -240" text="@menu_options_mute_in_background" align="l" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText origin="0 0" text="@menu_options_master_slider" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -60" text="@menu_options_music_slider" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -120" text="@menu_options_game_slider" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -180" text="@menu_options_dynreverb" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -240" text="@menu_options_mute_in_background" align="l" font="paragraph_2" textColor="7D9FBB"/>
 				</Item>
 
 				<Item align="t" origin="260 -120">
@@ -624,22 +624,22 @@
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="753" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
-						<StaticText text="@menu_options_keybindings" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
+						<StaticText text="@menu_options_keybindings" align="lt" origin="20 0" font="header_3" textColor="#d4d4d4" />
 					</StaticImage>
 				</StaticImage>
 
-				<StaticText text="Templates:" align="lt" origin="670 -14" font="header_4" textColor="201f1b" />
+				<StaticText text="Templates:" align="lt" origin="670 -14" font="header_4" textColor="#d4d4d4" />
 				<Checkbox name="Options_KeyTemplate1" align="t" origin="375 -12" stealFocus="true" defaultState="UncheckedState">
 					<UncheckedState>
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="48" sizeY="48" color="40392bbf"/>
 						<ButtonText text="1" font="header_4" textColor="f0e3cc"/>
 						<OnHover>
 							<RenderObject2D texture="data/textures/gui/square.tga" sizeX="48" sizeY="48" color="f0e3cc"/>
-							<ButtonText text="1" font="header_4" textColor="40392b"/>							
+							<ButtonText text="1" font="header_4" textColor="#d4d4d4"/>							
 						</OnHover>
 						<OnClick>
 							<RenderObject2D texture="data/textures/gui/square.tga" sizeX="44" sizeY="44" color="f0e3cc"/>
-							<ButtonText text="1" font="header_4" textColor="40392b"/>							
+							<ButtonText text="1" font="header_4" textColor="#d4d4d4"/>							
 							<Action type="Uncheck" target="Options_KeyTemplate2"/>
 						</OnClick>
 					</UncheckedState>
@@ -698,45 +698,45 @@
 					<StaticImage origin="0 -600">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="60" color="00000050"/>
 					</StaticImage>
-					<StaticText origin="-448 0" text="@menu_options_pauseunpause" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -60" text="@menu_options_actionmenu" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -120" text="@menu_options_gocodes" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -180" text="@menu_options_panning" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -240" text="@menu_options_tilt" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -300" text="@menu_options_zoomin" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -360" text="@menu_options_sniperfire" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -420" text="@menu_options_cycleselection" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -480" text="@menu_options_silent_toggle" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -540" text="@menu_options_stopinplace" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -600" text="@menu_options_slowmotion" align="l" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText origin="-448 0" text="@menu_options_pauseunpause" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -60" text="@menu_options_actionmenu" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -120" text="@menu_options_gocodes" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -180" text="@menu_options_panning" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -240" text="@menu_options_tilt" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -300" text="@menu_options_zoomin" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -360" text="@menu_options_sniperfire" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -420" text="@menu_options_cycleselection" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -480" text="@menu_options_silent_toggle" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -540" text="@menu_options_stopinplace" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -600" text="@menu_options_slowmotion" align="l" font="paragraph_2" textColor="7D9FBB"/>
 
 				</Item>
 
 				<Item  name="keymap_template1" align="t" origin="265 -120" hidden="false">
-					<StaticText origin="0 0" text="Space" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -60" text="Right Click (on path / trooper)" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -120" text="A / B / C / D or 1 / 2 / 3 / 4" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -180" text="Middle Click / Arrow Keys" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -240" text="Home / End" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -300" text="Mouse Scroll / Q / E" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -360" text="S / X" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -420" text="TAB" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -480" text="SHIFT + F" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -540" text="SHIFT + Click (on path / trooper)" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -600" text="L" align="c" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText origin="0 0" text="Space" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -60" text="Right Click (on path / trooper)" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -120" text="A / B / C / D or 1 / 2 / 3 / 4" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -180" text="Middle Click / Arrow Keys" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -240" text="Home / End" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -300" text="Mouse Scroll / Q / E" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -360" text="S / X" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -420" text="TAB" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -480" text="SHIFT + F" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -540" text="SHIFT + Click (on path / trooper)" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -600" text="L" align="c" font="paragraph_2" textColor="7D9FBB"/>
 				</Item>
 				<Item  name="keymap_template2" align="t" origin="265 -120" hidden="true">
-					<StaticText origin="0 0" text="Space" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -60" text="Right Click (on path / trooper)" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -120" text="1 / 2 / 3 / 4" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -180" text="Middle Click / WASD" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -240" text="Home / End" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -300" text="Mouse Scroll / Q / E" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -360" text="Z / X" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -420" text="TAB" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -480" text="SHIFT + F" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -540" text="SHIFT + Click (on path / trooper)" align="c" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="0 -600" text="L" align="c" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText origin="0 0" text="Space" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -60" text="Right Click (on path / trooper)" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -120" text="1 / 2 / 3 / 4" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -180" text="Middle Click / WASD" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -240" text="Home / End" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -300" text="Mouse Scroll / Q / E" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -360" text="Z / X" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -420" text="TAB" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -480" text="SHIFT + F" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -540" text="SHIFT + Click (on path / trooper)" align="c" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="0 -600" text="L" align="c" font="paragraph_2" textColor="7D9FBB"/>
 				</Item>
 			</Item>
 
@@ -746,7 +746,7 @@
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="573" color="211e1dB3"/>
 					<StaticImage align="t" origin="0 0">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
-						<StaticText text="@menu_options_video" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
+						<StaticText text="@menu_options_video" align="lt" origin="20 0" font="header_3" textColor="#d4d4d4" />
 					</StaticImage>
 				</StaticImage>
 
@@ -763,14 +763,14 @@
 					<StaticImage origin="0 -360">
 						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="60" color="00000050"/>
 					</StaticImage>
-					<StaticText origin="-448 0" text="@menu_options_displaymode" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -60" text="@menu_options_res" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -120" text="@menu_options_vsync" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -180" text="@menu_options_aa" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -240" text="@menu_options_texturequality" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -300" text="@menu_options_ssao" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -360" text="@menu_options_shadowsquality" align="l" font="paragraph_2" textColor="f0e3cc"/>
-					<StaticText origin="-448 -420" text="@menu_options_vfxquality" align="l" font="paragraph_2" textColor="f0e3cc"/>
+					<StaticText origin="-448 0" text="@menu_options_displaymode" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -60" text="@menu_options_res" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -120" text="@menu_options_vsync" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -180" text="@menu_options_aa" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -240" text="@menu_options_texturequality" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -300" text="@menu_options_ssao" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -360" text="@menu_options_shadowsquality" align="l" font="paragraph_2" textColor="7D9FBB"/>
+					<StaticText origin="-448 -420" text="@menu_options_vfxquality" align="l" font="paragraph_2" textColor="7D9FBB"/>
 				</Item>
 
 				<Item align="t" origin="265 -120">
