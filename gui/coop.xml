@@ -62,8 +62,10 @@
 	</OnKeyDown>
 
 	<StaticImage origin="0 0">
-		<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
+		<RenderObject2D texture="data/textures/gui/wallpaper_16x9.dds"/>
 	</StaticImage>
+
+	<Movie hidden="false" sizeX="2700" sizeY="1500" file="data/movies/DK1BackgroundTest1.mp4" loop="true"/>
 
 	<StaticImage name="ScreenBg" origin="0 0">
 		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
@@ -137,8 +139,10 @@
 	</OnKeyDown>
 
 	<StaticImage origin="0 0">
-		<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
+		<RenderObject2D texture="data/textures/gui/wallpaper_16x9.dds"/>
 	</StaticImage>
+
+	<Movie hidden="false" sizeX="2700" sizeY="1500" file="data/movies/DK1BackgroundTest1.mp4" loop="true"/>
 
 	<StaticImage name="ScreenBg" origin="0 0">
 		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
@@ -155,11 +159,11 @@
 			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="860" sizeY="560" color="211e1dB3"/>
 
 			<Item align="lt" origin="20 -130" sizeX="860">
-				<StaticText align="l" text="@menu_m_coop_players" font="paragraph_1" textColor="f0e3cc"/>
+				<StaticText align="l" text="@menu_m_coop_players" font="paragraph_1" textColor="7D9FBB"/>
 				<Item align="r" origin="-210 0">
 					<StaticImage origin="0 0" hidden="false">
 						<RenderObject2D texture="data/textures/gui/menu_class_background.tga"/>
-						<StaticText name="#numplayers" text="2" font="paragraph_1" textColor="f0e3cc"/>
+						<StaticText name="#numplayers" text="2" font="paragraph_1" textColor="7D9FBB"/>
 
 						<Button origin="0 0" align="l" stealFocus="true">
 							<RenderObject2D texture="data/textures/gui/menu_arrowright_normal.tga" flipX="true"/>
@@ -188,7 +192,7 @@
 			</Item>
 
 			<Item align="lt" origin="20 -200" sizeX="860">
-				<StaticText align="l" text="@menu_m_coop_friendsonly" font="paragraph_1" textColor="f0e3cc"/>
+				<StaticText align="l" text="@menu_m_coop_friendsonly" font="paragraph_1" textColor="7D9FBB"/>
 				<Checkbox name="#friendsonly" align="r" origin="-185 0" stealFocus="true" defaultState="CheckedState" acceptInput="false">
 					<UncheckedState>
 						<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
@@ -207,11 +211,11 @@
 			</Item>
 
 			<Item align="lt" origin="20 -270" sizeX="860">
-				<StaticText align="l" text="@menu_m_coop_pausetype" font="paragraph_1" textColor="f0e3cc"/>
+				<StaticText align="l" text="@menu_m_coop_pausetype" font="paragraph_1" textColor="7D9FBB"/>
 				<Item align="r" origin="-210 0">
 					<StaticImage origin="0 0" hidden="false" tooltip="@menu_m_coop_pause_realtime_ttip">
 						<RenderObject2D texture="data/textures/gui/menu_class_background.tga"/>
-						<StaticText name="#pausetype" text="@menu_m_coop_pause_realtime" font="paragraph_1" textColor="f0e3cc"/>
+						<StaticText name="#pausetype" text="@menu_m_coop_pause_realtime" font="paragraph_1" textColor="7D9FBB"/>
 
 						<Button origin="0 0" align="l" stealFocus="true">
 							<RenderObject2D texture="data/textures/gui/menu_arrowright_normal.tga" flipX="true"/>
@@ -300,13 +304,13 @@
 			</Button>
 
 			<Button align="cb" origin="0 20">
-				<ButtonText align="c" origin="0 0" text="@menu_m_selectmis" font="header_3" textColor="f0e3cc"/>
+				<ButtonText align="c" origin="0 0" text="@menu_m_selectmis" font="header_3" textColor="#d1d1d1"/>
 				<OnHover>
-					<RenderObject2D texture="data/textures/gui/menu_select.dds" color="f0e3cc" />
-					<ButtonText align="c" origin="0 0" text="@menu_m_selectmis" font="header_3" textColor="211e1d"/>
+					<RenderObject2D texture="data/textures/gui/menu_select.dds" color="d1d1d1" />
+					<ButtonText align="c" origin="0 0" text="@menu_m_selectmis" font="header_3" textColor="000000"/>
 				</OnHover>
 				<OnClick>
-					<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
+					<RenderObject2D texture="data/textures/gui/menu_select.dds" color="293F4C85" />
 					<Action type="Show" target="Menu_MissionSelect_Host"/>
 				</OnClick>
 			</Button>
@@ -327,14 +331,15 @@
 		</StaticImage>
 
 		<StaticImage align="t" origin="0 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1540" sizeY="72" color="f97b03"/>
-			<StaticText text="@menu_options_options" align="lt" origin="20 0" font="header_3" textColor="201f1b" />
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1540" sizeY="72" color="293F4C85"/>
+			<StaticText text="@menu_options_options" align="lt" origin="20 0" font="header_3" textColor="#d1d1d1" />
 		</StaticImage>
 	</Item>
+	
 
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
 		</StaticImage>
 
 		<!-- back button -->
