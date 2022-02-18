@@ -98,19 +98,20 @@
 	</StaticImage>
 
 
+	<StaticImage name="ScreenFooter top" align="b" origin="0 600">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
+			<StaticText origin="0 0" text="@menu_m_missiongen" font="header_2" textColor="#d4d4d4" align="c"/>
+	</StaticImage>
+
 
 	<Item sizeX="2000" sizeY="1200" origin="0 40">
 
-		<StaticImage  name="MainBg" origin="0 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1900" sizeY="9999" color="211e1d66"/>
+		<StaticImage  name="MainBg" origin="0 -37">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1900" sizeY="1205" color="211e1d66"/>
 		</StaticImage>
 
-		<StaticImage align="t" name="TitleBg" origin="0 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1900" sizeY="100" color="293F4C"/>
-			<StaticText origin="0 0" text="@menu_m_missiongen" font="header_2" textColor="201f1b" align="c"/>
-		</StaticImage>
 
-		<StaticImage align="t" name="ConstructionInProgress" origin="0 -110">
+		<StaticImage align="t" name="ConstructionInProgress" origin="0 -50">
 			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1900" sizeY="32" color="ffc600"/>
 			<StaticText text="CONSTRUCTION IN PROGRESS" font="header_4" origin="0 0" textColor="201f1b"/>
 			<StaticImage align="lt" origin="0 0">
@@ -196,7 +197,7 @@
 				<StaticImage origin="448 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="60" color="00000050"/>
 				</StaticImage>
-				<StaticText origin="0 0"   text="@menu_m_missiongen_str" align="l" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText origin="0 0"   text="@menu_m_missiongen_str" align="l" font="paragraph_2" textColor="7D9FBB"/>
 				<Slider 	origin="600 0" name="#RandomMap_EnemiesField"  stealFocus="true" sliderType="linear" integerValues="false" startValue="1.0" endValue="10.0" >
 					<BackgroundGraphics>
 						<RenderObject2D texture="data/textures/gui/menu_sliderbar_normal.tga"/>
@@ -212,7 +213,7 @@
 						</OnClick>
 					</ButtonGraphics>
 				</Slider>
-				<StaticText origin="816 0" name="#RandomMap_EnemiesTxt" text="0.7" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText origin="816 0" name="#RandomMap_EnemiesTxt" text="0.7" font="paragraph_2" textColor="7D9FBB"/>
 			</Item>
 
 			<!-- map size -->
@@ -220,9 +221,9 @@
 				<StaticImage origin="448 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="60" color="00000050"/>
 				</StaticImage>
-				<StaticText origin="0 0"   text="@menu_m_missiongen_msize" align="l" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText origin="0 0"   text="@menu_m_missiongen_msize" align="l" font="paragraph_2" textColor="7D9FBB"/>
 
-				<StaticText origin="600 0" name="#RandomMap_MapSizeTxt" text="0.7" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText origin="600 0" name="#RandomMap_MapSizeTxt" text="0.7" font="paragraph_2" textColor="7D9FBB"/>
 
 				<Button origin="350 0" align="l" name="#RandomMap_MapSizePrev">
 					<RenderObject2D texture="data/textures/gui/menu_arrowright_normal.tga" flipX="true"/>
@@ -250,9 +251,9 @@
 				<StaticImage origin="448 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="60" color="00000050"/>
 				</StaticImage>
-				<StaticText origin="0 0"   text="Map" align="l" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText origin="0 0"   text="Map" align="l" font="paragraph_2" textColor="7D9FBB"/>
 
-				<StaticText origin="600 0" name="#RandomMap_ChooseMapTxt" text="0.7" font="paragraph_2" textColor="f0e3cc"/>
+				<StaticText origin="600 0" name="#RandomMap_ChooseMapTxt" text="0.7" font="paragraph_2" textColor="7D9FBB"/>
 
 				<Button origin="350 0" align="l" name="#RandomMap_ChooseMapPrev">
 					<RenderObject2D texture="data/textures/gui/menu_arrowright_normal.tga" flipX="true"/>
@@ -279,12 +280,12 @@
 
 			<!-- seed -->
 			<StaticImage align="b" origin="0 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="f97b03"/>
-				<StaticText text="@menu_m_missiongen_seed" align="lt" origin="20 0" font="header_3" textColor="201f1b" />
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="936" sizeY="72" color="293F4C85"/>
+				<StaticText text="@menu_m_missiongen_seed" align="lt" origin="20 0" font="header_3" textColor="#d4d4d4" />
 			</StaticImage>
 			<Editbox name="#RandomMap_SeedField" origin="0 0" align="br" acceptNumbers="true" acceptLetters="true" forceUppercase="true" maxCharacters="10" focusedTextColor="f0e3cc">
-				<TextFormat origin="10 0" align="l" text="#A6213774B" font="header_3" textColor="f0e3cc"/>
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="270" sizeY="72" color="000000f0"/>
+				<TextFormat origin="10 0" align="l" text="#A6213774B" font="header_3" textColor="#d4d4d4"/>
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="270" sizeY="72" color="293F4C95"/>
 				<OnHover>
 					<RenderObject2D texture="data/textures/gui/menu_darkbrown_background.tga" color="000000d2" sizeX="270" sizeY="72"/>
 				</OnHover>
@@ -305,13 +306,13 @@
 
 		<!-- back button -->
 		<Button name="Menu_RandomMap_Back" align="lb" origin="-1200 -4">
-			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
-				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="211e1d"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
+				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="false"/>
 				<Action type="Hide" target="Menu_RandomMap"/>
 				<Action type="Show" target="Menu_Main"/>
 			</OnClick>
@@ -319,13 +320,13 @@
 
 		<!-- start button -->
 		<Button name="Menu_RandomMap_Start" align="rb" origin="1200 -4">
-			<ButtonText align="r" origin="-20 0" text="@menu_m_brief_go" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="r" origin="-20 0" text="@menu_m_brief_go" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="true"/>
-				<ButtonText align="r" origin="-20 0" text="@menu_m_brief_go" font="header_2" textColor="211e1d"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1c" flipX="true"/>
+				<ButtonText align="r" origin="-20 0" text="@menu_m_brief_go" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="true"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="true"/>
 
 				<Action type="Hide" target="Menu_RandomMap"/>
 				<Action type="TriggerEvent" target="GUI_GAME_RANDOMMAP_START"/>
