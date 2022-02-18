@@ -64,6 +64,7 @@ MK
     attackTypes
     Ammo
     Balancing
+    Criminals equipment, guns, texturing
 
 Anthony
     doing levels (waiting for more modern assets)
