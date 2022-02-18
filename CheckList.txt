@@ -1,8 +1,7 @@
 ---color palette----
 293F4C85
-
-
-
+7f7f7f
+#d4d4d4
 
 
 ----Work CheckList----
