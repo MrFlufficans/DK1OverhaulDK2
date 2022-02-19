@@ -3,7 +3,6 @@
 7D9FBB
 #d4d4d4
 
-
 ----Work CheckList----
 
 make sure mk changes the names before the day before the release
@@ -12,6 +11,7 @@ DK1 Wall Style (Done)
 DK1 Music (Done)
 DK1 Main Menu Video (Done)
 SWAT Units (WIP)
+Main Menu and Other Menus (Done)
 
 Equipment
    Weapons
@@ -27,9 +27,8 @@ Sounds
 UI
     Deploy
     Customize
-    Main Menu (95%)
-    Settings (95%)
     Loading Screens
+    Gui Buttons
 
 Models
     SWAT
@@ -45,6 +44,8 @@ Models
         Unknown
 
 Levels (Note: lets wait untill we get more modern assets)
+    Maps Bundles Names
+    
     Campaign
     
     
@@ -70,4 +71,5 @@ MK
 Anthony
     doing levels (waiting for more modern assets)
     UI
+    Other shit
 
