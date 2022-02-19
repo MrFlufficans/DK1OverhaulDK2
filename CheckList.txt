@@ -6,6 +6,8 @@
 
 ----Work CheckList----
 
+make sure mk changes the names before the day before the release
+
 DK1 Wall Style (Done)
 DK1 Music (Done)
 DK1 Main Menu Video (Done)
