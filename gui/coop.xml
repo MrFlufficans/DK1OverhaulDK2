@@ -77,35 +77,41 @@
 		</StaticImage>
 	</StaticImage>
 
-	<StaticText name="#waiting" origin="0 250" text="@menu_m_coop_host_wait" font="header_2" textColor="f0e3cc">
+	<StaticText name="#waiting" origin="0 250" text="@menu_m_coop_host_wait" font="header_2" textColor="#d1d1d1">
 		<Movie align="b" origin="0 -425" sizeX="1216" sizeY="456" autoPlay="true" file="data/movies/mpack_your_creations.ogv" loop="true"/>
 	</StaticText>
 
 	<Button origin="410 -330">
-		<ButtonText align="r" origin="-20 0" text="@menu_m_coop_invite" font="header_3" textColor="f0e3cc"/>
+		<ButtonText align="r" origin="-20 0" text="@menu_m_coop_invite" font="header_3" textColor="#d1d1d1"/>
 		<OnHover>
-			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="true"/>
-			<ButtonText align="r" origin="-20 0" text="@menu_m_coop_invite" font="header_3" textColor="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="true"/>
+			<ButtonText align="r" origin="-20 0" text="@menu_m_coop_invite" font="header_3" textColor="000000"/>
 		</OnHover>
 		<OnClick>
-			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="true"/>
+			<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="true"/>
 			<Action type="TriggerEvent" target="GUI_GAME_COOP_INVITE_FRIEND"/>
 		</OnClick>
 	</Button>
 
+	<StaticImage name="ScreenFooter top" align="b" origin="0 600">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
+			<StaticText origin="0 0" text="@menu_m_coop_host" font="header_2" textColor="#d4d4d4" align="c"/>
+	</StaticImage>
+
+
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
 		</StaticImage>
 
 		<Button name="Menu_Coop_Host_Search_Back" align="lb" origin="-1200 -4">
-			<ButtonText align="l" origin="0 0" text="@menu_generic_back" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="l" origin="0 0" text="@menu_generic_back" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
-				<ButtonText align="l" origin="0 0" text="@menu_generic_back" font="header_2" textColor="211e1d"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
+				<ButtonText align="l" origin="0 0" text="@menu_generic_back" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="false"/>
 				<Action type="Hide" target="Menu_Coop_Host_Search"/>
 				<Action type="TriggerEvent" target="GUI_GAME_COOP_QUIT_SEARCHING"/>
 				<Action type="Show" target="Menu_Coop_Host"/>
@@ -113,13 +119,13 @@
 		</Button>
 
 		<Button align="rb" origin="1200 -4">
-			<ButtonText align="r" origin="-20 0" text="@menu_generic_start" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="r" origin="-20 0" text="@menu_generic_start" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="true"/>
-				<ButtonText align="r" origin="-20 0" text="@menu_generic_start" font="header_2" textColor="211e1d"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="true"/>
+				<ButtonText align="r" origin="-20 0" text="@menu_generic_start" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="true"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="true"/>
 				<Action type="TriggerEvent" target="GUI_GAME_COOP_START_ANYWAYS"/>
 			</OnClick>
 		</Button>
@@ -336,6 +342,11 @@
 		</StaticImage>
 	</Item>
 	
+	<StaticImage name="ScreenFooter top" align="b" origin="0 600">
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
+			<StaticText origin="0 0" text="@menu_m_coop_host" font="header_2" textColor="#d4d4d4" align="c"/>
+	</StaticImage>
+
 
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
@@ -344,26 +355,26 @@
 
 		<!-- back button -->
 		<Button name="Menu_Coop_Host_Back" align="lb" origin="-1200 -4">
-			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
 				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="211e1d"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="false"/>
 				<Action type="Hide" target="Menu_Coop_Host"/>
 				<Action type="Show" target="Menu_Main"/>
 			</OnClick>
 		</Button>
 
 		<Button align="rb" origin="1200 -4">
-			<ButtonText align="r" origin="-20 0" text="@menu_m_coop_host" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="r" origin="-20 0" text="@menu_m_coop_host" font="header_2" textColor="#d1d1d1"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="true"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="true"/>
 				<ButtonText align="r" origin="-20 0" text="@menu_m_coop_host" font="header_2" textColor="211e1d"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="true"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="true"/>
 				<Action type="Hide" target="Menu_Coop_Host"/>
 				<Action type="Show" target="Menu_Coop_Host_Search"/>
 			</OnClick>
