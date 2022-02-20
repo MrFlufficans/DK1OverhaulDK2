@@ -69,7 +69,7 @@
 		</Sounds>
 	</Firearm>
 
-<!--"Revolver"-->
+<!--Revolver-->
 
     <Firearm name="Revolver" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="5"
 			tooltip=".38 Special Revolver"
@@ -138,7 +138,7 @@
 		</Sounds>
 	</Firearm>
 
-<!--MP5K For Grenadier Glenn (Foreign Advisor)-->
+<!--MP5K For Grenadier Glenns-->
 
     <Firearm name="MP5K_PDW_Glenn" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="5"
 			tooltip="@firearm_mp5kpdw_name"

@@ -1,16 +1,14 @@
 <entities>
 	<entity name="Grunt Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban_and_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+			<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/cia_cap_01.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 
-			<Id name="Theodore Thug" portrait="data/textures/portraits/enemy_grunt_ak.dds" gender="0" voicePack="enemies"/>
+			<Id name="Thug" portrait="data/textures/portraits/enemy_grunt_ak.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToBlindFire="0.5" stopsToShoot="true"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -25,13 +23,14 @@
 	
 	<entity name="Pistol Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>      
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/cia_cap_01.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-			<Id name="Theodore Thug" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
+			<Id name="Thug" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToBlindFire="0.0" stopsToShoot="true" />
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="2.2" max="10"/>
@@ -47,12 +46,13 @@
 	<entity name="Pistol Insurgent Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/cia_cap_01.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-			<Id name="Gunrunner Gabriel" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
+			<Id name="Thug" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToBlindFire="0.5" stopsToShoot="true" roamAround="true"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="2.2" max="10"/>
@@ -70,7 +70,7 @@
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
-			<Id name="Junkie James" portrait="data/textures/portraits/enemy_veteran.dds" gender="0" voicePack="enemies"/>
+			<Id name="Revolver Criminal" portrait="data/textures/portraits/enemy_veteran.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
@@ -85,17 +85,16 @@
 
 
 	<entity name="Veteran Insurgent LongRange" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse2.dds" windAnimated="1"/>
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse5.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/cia_cap_01.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true"/>
-			<Id name="Stylish Solomon" portrait="data/textures/portraits/enemy_veteran.dds" gender="0" voicePack="enemies"/>
+			<Id name="FAL Criminal" portrait="data/textures/portraits/enemy_veteran.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
@@ -111,7 +110,7 @@
 	<entity name="Rocket Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_rpg2.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
+<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/cia_cap_01.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
@@ -119,14 +118,14 @@
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" />
-			<Id name="Rocketer Raphael" portrait="data/textures/portraits/enemy_rocket.dds" gender="0" voicePack="enemies"/>
+			<Id name="Thug" portrait="data/textures/portraits/enemy_rocket.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 			
 			<equipment>
-				<Item name="RPG 7"/>
+				<Item name="Mac10"/>
 			</equipment>
 		</Human>
 	</entity>
@@ -140,44 +139,43 @@
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToBlindFire="0.5" stopsToShoot="true" chanceToThrowGrenade="0.10" />
-			<Id name="Specialist Shawn" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Id name="Thug" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
 			<equipment>
-				<Item name="Type 56"/>
-				<Item name="RPG 26"/>
+				<Item name="Mac10"/>
 			</equipment>
 		</Human>
 	</entity>
 	
 	<entity name="Sniper Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse5.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
-			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-			<Traits chanceToBlindFire="0" stopsToShoot="true" chanceToThrowGrenade="0.0" />
-			<Id name="Marksman Miller" portrait="data/textures/portraits/enemy_grunt_rocket.dds" gender="0" voicePack="enemies"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+			<Traits chanceToAmbush="0.7" usesSuppressionFire="true"/>
+			<Id name="FAL Criminal" portrait="data/textures/portraits/enemy_veteran.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
 			<equipment>
-				<Item name="SVD63"/>
+				<Item name="FAL Rifle"/> 
+				<Item name="Bodyguard SoftArmor"/>
 			</equipment>
 		</Human>
 	</entity>
 
 	<entity name="Machinegunner" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg1.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg2.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse2.dds" windAnimated="1"/>
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_shirt_jacket_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
@@ -185,7 +183,7 @@
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
-			<Id name="Juggernaut Jim" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
+			<Id name="Juggernaut" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
@@ -199,10 +197,7 @@
 	</entity>
 
 	<entity name="Machinegunner 762" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg1.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg2.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse2.dds" windAnimated="1"/>
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_shirt_jacket_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
@@ -210,48 +205,43 @@
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
-			<Id name="Machinegunner Mason" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
+			<Id name="Juggernaut" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
 			<equipment>
-				<Item name="RPK LMG"/>
+				<Item name="RPK 74 LMG"/>
+				<Item name="Bodyguard HeavyArmor"/>
 			</equipment>
 		</Human>
 	</entity>
 
 	<entity name="Machinegunner OldSchool" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg1.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg2.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban_and_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_shirt_jacket_vest.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
-			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-
-			<Id name="Machinegunner Matt" portrait="data/textures/portraits/enemy_grunt_ak.dds" gender="0" voicePack="enemies"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
+			<Id name="Juggernaut" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
 			</Mobility>
 
 			<equipment>
-				<Item name="RP46_MG"/> 
+				<Item name="RPK 74 LMG"/>
+				<Item name="Bodyguard HeavyArmor"/>
 			</equipment>
 		</Human>
 	</entity>
 
 	<entity name="Machinegunner Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse2.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg1.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_vest_mg2.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse2.dds" windAnimated="1"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_head_turban.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
@@ -259,7 +249,7 @@
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
-			<Id name="Insurgent Machinegunner" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
+			<Id name="Thug" portrait="data/textures/portraits/enemy_machinegun.dds" gender="0" voicePack="enemies"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
 				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
@@ -370,7 +360,7 @@
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="40.0"/>
-			<Id name="@entity_human_suicidebomber" portrait="data/textures/portraits/enemy_suicide.dds" gender="0" voicePack="enemies"/>
+			<Id name="I Just Went To Tacobell Taylor" portrait="data/textures/portraits/enemy_suicide.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToAmbush="0.0" ignoresAreaSuppression="true" />
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -389,11 +379,11 @@
 		<RenderObject3D model="data/models/humans/attachments/enemy_skirt.khm" diffuseTex="data/models/humans/attachments/enemy_skirt_diffuse1.dds" windAnimated="1"/>
 		<AnimationSet name="suicide_bomb" />
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="170" />
+		<PhysicalParams health="100" />
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="50.0"/>
-			<Id name="@entity_human_suicidebomber" portrait="data/textures/portraits/enemy_suicide.dds" gender="0" voicePack="enemies"/>
+			<Id name="Dingus Daniel" portrait="data/textures/portraits/enemy_suicide.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToAmbush="0.0" ignoresAreaSuppression="true" />
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="2.45" max="11"/>
@@ -406,10 +396,6 @@
 		</Human>
 	</entity>
 
-	
-	<!-- Debug stuff -->
-	
-	<!-- Just for test; should do this another way later -->
 	<entity name="Grunt Insurgent Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/enemy_vest_ammo.khm" diffuseTex="data/models/humans/attachments/enemy_vest_diffuse.dds"/>
@@ -419,7 +405,7 @@
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat"  suppressionRecovery="10.0"/>
-			<Id name="Grunt Insurgent" portrait="data/textures/portraits/enemy_grunt_ak.dds" gender="0" voicePack="enemies"/>
+			<Id name="Grunt George" portrait="data/textures/portraits/enemy_grunt_ak.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToBlindFire="0.5" stopsToShoot="true"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="1.83" max="10"/>
@@ -494,7 +480,6 @@
 
 			<equipment>
 				<Item name="PM63" />
-				<!-- Removed for clarity Item name="Bodyguard SoftArmor" /-->
 			</equipment>
 		</Human>
 	</entity>
