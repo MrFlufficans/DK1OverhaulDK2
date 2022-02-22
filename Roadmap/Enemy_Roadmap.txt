@@ -1,13 +1,13 @@
 For Me(MK)
 
 Models (fluffy can help) for:
-    .38 special Revolver
-    Mac 10
+    .38 special Revolver 
+    Mac 10 -- 
 guns:
     
 
 Humans:
-    Textures for Theodore Thug/Grunt (Tank top)
+    Textures for Thug/Grunt (Tank top) --In progress
 
 Optional: Attacktypes:
     Basically everything    
