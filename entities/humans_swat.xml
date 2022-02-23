@@ -140,7 +140,7 @@
 		</Human>
 	</Entity>
 
-	    <Entity name="SWAT_Stealth" type="Human" editorAutoHeight="false">
+	<Entity name="SWAT_Stealth" type="Human" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/SWAT_PlaceHolder.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/ranger_support_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
@@ -176,4 +176,5 @@
 			</Equipment>
 		</Human>
 	</Entity>
+	
 </Entities>
