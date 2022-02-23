@@ -14,11 +14,15 @@ SWAT Units (WIP)
 Main Menu and Other Menus (WIP)
 
 Equipment
-   Weapons
+    Weapons
         Rifles
         Pistols
         SMGS 
-    Launchers
+        Shotguns
+        DMR/Snipers
+    Grenade Launchers
+        Milkor MGL
+        M320
     Various
 
 Sounds
