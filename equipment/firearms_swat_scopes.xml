@@ -1,0 +1,12 @@
+<Equipment>
+    <Scope name="SWATKSGIronsights"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_ironsights_name"
+			description="@scope_ironsights_desc"
+			img="data/models/weapons/attachments/iron_sights_ui.dds"
+		>
+        <RenderObject3D model="data/Weapon Modelling/KSG/KSG Iron Sight.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex=""/>
+		
+		<Params/>
+	</Scope>
+</Equipment>

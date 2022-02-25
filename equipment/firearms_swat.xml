@@ -76,6 +76,164 @@
 		</Sounds>
 	</Firearm>
 
+	<Firearm name="KSGSWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
+			tooltip="KSG"
+			description="KSG"
+			img="data/models/weapons/m500_ui.dds"
+
+			animationSet="shotgun_pump"
+		>
+        <ClassBinding name="Breacher"/>
+		<ClassBinding name="Assault"/>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/Weapon Modelling/KSG/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex=""/>
+		<ModifiableParams
+			numPellets="9"
+			roundsPerMagazine="5"
+			closedBolt="1"
+
+			cyclicReload="1"
+			reloadTime="500"
+			reloadEmptyTime="1000"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="450"
+			guardTime="200"
+			
+			accuracyStart="100"
+			accuracyEnd="10"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+			
+			suppressionScale="0.14"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_12gauge_name"
+			operationInfoText="@firearm_operation_pumpaction_name"
+			ejectingShellEntity="BulletCasingShotgun"
+			suppressedSwitch="KSGSWATSUP"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="6.0"
+			ai_rangeMax="14.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AmmoTypes>
+			<Ammo name="12GA00BUCK_M500"/>
+
+		</AmmoTypes>
+
+		<ScopeTypes>
+			<Scope name="SWATKSGIronsights"/>
+			<Scope name="M68CCO"/>
+			<Scope name="Holosight"/>
+		</ScopeTypes>
+
+		<AttackTypes>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
+			<AttackType name="Rangers_PumpAimedFireLong" rangeMeters="12"/>
+			<AttackType name="Rangers_PumpAimedFireLongXX" rangeMeters="100"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_02" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_03" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
+		</MuzzleFlash>
+
+		<Sounds> 
+			<Equip name="870br_eqp"/>
+			<Unequip name="870br_neqp"/>
+			<Reload name="870br_reld"/>
+			<ReloadEmpty name="870br_reld"/>
+			<Fire name="870br_fire"/>
+			<ShellDrop name="shotgun_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Firearm name="KSGSWATSUP" inventoryBinding="PrimaryWeaponMuzzle" category="shotgun" unlockCost="0"
+			tooltip="KSGSup"
+			description="KSGSup"
+			img="data/models/weapons/m500_ui.dds"
+
+			animationSet="shotgun_pump"
+		>
+        <ClassBinding name="Breacher"/>
+		<ClassBinding name="Assault"/>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/Weapon Modelling/KSG/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex=""/>
+		<RenderObject3D model="data/Weapon Modelling/KSG/KSG Suppressor.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex=""/>
+		<ModifiableParams
+			numPellets="9"
+			roundsPerMagazine="5"
+			closedBolt="1"
+
+			cyclicReload="1"
+			reloadTime="500"
+			reloadEmptyTime="1000"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="450"
+			guardTime="200"
+			
+			accuracyStart="100"
+			accuracyEnd="10"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+			
+			suppressionScale="0.14"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_12gauge_name"
+			operationInfoText="@firearm_operation_pumpaction_name"
+			ejectingShellEntity="BulletCasingShotgun"
+			suppressedSwitch="KSGSWAT"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="6.0"
+			ai_rangeMax="14.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AmmoTypes>
+			<Ammo name="12GA00BUCK_M500"/>
+
+		</AmmoTypes>
+
+		<ScopeTypes>
+			<Scope name="SWATKSGIronsights"/>
+			<Scope name="M68CCO"/>
+			<Scope name="Holosight"/>
+		</ScopeTypes>
+
+		<AttackTypes>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
+			<AttackType name="Rangers_PumpAimedFireLong" rangeMeters="12"/>
+			<AttackType name="Rangers_PumpAimedFireLongXX" rangeMeters="100"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_02" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_03" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
+		</MuzzleFlash>
+
+		<Sounds> 
+			<Equip name="870br_eqp"/>
+			<Unequip name="870br_neqp"/>
+			<Reload name="870br_reld"/>
+			<ReloadEmpty name="870br_reld"/>
+			<Fire name="870br_fire"/>
+			<ShellDrop name="shotgun_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
     <Firearm name="M1014SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="8"
 			tooltip="@firearm_m1014_name"
 			description="@firearm_m1014_desc"
