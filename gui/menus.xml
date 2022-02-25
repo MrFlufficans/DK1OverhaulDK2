@@ -120,8 +120,8 @@
 	</Button>
 
 
-	<StaticText text="EARLY ACCESS 12.0" font="header_3" origin="0 -560" align="c" textColor="40382bdc"/>
-	<Item name="Extra Buttons" origin="0 -640" align="lbsv">
+	<StaticText text="EARLY ACCESS 12.0" font="header_3" origin="900-560" align="c" textColor="40382bdc"/>
+	<Item name="Extra Buttons" origin="900 -640" align="lbsv">
 		<StaticImage name="Options Background" origin="0 0">
 			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="332" sizeY="76"/>
 		</StaticImage>
@@ -139,6 +139,8 @@
 			</OnClick>
 		</Button>
 	</Item>
+
+
 
 	<!-- enclose all butons in a single parent item which is centered on the background -->
 	<Item name="Menu_Main_Buttons" origin="-800 100">
@@ -213,111 +215,91 @@
 		</StaticImage>
 	</Item>
 
-	<Item name="Menu_Main_CoopButtons" origin="0 -40">
-		<StaticImage origin="0 60">
-				<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="40382b"/>
+	<Item name="Menu_Main_CoopButtons" origin="-800 100">
+		<StaticImage origin="-150 60">
+				<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="5279a5"/>
 		</StaticImage>
 
-		<Button origin="0 0" sizeX="670" sizeY="90">
-			<ButtonText origin="0 0" text="@menu_m_coop_quickmission" font="header_2" textColor="40382b"/>
+		<Button origin="-330 0" align="l">
+			<ButtonText origin="20 0" text="@menu_m_coop_quickmission" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
-				<ButtonText origin="0 0" text="@menu_m_coop_quickmission" font="header_2" textColor="f0e3cc"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="410" />
+				<ButtonText origin="20 0" text="@menu_m_coop_quickmission" align="l" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" scaleX="0.9" scaleY="0.9"/>
-				<ButtonText origin="0 0" text="@menu_m_coop_quickmission" font="header_3" textColor="f0e3cc"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="410"/>
+				<ButtonText origin="20 0" text="@menu_m_coop_quickmission" align="l" font="header_3" textColor="000000"/>
 				<Action type="Hide" target="Menu_Main"/>
 				<Action type="Show" target="Menu_Coop_Quick_Search"/>
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -90" sizeX="670" sizeY="90">
-			<ButtonText origin="0 0" text="@menu_m_coop_host" font="header_2" textColor="40382b"/>
+		<Button origin="-330 -100" align="l">
+			<ButtonText origin="20 0" text="@menu_m_coop_host" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
-				<ButtonText origin="0 0" text="@menu_m_coop_host" font="header_2" textColor="f0e3cc"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="350"  />
+				<ButtonText origin="20 0" text="@menu_m_coop_host" align="l" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" scaleX="0.9" scaleY="0.9"/>
-				<ButtonText origin="0 0" text="@menu_m_coop_host" font="header_3" textColor="f0e3cc"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="350"/>
+				<ButtonText origin="20 0" text="@menu_m_coop_host" align="l" font="header_3" textColor="000000"/>
 				<Action type="Hide" target="Menu_Main"/>
-				<Action type="Show" target="Menu_Coop_Host"/>
+				<Action type="Show" target="Menu_Coop_Host"/>  
 			</OnClick>
 		</Button>
 
-		<Button origin="0 -270" sizeX="670" sizeY="90">
-
-			<ButtonText origin="0 0" text="@menu_generic_back" font="header_2" textColor="40382b"/>
+		<Button origin="-330 -300" align="l">
+			<ButtonText origin="20 0" text="BACK" align="l" font="header_2" textColor="9caec6"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" />
-				<ButtonText origin="0 0" text="@menu_generic_back" font="header_2" textColor="f0e3cc"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="200"  />
+				<ButtonText origin="20 0" text="BACK" align="l" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_select.dds" color="40382b" scaleX="0.9" scaleY="0.9"/>
-				<ButtonText origin="0 0" text="@menu_generic_back" font="header_3" textColor="f0e3cc"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false" sizeX="200"/>
+				<ButtonText origin="20 0" text="BACK" align="l" font="header_3" textColor="000000"/>
 				<Action type="Show" target="Menu_Main_Buttons"/>
-				<Action type="Hide" target="Menu_Main_CoopButtons"/>
+				<Action type="Hide" target="Menu_Main_CoopButtons"/> 
 			</OnClick>
 		</Button>
 
-		<StaticImage origin="0 -330">
-			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="40382b" flipY="true"/>
+		<StaticImage origin="-150 -360">
+			<RenderObject2D texture="data/textures/gui/menu_separator_top.dds" color="5279a5" flipY="true"/>
 		</StaticImage>
 	</Item>
 
-	<Item name="Extra Buttons" origin="1196 -640" align="bsv">
-		<StaticImage origin="-160 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
-		</StaticImage>
-		<Button origin="-160 0" tooltip="@menu_replays_replays">
-			<RenderObject2D texture="data/textures/gui/menu_replay_normal.dds" blendMode="none"/>
+	<Item name="Extra Buttons" origin="-850 -640" align="bsv">
+		
+		<Button origin="-220" tooltip="@menu_replays_replays">
+			<RenderObject2D texture="data/textures/gui/menu_replay_normal.dds" sizeX="80" sizeY="80"  blendMode="none"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_replay_hover.dds" blendMode="none"/>
+				<RenderObject2D texture="data/textures/gui/menu_replay_hover.dds" sizeX="80" sizeY="80" blendMode="none"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_replay_hover.dds" blendMode="none" scaleX="0.95" scaleY="0.95"/>
+				<RenderObject2D texture="data/textures/gui/menu_replay_hover.dds" blendMode="none" scaleX="0.99" scaleY="0.99"/>
 				<Action type="Show" target="Menu_Replays"/>
 				<!-- <Action type="TriggerEvent" target="GUI_GAME_TEMP_REPLAY_GO"/> -->
 			</OnClick>
 		</Button>
 
-		<StaticImage name="Options Background" origin="0 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
-		</StaticImage>
-		<Button name="Options" origin="0 0" sizeX="72" sizeY="72" tooltip="@menu_m_optionsgame_ttip">
-			<RenderObject2D texture="data/textures/gui/menu_options_normal.dds" blendMode="none"/>
+		<Button name="Options" origin="0 0" sizeX="90" sizeY="90" tooltip="@menu_m_optionsgame_ttip">
+			<RenderObject2D texture="data/textures/gui/menu_options_normal.tga" sizeX="150" sizeY="150" blendMode="none"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_options_hover.dds" blendMode="none"/>
+				<RenderObject2D texture="data/textures/gui/menu_options_hover.tga" sizeX="150" sizeY="150" blendMode="none"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_options_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
+				<RenderObject2D texture="data/textures/gui/menu_options_hover.tga" scaleX="0.99" scaleY="0.99" blendMode="none"/>
 				<Action type="Show" target="Menu_Options_Main"/>
 			</OnClick>
 		</Button>
 
-		<StaticImage name="HowToPlay Background" origin="-80 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
-		</StaticImage>
-		<Button name="HowToPlay" origin="-80 0" sizeX="72" sizeY="72" tooltip="@menu_htp_title">
-				<RenderObject2D texture="data/textures/gui/menu_howto_normal.dds" blendMode="none"/>
+		<Button name="HowToPlay" origin="-110 0" sizeX="90" sizeY="90" tooltip="@menu_htp_title">
+				<RenderObject2D texture="data/textures/gui/menu_howto_normal.dds" sizeX="80" sizeY="80" blendMode="none"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_howto_hover.dds" blendMode="none"/>
+				<RenderObject2D texture="data/textures/gui/menu_howto_hover.dds" sizeX="80" sizeY="80" blendMode="none"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_howto_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
+				<RenderObject2D texture="data/textures/gui/menu_howto_hover.dds" scaleX="0.99" scaleY="0.99" blendMode="none"/>
 				<Action type="Show" target="howtoplay_main"/>
-			</OnClick>
-		</Button>
-
-		<Button name="Send Feedback" align="l" origin="-404 100" tooltip="Be gentle">
-			<RenderObject2D texture="data/textures/gui/menu_feedback_normal.dds"/>
-			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_feedback_hover.dds"/>
-			</OnHover>
-			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_feedback_hover.dds" scaleX="0.95" scaleY="0.95"/>
-				<Action type="OpenURL" target="https://inthekillhouse.com/contact"/>
 			</OnClick>
 		</Button>
 	</Item>
