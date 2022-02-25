@@ -79,7 +79,7 @@
 	<Firearm name="KSGSWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
 			tooltip="KSG"
 			description="KSG"
-			img="data/models/weapons/m500_ui.dds"
+			img="data/models/weapons/KSG_ui.dds"
 
 			animationSet="shotgun_pump"
 		>
@@ -157,7 +157,7 @@
 	<Firearm name="KSGSWATSUP" inventoryBinding="PrimaryWeaponMuzzle" category="shotgun" unlockCost="0"
 			tooltip="KSGSup"
 			description="KSGSup"
-			img="data/models/weapons/m500_ui.dds"
+			img="data/models/weapons/KSGSup_ui.dds"
 
 			animationSet="shotgun_pump"
 		>
