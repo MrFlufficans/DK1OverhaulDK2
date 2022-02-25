@@ -86,7 +86,7 @@
         <ClassBinding name="Breacher"/>
 		<ClassBinding name="Assault"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
-		<RenderObject3D model="data/Weapon Modelling/KSG/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex=""/>
+		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSGTexture.dds"/>
 		<ModifiableParams
 			numPellets="9"
 			roundsPerMagazine="5"
@@ -164,8 +164,8 @@
         <ClassBinding name="Breacher"/>
 		<ClassBinding name="Assault"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
-		<RenderObject3D model="data/Weapon Modelling/KSG/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex=""/>
-		<RenderObject3D model="data/Weapon Modelling/KSG/KSG Suppressor.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex=""/>
+		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSGTexture.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/KSG Suppressor.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSGSilencer.dds"/>
 		<ModifiableParams
 			numPellets="9"
 			roundsPerMagazine="5"
