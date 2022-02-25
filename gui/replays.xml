@@ -78,6 +78,8 @@
 
 		<Item origin="-239 146" name="#ScenarioTooltip" tooltip="changed by the game" sizeX="90" sizeY="90">
 			<!-- mission types need to be named #ScenarioImg_*, where * is one of the string mission types that are also kept in the map.xml file -->
+			<StaticImage name="#ScenarioImg_None" hidden="true">
+			</StaticImage>
 			<StaticImage name="#ScenarioImg_ClearHostiles" hidden="true">
 				<RenderObject2D texture="data/textures/gui/missions/mission_clear_hostiles.dds"/>
 			</StaticImage>
@@ -155,7 +157,7 @@
 			</StaticImage>
 		</Item>
 
-		<StaticText name="#MapName" origin="0 -94" text="@menu_replays_last_replay" font="header_4" textColor="7D9FBB"/>
+		<StaticText name="#MapName" origin="0 -94" text="@menu_replays_last_replay" font="header_4" textColor="f0e3cc"/>
 
 		<Item align="b" origin="0 53">
 			<StaticImage name="#star0" origin="-53 0">
@@ -190,11 +192,14 @@
 		
 		<StaticImage origin="-38 134" align="rb">
 			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="80" sizeY="30" color="40392b"/>
-		</StaticImage>		
+		</StaticImage>
 		<StaticText name="#ReplayTime" origin="-56 135" align="rb" text="HH:MM:SS" font="paragraph_3" textColor="f0e3cc"/>
 
 		<StaticImage name="#ReplayIncompatible" origin="0 50" hidden="true" ignoreFocus="true">
-			<RenderObject2D texture="data/textures/gui/replay_incompatible.dds"/>
+			<RenderObject2D texture="data/textures/gui/replay_incompatible.dds" color="ff5a5a7f"/>
+		</StaticImage>
+		<StaticImage name="#ReplayBackcompatible" align="tr" origin="-50 -35" hidden="true" ignoreFocus="true">
+			<RenderObject2D texture="data/textures/gui/replay_incompatible.dds" scaleX="0.5" scaleY="0.5"/>
 		</StaticImage>
 	</Button>
 
@@ -239,11 +244,6 @@
 		</RenderObject2D>
 	</StaticImage>
 
-	<StaticImage name="ScreenFooter top" align="b" origin="0 600">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
-			<StaticText origin="0 0" text="@menu_m_missiongen" font="header_2" textColor="#d4d4d4" align="c"/>
-	</StaticImage>
-
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32" stealFocus="true">
 			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
@@ -251,13 +251,13 @@
 
 		<!-- back button -->
 		<Button name="Menu_Replays_Back" align="lb" origin="-1200 -4">
-			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="#d1d1d1"/>
+			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="d1d1d1"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
 				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="000000"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4CD9" flipX="false"/>
 				<Action type="Hide" target="Menu_Replays"/>
 			</OnClick>
 		</Button>
