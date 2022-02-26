@@ -1,6 +1,6 @@
 <!--this currently just doesnt replace the enemies to be used by anthony in map making-->
 
-<!--PLEASE DONT BE A FUCKING DUNMCE FUTURE MK, MAKE A PROPER REPALCEMENT!!!!!!!!-->
+<!--PLEASE DONT BE A FUCKING DUNCE FUTURE MK, MAKE A PROPER REPALCEMENT!!!!!!!!-->
 
 <Entities>
 	<Entity name="Dunce Daniel" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
@@ -24,4 +24,6 @@
 			</Equipment>
 		</Human>
 	</Entity>
+
+
 </Entities>
