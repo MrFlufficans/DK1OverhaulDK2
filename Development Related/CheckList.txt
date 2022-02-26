@@ -11,7 +11,8 @@ DK1 Wall Style (Done)
 DK1 Music (Done)
 DK1 Main Menu Video (Done)
 SWAT Units (WIP)
-Main Menu and Other Menus (WIP)
+Main Menu and Other Menus (95%)
+   mission select boxes to do
 
 Equipment
     Weapons
