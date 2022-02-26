@@ -157,7 +157,7 @@
 			</StaticImage>
 		</Item>
 
-		<StaticText name="#MapName" origin="0 -94" text="@menu_replays_last_replay" font="header_4" textColor="f0e3cc"/>
+		<StaticText name="#MapName" origin="0 -94" text="@menu_replays_last_replay" font="header_4" textColor="7D9FBB"/>
 
 		<Item align="b" origin="0 53">
 			<StaticImage name="#star0" origin="-53 0">
@@ -188,12 +188,12 @@
 		<StaticImage origin="34 134" align="lb">
 			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="200" sizeY="30" color="40392b"/>
 		</StaticImage>
-		<StaticText name="#ReplayDate" origin="47 135" align="lb" text="01/12/2021" font="paragraph_3" textColor="f0e3cc"/>
+		<StaticText name="#ReplayDate" origin="47 135" align="lb" text="01/12/2021" font="paragraph_3" textColor="293F4C"/>
 		
 		<StaticImage origin="-38 134" align="rb">
 			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="80" sizeY="30" color="40392b"/>
 		</StaticImage>
-		<StaticText name="#ReplayTime" origin="-56 135" align="rb" text="HH:MM:SS" font="paragraph_3" textColor="f0e3cc"/>
+		<StaticText name="#ReplayTime" origin="-56 135" align="rb" text="HH:MM:SS" font="paragraph_3" textColor="293F4C"/>
 
 		<StaticImage name="#ReplayIncompatible" origin="0 50" hidden="true" ignoreFocus="true">
 			<RenderObject2D texture="data/textures/gui/replay_incompatible.dds" color="ff5a5a7f"/>
@@ -203,21 +203,15 @@
 		</StaticImage>
 	</Button>
 
-	<Item name="MissionListBg" origin="-1180 660" align="l" sizeX="2560" hidden="false">
-		<StaticText align="l" text="@menu_replays_replays_upper" font="header_3" textColor="f97b03"/>
-		<StaticImage origin="0 -40" align="l">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="732" sizeY="4" color="f97b03"/>
-		</StaticImage>
-	</Item>
 
 	<ItemList name="#Replays_ItemList" origin="0 7" sizeX="2450" sizeY="1138" direction="y" clipChildren="true">
 		<ButtonGraphics align="r" origin="32 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="f97b0340"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="293F4C"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="f97b03ff"/>
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="5279a5"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="f97b03ff"/>
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="32" color="5279a5"/>
 			</OnClick>
 		</ButtonGraphics>
 
@@ -244,6 +238,11 @@
 		</RenderObject2D>
 	</StaticImage>
 
+	<StaticImage align="t" name="ScreenFooter top" origin="0 720">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303CC"/>
+				<StaticText origin="-20 0" text="@menu_replays_replays_upper" font="header_2" textColor="5279a5" align="c"/>
+	</StaticImage>
+
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32" stealFocus="true">
 			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
@@ -251,7 +250,7 @@
 
 		<!-- back button -->
 		<Button name="Menu_Replays_Back" align="lb" origin="-1200 -4">
-			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="d1d1d1"/>
+			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="5279a5"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
 				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="000000"/>
