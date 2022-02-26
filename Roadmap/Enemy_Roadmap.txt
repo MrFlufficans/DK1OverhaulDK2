@@ -14,7 +14,7 @@ Classes:
 
 Models (fluffy can do) for:
     .38 special Revolver 
-    Mac 10
+    Mac 10 
 
 
 guns:
