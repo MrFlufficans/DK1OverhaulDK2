@@ -64,6 +64,17 @@ Fluffy
         Five Seven
         Honey Badger
         MP7
+        G36C
+        MCX .300
+        MPX
+        P90
+        EVO3
+        Vector
+        Six 12
+        Six 12-SD
+        Tac .357
+        Magnum 44
+        HK416
 
 MK
     Equipment
