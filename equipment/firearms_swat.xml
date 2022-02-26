@@ -86,7 +86,7 @@
         <ClassBinding name="Breacher"/>
 		<ClassBinding name="Assault"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
-		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSGTexture.dds"/>
+		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
 		<ModifiableParams
 			numPellets="9"
 			roundsPerMagazine="5"
@@ -165,7 +165,7 @@
 		<ClassBinding name="Assault"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSGTexture.dds"/>
-		<RenderObject3D model="data/models/weapons/attachments/KSG Suppressor.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSGSilencer.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/KSG_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSG_Sup.dds"/>
 		<ModifiableParams
 			numPellets="9"
 			roundsPerMagazine="5"
@@ -944,6 +944,172 @@
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
 			suppressedSwitch="M9 Pistol"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AmmoTypes>
+			<Ammo name="919FMJM882_SupHandgun"/>
+			<Ammo name="919FMJM1152_SupHandgun"/>
+			<Ammo name="919JHPM1153_SupHandgun"/>
+		</AmmoTypes>
+
+		<ScopeTypes>
+			<Scope name="IronSights_Pistol"/>
+		</ScopeTypes>
+
+		<AttackTypes>
+			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="3" priority="0"/>
+			<AttackType name="Rangers_ControlledPair9mil" rangeMeters="6" priority="0"/>
+			<AttackType name="Rangers_PistolAimedFireM9Sup" rangeMeters="10"/>
+			<AttackType name="Rangers_PistolAimedFireLongM9Sup" rangeMeters="20"/>
+			<AttackType name="Rangers_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> 
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="m9sup_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Firearm name="FiveSevenSWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+			tooltip="FiveSeven"
+			description="FiveSeven"
+			img="data/models/weapons/m9_ui.dds"
+
+			animationSet="pistol"
+		>
+		<ClassBinding name="Assault"/>
+		<ClassBinding name="Support"/>
+		<ClassBinding name="Marksman"/>
+		<ClassBinding name="Medic"/>
+		<ClassBinding name="Grenadier"/>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
+		
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="15"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1400"
+			reloadEmptyTime="1800"
+			changeInTime="800"
+			changeOutTime="1000"
+			readyTime="100"
+			guardTime="50"
+			
+			accuracyStart="90"
+			accuracyEnd="85"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedSwitch="FiveSevenSupSWAT"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AmmoTypes>
+			<Ammo name="919FMJM882_Handgun"/>
+			<Ammo name="919FMJM1152_Handgun"/>
+			<Ammo name="919JHPM1153_Handgun"/>
+		</AmmoTypes>
+
+		<ScopeTypes>
+			<Scope name="IronSights_Pistol"/>
+		</ScopeTypes>
+
+		<AttackTypes>
+			<AttackType name="Rangers_EmergencyFire9mil" rangeMeters="1.5"/>
+			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="4" priority="0"/>
+			<AttackType name="Rangers_ControlledPair9mil" rangeMeters="8" priority="0"/>
+			<AttackType name="Rangers_PistolAimedFire9mil" rangeMeters="15"/>
+			<AttackType name="Rangers_PistolAimedFireLong9mil" rangeMeters="30"/>
+			<AttackType name="Rangers_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds> 
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="m9_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Firearm name="FiveSevenSupSWAT" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
+			tooltip="FiveSevenSup"
+			description="FiveSevenSup"
+			img="data/models/weapons/m9_ui.dds"
+
+			animationSet="pistol"
+		>
+		<ClassBinding name="Assault"/>
+		<ClassBinding name="Support"/>
+		<ClassBinding name="Marksman"/>
+		<ClassBinding name="Grenadier"/>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
+		<RenderObject3D model="data/models/weapons/attachments/FiveSeven_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/FiveSeven_Sup.dds"/>
+		
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="15"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1600"
+			reloadEmptyTime="2200"
+			changeInTime="1100"
+			changeOutTime="1300"
+			readyTime="140"
+			guardTime="50"
+			
+			accuracyStart="80"
+			accuracyEnd="70"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_9x19_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedSwitch="FiveSevenSWAT"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
