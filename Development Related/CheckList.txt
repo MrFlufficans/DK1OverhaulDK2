@@ -5,7 +5,7 @@
 
 ----Work CheckList----
 
-make sure mk changes the names before the day before the release
+make sure mk changes the badguys names before the day before the release
 
 DK1 Wall Style (Done)
 DK1 Music (Done)
