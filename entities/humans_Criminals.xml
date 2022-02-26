@@ -1,7 +1,5 @@
 <!--this currently just doesnt replace the enemies to be used by anthony in map making-->
 
-<!--PLEASE DONT BE A FUCKING DUNCE FUTURE MK, MAKE A PROPER REPALCEMENT!!!!!!!!-->
-
 <Entities>
 	<Entity name="Thugly Theodore" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
@@ -54,7 +52,7 @@
 		<Human type="BadGuy">
 			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-			<Id name="" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
+			<Id name="AK Criminal" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToBlindFire="0.0" stopsToShoot="true"/>
 			<Mobility>
 				<MoveSped min="0.7" defaultMetersPerSec="2.2" max="10"/>
