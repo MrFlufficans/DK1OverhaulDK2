@@ -3,7 +3,7 @@
 <!--PLEASE DONT BE A FUCKING DUNCE FUTURE MK, MAKE A PROPER REPALCEMENT!!!!!!!!-->
 
 <Entities>
-	<Entity name="Dunce Daniel" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+	<Entity name="Thugly Theodore" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
 		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
 			<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/cia_cap_01.dds"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
@@ -25,5 +25,46 @@
 		</Human>
 	</Entity>
 
+    <Entity name="Junkie James" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/cia_cap_01.dds"/>
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="BadGuy">
+			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
+			<Id name="Pistol Criminal" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.0" stopsToShoot="true"/>
+			<Mobility>
+				<MoveSped min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
 
+			<Equipment>
+				<Item name="Revolver"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+    	<Entity name="Grenadier Glenn" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/enemy_1.khm" diffuseTex="data/models/humans/enemy_base_diffuse1.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/enemy_head_beard.khm" diffuseTex="data/models/humans/attachments/enemy_head.dds"/>      
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/cia_cap_01.dds"/>
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100"/>
+		<Human type="BadGuy">
+			<FOV degres="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
+			<Id name="Thug" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.0" stopsToShoot="true"/>
+			<Mobility>
+				<MoveSped min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSped min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="MP5K_PDW_Glenn"/>
+			</Equipment>
+		</Human>
+	</Entity>
 </Entities>
