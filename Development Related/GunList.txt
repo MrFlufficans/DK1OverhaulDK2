@@ -1,0 +1,54 @@
+note:To be realistic they is no way we can do all of the guns
+
+X Means its in DK2 already
+ M Means someone made a mod of it (maybe we can ask permission to use it)
+I Means its in progress
+D means its completed
+
+Rifles:
+  M4 = X
+  G36C
+  HK416 = M
+  Commando 553
+  SAR-18
+  MK17 = X
+  Bren A1
+  MCX 300 = M
+
+SMGS:
+  MP5 = X
+  MPX
+  UMP45 
+  P90 = M
+  MK19
+  MP7 = X (CIA)
+  EVO3
+  Vector = M
+  X635
+  Honey Badger
+
+ShotGuns:
+  M870 = X
+  M590 = X/M
+  M26 LSS
+  S12K
+  KSG = D (thanks for the model fluffy)
+  Six 12,Six 12-SD
+
+SideArms:
+  G17 = X
+  M1911 = X
+  P226
+  Map40
+  VP-9
+  Tazer
+  XD4 ported
+  686 plus
+  HK45
+  XD4
+  FS AP
+  Tac .357
+  MAG 44
+  Mark 23
+  Spo1
+  Veterinary pistol = X

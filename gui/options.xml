@@ -53,10 +53,11 @@
 	<StaticImage origin="0 0">
 		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="99999" sizeY="99999" color="0c0b0b"/>
 	</StaticImage>
-
+	
 	<StaticImage origin="0 0">
-		<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
+		<RenderObject2D texture="data/textures/gui/wallpaper_16x9.dds"/>
 	</StaticImage>
+
 
 	<StaticImage name="ScreenBg" origin="0 0">
 		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
@@ -67,15 +68,17 @@
 			<RenderObject2D texture="data/textures/gui/bg_edge.tga" flipY="true" />
 		</StaticImage>
 	</StaticImage>
+	
+	<Movie origin="0 0" hidden="false" sizeX="2700" sizeY="1500" file="data/movies/DK1BackgroundTest1.mp4" loop="true"/>
 
 	<Item align="sv" origin="0 -688">
 		<StaticImage name="ScreenFooter" align="b" origin="0 -32">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="211e1d"/>
+			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303"/>
 		</StaticImage>
 
 		<!-- back button -->
 		<Button name="Menu_Credits_Back" align="lb" origin="-1200 -4">
-			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="f0e3cc"/>
+			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="5279a5"/>
 			<OnHover>
 				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
 				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="211e1d"/>
@@ -122,12 +125,12 @@
 
 	<Item sizeX="2000" sizeY="1270" origin="0 50">
 
-			<StaticImage align="t" name="TitleBg" origin="0 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2020" sizeY="100" color="f97b03"/>
-				<StaticText origin="-20 0" text="CREDITS" font="header_2" textColor="201f1b" align="c"/>
+			<StaticImage align="t" name="TitleBg" origin="0 35">
+				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="9999" sizeY="120" color="030303CC"/>
+				<StaticText origin="-20 0" text="CREDITS" font="header_2" textColor="5279a5" align="c"/>
 			</StaticImage>
 
-			<Item align="t" sizeX="1000" sizeY="340" origin="-510 -120">
+			<Item align="t" sizeX="1000" sizeY="340" origin="-510 -105">
 
 				<StaticImage align="t" origin="0 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="1150" color="211e1dB3"/>
@@ -135,22 +138,22 @@
 
 				<Item align="t" origin="-480 -35">
 					<StaticImage origin="480 0">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="70" color="00000050"/>
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="70" color="293F4C85"/>
 					</StaticImage>
 					<StaticImage origin="480 -560">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="70" color="00000050"/>
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="70" color="293F4C85"/>
 					</StaticImage>
 
 
-					<StaticText origin="0 0" text="KillHouse Games" align="l" font="header_3" textColor="f97b03"/>
-					<StaticText origin="0 -70" text="Adrian Cruceanu" align="l" font="header_3" textColor="f0e3cc"/>
-					<StaticText origin="0 -140" text="Adrian Maraloiu" align="l" font="header_3" textColor="f0e3cc"/>
-					<StaticText origin="0 -210" text="Andreea Medvedovici-Per" align="l" font="header_3" textColor="f0e3cc"/>
-					<StaticText origin="0 -280" text="Dan Dimitrescu" align="l" font="header_3" textColor="f0e3cc"/>
-					<StaticText origin="0 -350" text="Iulia Tivig" align="l" font="header_3" textColor="f0e3cc"/>
-					<StaticText origin="0 -420" text="Mihai Gosa" align="l" font="header_3" textColor="f0e3cc"/>
-					<StaticText origin="0 -490" text="Serban Nicolescu" align="l" font="header_3" textColor="f0e3cc"/>
-					<StaticText origin="0 -560" text="Additional Credits" align="l" font="header_3" textColor="f97b03"/>
+					<StaticText origin="0 0" text="KillHouse Games" align="l" font="header_3" textColor="5279a5"/>
+					<StaticText origin="0 -70" text="Adrian Cruceanu" align="l" font="header_3" textColor="7D9FBB"/>
+					<StaticText origin="0 -140" text="Adrian Maraloiu" align="l" font="header_3" textColor="7D9FBB"/>
+					<StaticText origin="0 -210" text="Andreea Medvedovici-Per" align="l" font="header_3" textColor="7D9FBB"/>
+					<StaticText origin="0 -280" text="Dan Dimitrescu" align="l" font="header_3" textColor="7D9FBB"/>
+					<StaticText origin="0 -350" text="Iulia Tivig" align="l" font="header_3" textColor="7D9FBB"/>
+					<StaticText origin="0 -420" text="Mihai Gosa <3" align="l" font="header_3" textColor="7D9FBB"/>
+					<StaticText origin="0 -490" text="Serban Nicolescu" align="l" font="header_3" textColor="7D9FBB"/>
+					<StaticText origin="0 -560" text="Additional Credits" align="l" font="header_3" textColor="5279a5"/>
 					<StaticText origin="0 -600" text="Cosmin Mirza
 						Mihai Popescu
 						Catalin Saitan
@@ -160,7 +163,7 @@
 						George Cercheaza
 						Luter Ionov
 						FatFox Animation
-						Mihai Daranga" align="lt" font="header_4" textColor="f0e3cc"/>
+						Mihai Daranga" align="lt" font="header_4" textColor="7D9FBB"/>
 
 
 					<StaticText origin="260 -600" text="Music
@@ -172,11 +175,11 @@
 						Environment Art
 						Environment Art
 						Animation
-						Animation" align="lt" font="header_4" textColor="f0e3cc"/>
+						Animation" align="lt" font="header_4" textColor="7D9FBB"/>
 
 				</Item>
 			</Item>
-			<Item align="t" sizeX="1000" sizeY="340" origin="510 -120">
+			<Item align="t" sizeX="1000" sizeY="340" origin="510 -105">
 
 				<StaticImage align="t" origin="0 0">
 					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="1150" color="211e1dB3"/>
@@ -184,14 +187,14 @@
 
 				<Item align="t" origin="-480 -35">
 					<StaticImage origin="480 0">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="70" color="00000050"/>
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="70" color="293F4C85"/>
 					</StaticImage>
 
 					<StaticImage origin="480 -990">
-						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="70" color="00000050"/>
+						<RenderObject2D texture="data/textures/gui/square.tga" sizeX="1000" sizeY="70" color="293F4C85"/>
 					</StaticImage>
 
-					<StaticText origin="0 0" text="Special Thanks" align="l" font="header_3" textColor="f97b03"/>
+					<StaticText origin="0 0" text="Special Thanks" align="l" font="header_3" textColor="5279a5"/>
 					<StaticText origin="0 -50" text="Oreste 'Axi0s' Gamba
 						C2
 						ThatKoreanGamer
@@ -199,7 +202,7 @@
 						OhHeckItsPeck
 						OursIsTheFury
 						sniperwhg
-						Spyder638" align="lt" font="header_4" textColor="f0e3cc"/>
+						Spyder638" align="lt" font="header_4" textColor="7D9FBB"/>
 			<!--	<StaticText origin="0 -140" text="OursIsTheFury" align="l" font="header_3" textColor="f0e3cc"/>
 					<StaticText origin="0 -210" text="sniperwhg" align="l" font="header_3" textColor="f0e3cc"/>
 					<StaticText origin="0 -280" text="Spyder638" align="l" font="header_3" textColor="f0e3cc"/>
@@ -207,14 +210,14 @@
 					<StaticText origin="0 -420" text="ThatKoreanGamer" align="l" font="header_3" textColor="f0e3cc"/>
 					<StaticText origin="0 -490" text="Boneclone" align="l" font="header_3" textColor="f0e3cc"/>
 					<StaticText origin="0 -560" text="OhHeckItsPeck" align="l" font="header_3" textColor="f0e3cc"/>-->
-					<StaticText origin="0 -990" text="Third Party" align="l" font="header_3" textColor="f97b03"/>
+					<StaticText origin="0 -990" text="Third Party" align="l" font="header_3" textColor="5279a5"/>
 			<!--	<StaticText origin="0 -710" text="Luter Ionov" align="l" font="header_3" textColor="f0e3cc"/>
 					<StaticText origin="0 -780" text="Ionut Nicolaescu" align="l" font="header_3" textColor="f0e3cc"/>
 					<StaticText origin="0 -850" text="Alex Stanculescu" align="l" font="header_3" textColor="f0e3cc"/>
 					<StaticText origin="0 -920" text="Level Design" align="l" font="header_3" textColor="f97b03"/>
 					<StaticText origin="0 -990" text="Adrian Maraloiu" align="l" font="header_3" textColor="f0e3cc"/>-->
 					<StaticText origin="0 -1070" text="This software uses OpenAL and FFMPEG under LGPL and Nvidia PhysX under BSD 3 license.
-						See readme.txt for details." align="l" font="header_5" textColor="f0e3cc"/>
+						See readme.txt for details." align="l" font="header_5" textColor="7D9FBB"/>
 				</Item>
 			</Item>
 	</Item>
