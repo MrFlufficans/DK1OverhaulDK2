@@ -25,9 +25,7 @@
 	<StaticImage origin="-420 0">
 		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="99999" sizeY="9999" color="171616"/>
 	</StaticImage>
-	<StaticImage origin="0 0">
-		<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" blendMode="multiply" color="ffffff42" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
-	</StaticImage>
+
 	<!--<StaticImage origin="0 280" sizeX="1" sizeY="1.2" >
 		<RenderObject2D texture="data/textures/gui/bg_logo_smoke.dds" />
 	</StaticImage>
@@ -72,9 +70,6 @@
 		<Action type="Hide" target="Menu_Main_CoopButtons"/>
 	</OnKeyDown>
 
-	<StaticImage origin="0 0">
-		<RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
-	</StaticImage>
 
 	<StaticImage name="ScreenBg" origin="0 0">
 		<RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
@@ -120,8 +115,8 @@
 	</Button>
 
 
-	<StaticText text="EARLY ACCESS 12.0" font="header_3" origin="900-560" align="c" textColor="40382bdc"/>
-	<Item name="Extra Buttons" origin="900 -640" align="lbsv">
+	<StaticText text="EARLY ACCESS 0.0 " font="header_3" origin="1000-560" align="c" textColor="9caec6"/>
+	<Item name="Extra Buttons" origin="1000 -640" align="lbsv">
 		<StaticImage name="Options Background" origin="0 0">
 			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="332" sizeY="76"/>
 		</StaticImage>
@@ -436,19 +431,7 @@
 				<Action type="Show" target="howtoplay_ingame"/>
 			</OnClick>
 		</Button>
-		<!--
-		<Button name="Send Feedback" align="l" origin="-404 100">
-				<RenderObject2D texture="data/textures/gui/menu_feedback_normal.dds"/>
-			<OnHover>
-				<RenderObject2D texture="data/textures/gui/menu_feedback_hover.dds"/>
-			</OnHover>
-			<OnClick>
-				<RenderObject2D texture="data/textures/gui/menu_feedback_hover.dds" scaleX="0.95" scaleY="0.95"/>
-				<Action type="OpenURL" target="https://inthekillhouse.com/contact"/>
-			</OnClick>
-		</Button>
-		-->
-
+	
 		<Item origin="-40 -55" name="#MapSeedParent" hidden="true">
 			<StaticText origin="0 0" text="Seed" font="paragraph_2" textColor="f97b03ff" tooltip="@menu_m_missiongen_copy">
 				<OnCursorDown>
