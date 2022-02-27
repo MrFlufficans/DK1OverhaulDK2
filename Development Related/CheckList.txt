@@ -13,7 +13,8 @@ DK1 Main Menu Video (Done)
 SWAT Units (WIP)
 Main Menu and Other Menus (95%)
    mission select boxes to do
-
+   can't change the BG before the main menu shows up 
+   
 Equipment
     Weapons
         Rifles
