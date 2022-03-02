@@ -52,3 +52,7 @@ SideArms:
   Mark 23
   Spo1
   Veterinary pistol = X
+
+Misc items:
+  M320
+  Milkor MGL

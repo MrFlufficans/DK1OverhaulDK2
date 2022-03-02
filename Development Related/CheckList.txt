@@ -15,18 +15,6 @@ Main Menu and Other Menus (95%)
    mission select boxes to do
    can't change the BG before the main menu shows up 
    
-Equipment
-    Weapons
-        Rifles
-        Pistols
-        SMGS 
-        Shotguns
-        DMR/Snipers
-    Grenade Launchers
-        Milkor MGL
-        M320
-    Various
-
 Sounds
     Unknown
 
