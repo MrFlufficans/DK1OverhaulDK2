@@ -62,10 +62,9 @@ Levels (Note: lets wait untill we get more modern assets)
 
 Fluffy
     Weapon Models (In Order)
-        KSG
-        Five Seven
-        Honey Badger
-        MP7
+        KSG (Completed)
+        Five Seven (Completed)
+        Honey Badger (In progress)
         G36C
         MCX .300
         MPX
@@ -89,4 +88,3 @@ Anthony
     doing levels (waiting for more modern assets)
     UI
     Other shit
-

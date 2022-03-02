@@ -1,7 +1,7 @@
 note:To be realistic they is no way we can do all of the guns
 
 X Means its in DK2 already
- M Means someone made a mod of it (maybe we can ask permission to use it)
+M Means someone made a mod of it (maybe we can ask permission to use it)
 I Means its in progress
 D means its completed
 
@@ -25,7 +25,7 @@ SMGS:
   EVO3
   Vector = M
   X635
-  Honey Badger
+  Honey Badger = I (Fluffy is completing)
 
 ShotGuns:
   M870 = X
