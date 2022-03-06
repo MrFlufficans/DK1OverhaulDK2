@@ -15,43 +15,40 @@
 		<ClassBinding name="SWAT_Officer"/>
 		<ClassBinding name="Assault"/> <!-- test -->
 		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
-		<ConcealmentModifier add="-1"/>
 		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
 
 		<ModifiableParams
 			changeInTime="0"
 			changeOutTime="0"
-			throwTime="1000"
-			throwTimeCorner="1400"
+			throwTime="800"
+			throwTimeCorner="1200"
 		/>
 
 		<Projectile
 			bodyTemplate="FragGrenade"
 			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
 
-			soundExplosion="frag_expl"
+			soundExplosion=""
 			soundHitFloor="grenade_hit_floor"
 			soundVoiceOnLaunch="VOX_TRPR_GEAR_FRAG"
 
 			friendlyFire="true"
 			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="-9000"
+			triggerTimeAfterTargetHitMsec="800"
 
 			audibleLaunchSoundRadius="0"
 			audibleDetonationSoundRadius="0">
 
 			<!-- spawn these when exploding -->
 			<FX
-				entity1="FX_police_light_green" 
-				randRotation2="true"
+				entity1="glowstick_glow" 
+				entity2="glowstick_ground"
 				anim2D="">
 			</FX>
 
-			<EffectRange radiusMeters="2.5">
-				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
-				<ScatterEffect chancePercent="100" armorPenetration="3"/>
-				<SuppressEffect amount="0"/>
-				<SmokeEffect durationMSec="0" />
+			<EffectRange radiusMeters="1.5">
+				<StunEffect chancePercent="0" innerRangeTimeMSec="700" outerRangeTimeMSec="700"/>
+				<SuppressEffect amount="0"/>>
 			</EffectRange>
 		</Projectile>
 	</Grenade>
