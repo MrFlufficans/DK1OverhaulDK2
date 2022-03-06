@@ -13,6 +13,7 @@
 			soundUse="grenade_use"
 		>
 		<ClassBinding name="SWAT_Officer"/>
+		<ClassBinding name="Assault"/> <!-- test -->
 		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
 		<ConcealmentModifier add="-1"/>
 		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
@@ -34,7 +35,7 @@
 
 			friendlyFire="true"
 			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="0"
+			triggerTimeAfterTargetHitMsec="-9000"
 
 			audibleLaunchSoundRadius="0"
 			audibleDetonationSoundRadius="0">
@@ -43,12 +44,10 @@
 			<FX
 				entity1="FX_police_light_green" 
 				randRotation2="true"
-				entity3="FX_dust_small"
 				anim2D="">
-				<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
 			</FX>
 
-			<EffectRange radiusMeters="1.7">
+			<EffectRange radiusMeters="2.5">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
 				<ScatterEffect chancePercent="100" armorPenetration="3"/>
 				<SuppressEffect amount="0"/>
