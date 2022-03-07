@@ -1,2 +1,55 @@
 <Equipment>
+
+<Grenade name="Chem Light" inventoryBinding="UtilityPouch"
+			quantity="11"
+
+			tooltip="Chem Light"
+			description="Chem Light test"
+			img="data/models/equipment/frag_grenade_ui.dds"
+			img_tooltip="data/models/equipment/frag_grenade_ui_ttip.tga"
+			movie="data/movies/frag.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<ClassBinding name="SWAT_Officer"/>
+		<ClassBinding name="Assault"/> <!-- test -->
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="800"
+			throwTimeCorner="1200"
+		/>
+
+		<Projectile
+			bodyTemplate="FragGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			soundExplosion=""
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_FRAG"
+
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="800"
+
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="0">
+
+			<!-- spawn these when exploding -->
+			<FX
+				entity1="glowstick_glow" 
+				entity2="glowstick_ground"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="1.5">
+				<StunEffect chancePercent="0" innerRangeTimeMSec="700" outerRangeTimeMSec="700"/>
+				<SuppressEffect amount="0"/>>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
 </Equipment>
