@@ -9,7 +9,10 @@
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
-			<Class name="SWAT_Officer" 	numSlots="12" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Pointmen" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Assaulter" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Breacher" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Stealth" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 		</Classes>
 
 		<TrooperRanks>
