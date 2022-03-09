@@ -119,7 +119,7 @@
 	</Button>
 
 
-	<StaticText text="EARLY ACCESS 0.0 " font="header_3" origin="1000-560" align="c" textColor="9caec6"/>
+	<StaticText text="EARLY ACCESS 0.0" font="header_3" origin="1000-560" align="c" textColor="9caec6"/>
 	<Item name="Extra Buttons" origin="1000 -640" align="lbsv">
 		<StaticImage name="Options Background" origin="0 0">
 			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="332" sizeY="76"/>
@@ -138,6 +138,21 @@
 			</OnClick>
 		</Button>
 	</Item>
+	
+	<!-- Fluffy's Mod Credits Button -->
+	<StaticImage name="Fluffy Options Background" origin="0 200">
+		<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
+	</StaticImage>
+	<Button name="Fluffy Options" origin="0 200" sizeX="72" sizeY="72" tooltip="New Button BABE!">
+		<RenderObject2D texture="data/textures/gui/menu_options_normal.dds" blendMode="none"/>
+		<OnHover>
+			<RenderObject2D texture="data/textures/gui/menu_options_hover.dds" blendMode="none"/>
+		</OnHover>
+		<OnClick>
+			<RenderObject2D texture="data/textures/gui/menu_options_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
+			<Action type="Show" target="FF_Credits_Controller"/>
+		</OnClick>
+	</Button>
 
 
 
@@ -304,50 +319,49 @@
 	</Item>
 
 	<!-- Start: WIP Dialog Box -->
-    	    <Item name="WIP_Dialog_Box" hidden="false" sizeX="1000" sizeY="450">
-    	    	<StaticImage>
-					<RenderObject2D texture="data/textures/gui/menu_pause_black.tga" color="fffffff9" sizeX="9999" sizeY="9999"/>
-				</StaticImage>
+    <Item name="WIP_Dialog_Box" hidden="false" sizeX="1000" sizeY="450">
+    	<StaticImage>
+			<RenderObject2D texture="data/textures/gui/menu_pause_black.tga" color="fffffff9" sizeX="9999" sizeY="9999"/>
+		</StaticImage>
 
-				<OnOpen>
-    			    <Action type="SetForeground" target="WIP_Dialog_Box"/>
-    			</OnOpen>
+		<OnOpen>
+		    <Action type="SetForeground" target="WIP_Dialog_Box"/>
+		</OnOpen>
 
-    	        <StaticImage align="t" origin="0 -64">
-    	            <RenderObject2D texture="data/textures/gui/square.tga" sizeX="1400" sizeY="286" color="0c0b0bCC"/>
+        <StaticImage align="t" origin="0 -64">
+            <RenderObject2D texture="data/textures/gui/square.tga" sizeX="1400" sizeY="286" color="0c0b0bCC"/>
 
-    	            <StaticImage origin="0 -30">
-    	                    <StaticText name="#TextLine" origin="0 104" text="Attention this is a Heavy Work In Progress Build." font="paragraph_1" textColor="7D9FBB"/>
-    	                    <StaticText name="#TextLine" origin="0 44" text="There is likely to be bugs, crashes and plenty of Unfinished Content." font="paragraph_1" textColor="7D9FBB"/>
-    	                    <StaticText name="#TextLine" origin="0 -24" text="" font="paragraph_1" textColor="7D9FBB"/>
-    	                    <StaticText name="#TextLine" origin="0 -84" text="" font="paragraph_1" textColor="7D9FBB"/>
-    	            </StaticImage>
-    	        </StaticImage>
+            <StaticImage origin="0 -30">
+                    <StaticText name="#TextLine" origin="0 104" text="Attention this is a Heavy Work In Progress Build." font="paragraph_1" textColor="7D9FBB"/>
+                    <StaticText name="#TextLine" origin="0 44" text="There is likely to be bugs, crashes and plenty of Unfinished Content." font="paragraph_1" textColor="7D9FBB"/>
+                    <StaticText name="#TextLine" origin="0 -24" text="" font="paragraph_1" textColor="7D9FBB"/>
+                    <StaticText name="#TextLine" origin="0 -84" text="" font="paragraph_1" textColor="7D9FBB"/>
+            </StaticImage>
+        </StaticImage>
 
-    	        <StaticImage origin="0 24" align="t">
-    	            <RenderObject2D texture="data/textures/gui/square.tga" align="t" sizeX="1400" sizeY="88" color="293F4CB3"/>
+    	<StaticImage origin="0 24" align="t">
+    	    <RenderObject2D texture="data/textures/gui/square.tga" align="t" sizeX="1400" sizeY="88" color="293F4CB3"/>
 
-    	            <StaticText origin="0 0" name="#Caption" text="A Notice from the Overhaul Team" font="header_2" textColor="5279a5"/>
-    	        </StaticImage>
+    	    <StaticText origin="0 0" name="#Caption" text="A Notice from the Overhaul Team" font="header_2" textColor="5279a5"/>
+    	</StaticImage>
 
-    	        <StaticImage origin="0 12" align="b">
-    	            <RenderObject2D texture="data/textures/gui/square.tga" align="t" sizeX="1400" sizeY="88" color="030303CC"/>
-    	        </StaticImage>
+    	<StaticImage origin="0 12" align="b">
+    	    <RenderObject2D texture="data/textures/gui/square.tga" align="t" sizeX="1400" sizeY="88" color="030303CC"/>
+    	</StaticImage>
 
-				<Button name="MessageBox_OK_Button" origin="188 22" align="rb"> <!-- OK Button -->
-    	            <ButtonText align="r" origin="-20 0" text="@menu_generic_ok" font="header_2" textColor="5279a5"/>
+		<Button name="MessageBox_OK_Button" origin="188 22" align="rb"> <!-- OK Button -->
+    	    <ButtonText align="r" origin="-20 0" text="@menu_generic_ok" font="header_2" textColor="5279a5"/>
+    		<OnHover>
+    		    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="true"/>
+    		    <ButtonText align="r" origin="-20 0" text="@menu_generic_ok" font="header_2" textColor="000000"/>
+    		</OnHover>
 
-    	            <OnHover>
-    	                <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="true"/>
-    	                <ButtonText align="r" origin="-20 0" text="@menu_generic_ok" font="header_2" textColor="000000"/>
-    	            </OnHover>
-
-    	            <OnClick>
-    	                <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="true"/>
-    	                <Action type="Hide" target="WIP_Dialog_Box"/>
-    	            </OnClick>
-    	        </Button>
-    	    </Item>
+    		<OnClick>
+    		    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="true"/>
+    		    <Action type="Hide" target="WIP_Dialog_Box"/>
+    		</OnClick>
+    	</Button>
+	</Item>
     <!-- End: WIP Dialog Box -->
 
 </Item>
