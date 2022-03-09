@@ -298,6 +298,57 @@
 			</OnClick>
 		</Button>
 	</Item>
+
+<!-- Sly Testing Box -->
+    <StaticImage name="#MessageBox_OK" origin="0 0" hidden="false">
+        <OnOpen>
+            <Action type="Hide" target="Menu_Main_Buttons"/>
+            <Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+            <Action type="SetForeground" target="#MessageBox_OK"/>
+        </OnOpen>
+        <OnClose>
+            <Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+        </OnClose>
+        <OnKeyDown key0="27">
+            <Action type="Hide" target="#MessageBox_OK"/>
+        </OnKeyDown>
+        <RenderObject2D texture="data/textures/gui/menu_pause_black.tga" color="fffffff9" sizeX="9999" sizeY="9999"/>
+
+        <Item origin="0 0" sizeX="1000" sizeY="450">
+            
+			<StaticImage origin="0 0">
+                <RenderObject2D texture="data/textures/gui/square.tga" color="40392b" sizeX="1400" sizeY="450"/>
+            </StaticImage>
+			
+            <StaticImage align="t" origin="0 -64">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="1400" sizeY="286" color="0c0b0b80"/>
+                <StaticImage origin="0 -30">
+                        <StaticText name="#TextLine" origin="0 104" text="Please note that this mod is still being work on." font="paragraph_1" textColor="7D9FBB"/>
+                        <StaticText name="#TextLine" origin="0 44" text="There will be bugs, there will likely be shit not quite finished." font="paragraph_1" textColor="7D9FBB"/>
+                        <StaticText name="#TextLine" origin="0 -24" text="Please reply with any problems or feedback." font="paragraph_1" textColor="7D9FBB"/>
+                        <StaticText name="#TextLine" origin="0 -84" text="and hang in there for future releases :)" font="paragraph_1" textColor="7D9FBB"/>
+                </StaticImage>
+            </StaticImage>
+            <StaticImage origin="0 24" align="t">
+                <RenderObject2D texture="data/textures/gui/square.tga" align="t" sizeX="1400" sizeY="88" color="030303CC"/>
+                <StaticText origin="0 0" name="#Caption" text=" A Message From The Devs" font="header_2" textColor="5279a5"/>
+            </StaticImage>
+            <Button origin="188 16" align="rb">
+                <ButtonText align="r" origin="-20 0" text="@menu_generic_ok" font="header_2" textColor="5279a5"/>
+                <OnHover>
+                    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="true"/>
+                    <ButtonText align="r" origin="-20 0" text="@menu_generic_ok" font="header_2" textColor="000000"/>
+                </OnHover>
+                <OnClick>
+                    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="true"/>
+                    <Action type="Hide" target="#MessageBox_OK"/>
+                    <Action type="TriggerEvent" target="GUI_GAME_MESSAGEBOX_OK"/>
+                </OnClick>
+            </Button>
+        </Item>
+    </StaticImage>
+    <!-- End Testing Box -->
+
 </Item>
 
 <Item name="Menu_Ingame" origin="0 0" hidden="true">
