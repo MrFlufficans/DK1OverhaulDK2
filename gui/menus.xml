@@ -140,7 +140,7 @@
 	</Item>
 	
 	<!-- Fluffy's Mod Credits Button -->
-	<StaticImage name="Fluffy Options Background" origin="0 200">
+	<!--<StaticImage name="Fluffy Options Background" origin="0 200">
 		<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
 	</StaticImage>
 	<Button name="Fluffy Options" origin="0 200" sizeX="72" sizeY="72" tooltip="New Button BABE!">
@@ -152,7 +152,7 @@
 			<RenderObject2D texture="data/textures/gui/menu_options_hover.dds" scaleX="0.95" scaleY="0.95" blendMode="none"/>
 			<Action type="Show" target="FF_Credits_Controller"/>
 		</OnClick>
-	</Button>
+	</Button>-->
 
 
 
