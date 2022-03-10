@@ -1,7 +1,7 @@
 <Units>
 	
 	<!-- Actual SWAT Unit -->
-	<!--<Unit
+	<Unit
 		name="SWAT"
 		nameUI="SWAT"
 		description="Swat Boys"
@@ -47,7 +47,7 @@
 			<Rank xpNeeded="140100" badgeTex=""/>
 			<Rank xpNeeded="156420" badgeTex=""/>
 		</Ranks>
-	</Unit>-->
+	</Unit>
 
 	<!-- Testing Unit for Fluffy Don't Edit	-->
 	<!--
