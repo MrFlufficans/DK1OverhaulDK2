@@ -27,6 +27,9 @@
 		<Action type="AddChild" target="Customization_Screen"/>
 		<Action type="AddChild" target="Squad_Screen"/>
 		<Action type="TriggerEvent" target="GAME_GUI_DEPLOY_SHOW_EXTRA"/>
+		
+		
+		<Action type="AddChild" target="SWAT"/>
 	</OnOpen>
 
 	<OnClose>
