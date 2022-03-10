@@ -423,7 +423,7 @@
 					<!-- save plan -->
 					<Checkbox name="Options_KeepPlans" origin="0 -180" stealFocus="true" defaultState="CheckedState" tooltip="@menu_options_keepplan_ttip">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
@@ -482,7 +482,7 @@
 					<!-- disable RGB -->
 					<Checkbox name="Options_EnableRGB" origin="0 -360" stealFocus="true" defaultState="UncheckedState" tooltip="@menu_options_enablergb_ttip">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
@@ -498,7 +498,7 @@
 
 					<Checkbox name="Options_LockMouseToScreenInBorderless" origin="0 -420" stealFocus="true" defaultState="UncheckedState">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
@@ -593,7 +593,7 @@
 					<!-- Reverb -->
 					<Checkbox name="Options_DynamicReverb" origin="0 -180" stealFocus="true" defaultState="CheckedState">
 						<UncheckedState tooltip="@menu_options_dynreverb_ttip">
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
@@ -609,7 +609,7 @@
 
 					<Checkbox name="Options_MuteInBackground" origin="0 -240" stealFocus="true" defaultState="CheckedState">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
@@ -845,7 +845,7 @@
 					<!-- vsync mode -->
 					<Checkbox name="Options_VSync" origin="0 -120" stealFocus="true" defaultState="CheckedState">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
@@ -891,7 +891,7 @@
 
 					<Checkbox name="Options_TextureQuality" origin="0 -240" defaultState="CheckedState" hidden="false">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
@@ -936,7 +936,7 @@
 
 					<Checkbox name="Options_ShadowsQuality" origin="0 -360" defaultState="CheckedState" hidden="false">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
@@ -951,7 +951,7 @@
 
 					<Checkbox name="Options_VFXQuality" origin="0 -420" defaultState="CheckedState" hidden="false" tooltip="@menu_options_vfxquality_ttip">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="5279a5"/>
 							<OnHover>
 								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
 							</OnHover>
