@@ -1,0 +1,12 @@
+#
+#DK1_O_For_DK2
+#
+
+@firearm_KSG_name=KSG-12
+@firearm_KSG_Description=##//--[[Description here!]]--\\## 
+
+
+@ammo_12GA00BUCK_KSG_desc=##//--[[Description here!]]--\\##
+@ammo_5_7_FS_name=5.7 x 28mm
+@ammo_5_7_FS_Desc=##//--[[Description here!]]--\\##
+@ammo_12GA00BUCK_KSG_desc=##//--[[Description here!]]--\\##

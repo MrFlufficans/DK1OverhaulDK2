@@ -1,5 +1,7 @@
-<Equipment>
-    <!--Shotguns-->
+<Equipment>   
+	 <!--========================================================-->
+    <!--                 	Shotguns                             -->
+    <!--========================================================-->
     <Firearm name="M500SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
 			tooltip="@firearm_m500pp_name"
 			description="@firearm_m500pp_desc"
@@ -84,7 +86,6 @@
 			animationSet="shotgun_pump"
 		>
         <ClassBinding name="Breacher"/>
-		<ClassBinding name="Assault"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
 		<ModifiableParams
@@ -120,8 +121,7 @@
 		/>
 
 		<AmmoTypes>
-			<Ammo name="12GA00BUCK_M500"/>
-
+			<Ammo name="12GA00BUCK_KSG"/>
 		</AmmoTypes>
 
 		<ScopeTypes>
@@ -162,7 +162,6 @@
 			animationSet="shotgun_pump"
 		>
         <ClassBinding name="Breacher"/>
-		<ClassBinding name="Assault"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
 		<RenderObject3D model="data/models/weapons/attachments/KSG_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSG_Sup.dds"/>
@@ -200,8 +199,7 @@
 		/>
 
 		<AmmoTypes>
-			<Ammo name="12GA00BUCK_M500"/>
-
+			<Ammo name="12GA00BUCK_KSG"/>
 		</AmmoTypes>
 
 		<ScopeTypes>
@@ -902,6 +900,7 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
+
     <!--Rifles end-->
 
     <!--Pistols-->
@@ -913,11 +912,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Medic"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/m9.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m9.dds" skipGOSSAO="true"/>
 
@@ -996,10 +994,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/m9_02.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m9.dds" skipGOSSAO="true"/>
 
@@ -1078,11 +1076,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Medic"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
 		
@@ -1118,9 +1115,7 @@
 		/>
 
 		<AmmoTypes>
-			<Ammo name="919FMJM882_Handgun"/>
-			<Ammo name="919FMJM1152_Handgun"/>
-			<Ammo name="919JHPM1153_Handgun"/>
+			<Ammo name="5_7_28_Five_SeveN"/>
 		</AmmoTypes>
 
 		<ScopeTypes>
@@ -1161,10 +1156,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
 		<RenderObject3D model="data/models/weapons/attachments/FiveSeven_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/FiveSeven_Sup.dds"/>
@@ -1244,11 +1239,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Medic"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2.3" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/m17.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m17.dds" skipGOSSAO="true"/>
 
@@ -1326,11 +1320,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Medic"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-1.5" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/m18.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/m17.dds" skipGOSSAO="true"/>
 
@@ -1408,11 +1401,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Medic"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/g19x.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g19x.dds" skipGOSSAO="true"/>
 
@@ -1490,11 +1482,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Medic"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-1.2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/g2240.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/g2240.dds" skipGOSSAO="true"/>
 
@@ -1570,11 +1561,10 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="Assault"/>
-		<ClassBinding name="Support"/>
-		<ClassBinding name="Marksman"/>
-		<ClassBinding name="Medic"/>
-		<ClassBinding name="Grenadier"/>
+		<ClassBinding name="SWAT_Pointmen"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/1911.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/1911_02.dds" skipGOSSAO="true"/>
 
@@ -1642,5 +1632,6 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
+
     <!--PistolsEnd-->
 </Equipment>
