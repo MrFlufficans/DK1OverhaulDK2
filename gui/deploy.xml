@@ -420,47 +420,6 @@
 		</StaticImage>
 	</Item>
 
-    <Item name="SWAT" origin="-18 42" hidden="true">
-		<OnOpen>
-			<Action type="SetOrigin" target="#deploy_squad_buttons" params="-18 629"/>
-		</OnOpen>
-		<StaticImage name="SWAT_Officer" origin="0 407">			
-			<StaticImage origin="8 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="148" color="211e1dcc"/>
-				<StaticImage origin="0 0" align="t">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="6a879d"/>
-				</StaticImage>	
-				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>		
-				</StaticImage>					
-				<StaticImage origin="-16 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>		
-				</StaticImage>	
-				<StaticText origin="-6 50" text="Swat Gang" align="r" font="header_4" textColor="211e1d"/>
-				<StaticImage origin="8 50" align="l">
-					<RenderObject2D texture="data/textures/gui/deploy/class_name_icon_undercover.dds"/>
-				</StaticImage>	
-			</StaticImage>						
-
-			<Item origin="-128 -20">
-				<StaticImage name="#slot0" origin="0 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-
-				<StaticImage name="#slot1" origin="90 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-
-                <StaticImage name="#slot2" origin="180 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-
-				<StaticImage name="#slot3" origin="270 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-			</Item>
-		</StaticImage>
-    </Item>
 	<!-- customize / auto-deploy / previous plan
 		Note: origin will be modified by SetOrigin depending on which unit is shown
 	-->
