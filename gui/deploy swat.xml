@@ -151,32 +151,6 @@
 			</Item>
 		</StaticImage>
 
-			<StaticImage name="SWAT_Stealth" origin="0 -88">			
-			<StaticImage origin="8 0">
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="148" color="211e1dcc"/>
-				<StaticImage origin="0 0" align="t">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="6a879d"/>
-				</StaticImage>	
-				<StaticImage origin="0 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>		
-				</StaticImage>					
-				<StaticImage origin="-16 0" align="lt">
-					<RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="148" color="f97b0380"/>		
-				</StaticImage>	
-				<StaticText origin="-6 50" text="Stealth" align="r" font="header_4" textColor="211e1d"/>
-			</StaticImage>				
-
-			<Item origin="-128 -24">
-				<StaticImage name="#slot6" origin="0 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-
-				<StaticImage name="#slot7" origin="90 0">
-					<RenderObject2D texture="data/textures/gui/deploy/deploy_trooperbackground_01.tga"/>
-				</StaticImage>
-			</Item>
-		</StaticImage>
-
-
+			
 	</Item>
 </GUIItems>
