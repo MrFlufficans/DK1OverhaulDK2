@@ -56,14 +56,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="M9 Pistol"/>
-				<Item name="IronSights_Pistol"/>
-				<Item name="Flashbang"/>
-				<Item name="Slap Charge"/>
-				<Item name="Spy Camera"/>
-				<Item name="Crowbar"/>
-				<Item name="HelmetACH"/>
-				<Item name="Rangers SFLCS Level III"/>
+	
 			</Equipment>
 		</Human>
 	</Entity>
@@ -89,16 +82,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="M16A4"/>
-				<Item name="IronSights"/>
-				<Item name="M9 Pistol"/>
-				<Item name="IronSights_Pistol"/>
-				<Item name="Flashbang"/>
-				<Item name="Slap Charge"/>
-				<Item name="Spy Camera"/>
-				<Item name="Crowbar"/>
-				<Item name="HelmetACH"/>
-				<Item name="Rangers SFLCS Level III"/>
+		
 			</Equipment>
 		</Human>
 	</Entity>
@@ -126,16 +110,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="M1014"/>
-				<Item name="IronSights"/>
-				<Item name="M9 Pistol"/>
-				<Item name="IronSights_Pistol"/>
-				<Item name="Smoke Grenade"/>
-				<Item name="Frag Grenade"/>
-				<Item name="Breaching Charge"/>
-				<Item name="Crowbar"/>
-				<Item name="HelmetACH"/>
-				<Item name="Rangers SFLCS Level III"/>
+	
 			</Equipment>
 		</Human>
 	</Entity>
@@ -163,16 +138,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="M1014"/>
-				<Item name="IronSights"/>
-				<Item name="M9 Pistol"/>
-				<Item name="IronSights_Pistol"/>
-				<Item name="Smoke Grenade"/>
-				<Item name="Frag Grenade"/>
-				<Item name="Breaching Charge"/>
-				<Item name="Crowbar"/>
-				<Item name="HelmetACH"/>
-				<Item name="Rangers SFLCS Level III"/>
+
 			</Equipment>
 		</Human>
 	</Entity>
