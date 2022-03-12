@@ -3,13 +3,13 @@
 	<!-- Actual SWAT Unit -->
 	<Unit
 		name="SWAT"
-		nameUI="SWAT"
+		nameUI="NCPD SWAT"
 		description="Swat Boys"
 		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
-			<Class name="SWAT_Pointmen" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Pointman" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 			<Class name="SWAT_Assaulter" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 			<Class name="SWAT_Breacher" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 			<Class name="SWAT_Stealth" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
