@@ -5,7 +5,23 @@
 		ui_prefix="data/textures/gui_ingame/waypoints/frag"
 		ttip="Throw a chemlight"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_fg_none_ttip"/>
+		ttip_empty="@menu_game_fg_none_ttip"/> 
+		
+		<wp
+		type="THROW_GRENADE"
+		equipment="CS Gas Grenade"
+		ui_prefix="data/textures/gui_ingame/waypoints/stinger"
+		ttip="Throw a chemlight"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_fg_none_ttip"/> 
+
+		<wp
+		type="THROW_GRENADE"
+		equipment="9-Bang"
+		ui_prefix="data/textures/gui_ingame/waypoints/stinger"
+		ttip="@menu_game_stinger_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_stinger_none_ttip"/>
 
 		<wp
 		type="THROW_GRENADE"
