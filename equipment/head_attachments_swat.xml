@@ -1,2 +1,123 @@
 <Equipment>
+
+<Helmet name="PoliceCap" inventoryBinding="Helmet" unlockCost="0"
+			tooltip="PoliceCap"
+			description=""
+			img="data/models/humans/attachments/cia_cap_ui.dds"
+		>
+		    <ClassBinding name="SWAT_Pointman"/>
+		    <ClassBinding name="SWAT_Assaulter"/>
+		    <ClassBinding name="SWAT_Breacher"/>
+		    <ClassBinding name="SWAT_Stealth"/>>
+		<MobilityModifiers moveSpeedModifierPercent="3" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0" />
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/police_cap.dds" attachSlot="Bip001 Head"/>
+
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0"/>
+		</Params>
+	</Helmet>
+
+<Helmet name="HelmetACH" inventoryBinding="Helmet" unlockCost="0"
+			tooltip="@helmet_rangers_ach_name"
+			description=""
+			img="data/models/humans/attachments/ach_helmet_ui.dds"
+		>
+		    <ClassBinding name="SWAT_Pointman"/>
+		    <ClassBinding name="SWAT_Assaulter"/>
+		    <ClassBinding name="SWAT_Breacher"/>
+		    <ClassBinding name="SWAT_Stealth"/>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="0" />
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
+		</Params>
+	</Helmet>
+
+	<Helmet name="HelmetFAST" inventoryBinding="Helmet" unlockCost="4"
+			tooltip="@helmet_rangers_fast_name"
+			description=""
+			img="data/models/humans/attachments/ranger_helmet_ui.dds"
+		>
+		    <ClassBinding name="SWAT_Pointman"/>
+		    <ClassBinding name="SWAT_Assaulter"/>
+		    <ClassBinding name="SWAT_Breacher"/>
+		    <ClassBinding name="SWAT_Stealth"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0" />
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="3"/>
+		</Params>
+	</Helmet>
+
+
+
+    
+	<HelmetNVG name="NVG" inventoryBinding="HelmetNVG" unlockCost="0"
+			tooltip="@nvg_rangers_pvs14_name"
+			description="@nvg_rangers_pvs14_desc"
+			img="data/models/humans/attachments/nvg_01_ui.dds"
+		>
+		<ClassBinding name="SWAT_Pointman"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="0" />
+
+		<!-- fov params overwrite the base ones -->
+		<ModifiableParams
+			fovDegrees="50"
+			fovRadiusMeters="0.42"
+			fovRangeMeters="999"
+		/>
+
+		<!-- this is shown for daylight missions -->
+		<RenderObject3D model="data/models/humans/attachments/nvg_01_up.khm" diffuseTex="data/models/humans/attachments/nvg_01.dds" attachSlot="nvg">
+			<Specular shininess="8" intensity="1.3"/>
+		</RenderObject3D>
+
+		<!-- this is shown in night missions -->
+		<RenderObject3D model="data/models/humans/attachments/nvg_01.khm" diffuseTex="data/models/humans/attachments/nvg_01.dds" attachSlot="nvg">
+			<Specular shininess="8" intensity="1.3"/>
+		</RenderObject3D>
+		<RenderObject3D model="data/models/humans/attachments/nvg_01_lights.khm" diffuseTex="data/textures/fx/light_flare_01.dds" diffuseColor="84ff47" blendMode="add" attachSlot="nvg">
+		</RenderObject3D>			
+	</HelmetNVG>
+
+	<HelmetNVG name="NVG_02" inventoryBinding="HelmetNVG" unlockCost="10"
+			tooltip="@nvg_rangers_pvs31_name"
+			description="@nvg_rangers_pvs31_desc"
+			img="data/models/humans/attachments/nvg_02_ui.dds"
+		>
+		<ClassBinding name="SWAT_Pointman"/>
+		<ClassBinding name="SWAT_Assaulter"/>
+		<ClassBinding name="SWAT_Breacher"/>
+		<ClassBinding name="SWAT_Stealth"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="0" />
+
+		<!-- fov params overwrite the base ones -->
+		<ModifiableParams
+			fovDegrees="70"
+			fovRadiusMeters="0.42"
+			fovRangeMeters="999"
+		/>
+
+		<!-- this is shown for daylight missions -->
+		<RenderObject3D model="data/models/humans/attachments/nvg_02_up.khm" diffuseTex="data/models/humans/attachments/nvg_02.dds" attachSlot="nvg">
+			<Specular shininess="8" intensity="1.3"/>
+		</RenderObject3D>
+
+		<!-- this is shown in night missions -->
+		<RenderObject3D model="data/models/humans/attachments/nvg_02.khm" diffuseTex="data/models/humans/attachments/nvg_02.dds" attachSlot="nvg">
+			<Specular shininess="8" intensity="1.3"/>
+		</RenderObject3D>
+		<RenderObject3D model="data/models/humans/attachments/nvg_02_lights.khm" diffuseTex="data/textures/fx/light_flare_01.dds" diffuseColor="84ff47" blendMode="add" attachSlot="nvg">
+		</RenderObject3D>		
+	</HelmetNVG>
+
+
 </Equipment>
