@@ -345,16 +345,16 @@
     	</Button>
 
 		<Button name="MessageBox_Feedback_Button" origin="-775 22" align="rb"> <!-- feedback Button -->
-    	    <ButtonText align="r" origin="-30 0" text="SEND FEEDBACK" font="header_2" textColor="5279a5"/>
+    	    <ButtonText align="l" origin="20 0" text="SEE MORE" font="header_2" textColor="5279a5"/>
     		<OnHover>
     		    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1"/>
-    		    <ButtonText align="r" origin="-30 0" text="SEND FEEDBACK" font="header_2" textColor="000000"/>
+    		    <ButtonText align="l" origin="20 0" text="SEE MORE" font="header_2" textColor="000000"/>
     		</OnHover>
 
     		<OnClick>
     		    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85"/>
     		    <Action type="Hide" target="WIP_Dialog_Box"/>
-				<Action type="OpenURL" target="https://github.com/MrFlufficans/DK1OverhaulDK2"/>
+				<Action type="Show" target="FF_Credits_Controller"/>
     		</OnClick>
     	</Button>
 		
