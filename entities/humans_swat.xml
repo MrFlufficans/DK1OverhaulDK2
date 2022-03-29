@@ -1,37 +1,5 @@
 <Entities>
-	<!-- Place Holder for Fluffy Don't Edit-->
-	<Entity name="SWAT_Officer" type="Human" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_Tex.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
-		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
-		<PhysicalParams health="100"/>
-		<Human type="GoodGuy"
-			unit="SWAT"
-			class="SWAT_Officer">
-
-			<Id name="SWAT_Officer" portrait="data/textures/portraits/ranger56.dds" gender="0" voicePack="male_very_american"/>
-			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
-			<Brain suppressionRecovery="30.0"/>
-			<Mobility>
-				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="9"/>
-				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
-			</Mobility>
-			
-			<Equipment>
-				<Item name="M4 CIA BOps"/>
-				<Item name="IronSights"/>
-				<Item name="G17 Pistol CIA BOps"/>
-				<Item name="IronSights_Pistol"/>
-				<Item name="Flashbang"/>
-				<Item name="Slap Charge"/>
-				<Item name="Lockpick"/>
-				<Item name="Poncho"/>
-				<Item name="CapBlackOps"/>				
-				<Item name="CIA TacVest Level III"/>
-			</Equipment>
-		</Human>
-	</Entity>
+	
 
 	<!-- Actual Classes -->
 	
