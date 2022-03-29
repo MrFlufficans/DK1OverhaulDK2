@@ -2,6 +2,13 @@
 	<!--============================================-->
 	<!--               Custom Equipment 			-->
 	<!--============================================-->
+	
+	<Bind eqp="Chem Light">
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
 	<Grenade name="Chem Light" inventoryBinding="UtilityPouch"
 			quantity="11"
 
@@ -14,11 +21,6 @@
 			animationSet="grenade"
 			soundUse="grenade_use"
 		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-
 		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
 		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
 
@@ -58,6 +60,13 @@
 		</Projectile>
 	</Grenade>
 
+	<Bind eqp="CS Gas Grenade">
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+
 	<Grenade name="CS Gas Grenade" inventoryBinding="UtilityPouch"
 			quantity="2"
 
@@ -69,11 +78,6 @@
 			animationSet="grenade"
 			soundUse="grenade_use"
 		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		
 		<RenderObject3D model="data/models/equipment/smoke_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/smoke_grenade.dds"/>
 		<ConcealmentModifier add="-1"/>
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
@@ -128,6 +132,13 @@
 		</Projectile>
 	</Grenade>
 
+	<Bind eqp="9-Bang">
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+
 	<Grenade name="9-Bang" inventoryBinding="UtilityPouch"
 			quantity="2"
 
@@ -140,10 +151,6 @@
 			animationSet="grenade"
 			soundUse="grenade_use"
 		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
 		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
 		<ConcealmentModifier add="-1"/>
 		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
@@ -199,572 +206,146 @@
 	<!--               Vanilla Equipment			-->
 	<!--============================================-->
 
-	<Grenade name="SWAT Smoke Grenade" inventoryBinding="UtilityPouch"
-			quantity="2"
-
-			tooltip="@grenade_smoke_name"
-			description="@grenade_smoke_desc"
-			img="data/models/equipment/smoke_grenade_ui.dds"
-			img_tooltip="data/models/equipment/smoke_grenade_ui_ttip.tga"
-			movie="data/movies/smoke_grenade.ogv"
-
-			animationSet="grenade"
-			soundUse="grenade_use"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/equipment/smoke_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/smoke_grenade.dds"/>
-		<ConcealmentModifier add="-1"/>
-		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
-
-		<ModifiableParams
-			changeInTime="0"
-			changeOutTime="0"
-			throwTime="1000"
-			throwTimeCorner="1400"
-		/>
-
-		<Projectile
-			bodyTemplate="SmokeGrenade"
-			trailParticles="SmokeGrenadeTrail"
-			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-
-			soundExplosion=""
-			soundOnSpawn="smoke_throw"
-			soundFollow="smoke_loop"
-			soundHitFloor="grenade_hit_floor"
-			soundVoiceOnLaunch="VOX_TRPR_GEAR_SMOKE"
-
-			friendlyFire="false"
-			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="200"
-
-			physicsDetonationForce="5"
-			audibleLaunchSoundRadius="0"
-			audibleDetonationSoundRadius="10">
-
-			<FX
-				particles="SmokeGrenadeExplosion"
-				anim2D="">
-			</FX>
-
-			<EffectRange radiusMeters="2.5">
-				<SmokeEffect durationMSec="14300" />
-			</EffectRange>
-		</Projectile>
-	</Grenade>
-
-	<Grenade name="SWAT Smoke Grenade Kit" inventoryBinding="SupportGear1"
-			quantity="3"
-
-			tooltip="@grenade_smoke_kit_name"
-			description="@grenade_smoke_desc"
-			img="data/models/equipment/smoke_grenade_kit_ui.dds"
-			img_tooltip="data/models/equipment/smoke_grenade_ui_ttip.tga"
-			movie="data/movies/smoke_grenade.ogv"
-
-			animationSet="grenade"
-			soundUse="grenade_use"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/equipment/smoke_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/smoke_grenade.dds"/>
-		<ConcealmentModifier add="-2"/>
-		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
-
-		<ModifiableParams
-			changeInTime="0"
-			changeOutTime="0"
-			throwTime="1000"
-			throwTimeCorner="1400"
-		/>
-
-		<Projectile
-			bodyTemplate="SmokeGrenade"
-			trailParticles="SmokeGrenadeTrail"
-			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-
-			soundExplosion=""
-			soundOnSpawn="smoke_throw"
-			soundFollow="smoke_loop"
-			soundHitFloor="grenade_hit_floor"
-			soundVoiceOnLaunch="VOX_TRPR_GEAR_SMOKE"
-
-			friendlyFire="false"
-			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="200"
-
-			physicsDetonationForce="5"
-			audibleLaunchSoundRadius="0"
-			audibleDetonationSoundRadius="10">
-
-			<FX
-				particles="SmokeGrenadeExplosion"
-				anim2D="">
-			</FX>
-
-			<EffectRange radiusMeters="2.5">
-				<SmokeEffect durationMSec="14300" />
-			</EffectRange>
-		</Projectile>
-	</Grenade>
-
-	<Grenade name="SWAT Flashbang" inventoryBinding="UtilityPouch"
-			quantity="2"
-
-			tooltip="@grenade_flashbang_name"
-			description="@grenade_flashbang_desc"
-			img="data/models/equipment/flashbang_ui.dds"
-			img_tooltip="data/models/equipment/flashbang_ui_ttip.tga"
-			movie="data/movies/flashbang.ogv"
-
-			animationSet="grenade"
-			soundUse="grenade_use"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
-		<ConcealmentModifier add="-1"/>
-		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
-
-		<ModifiableParams
-			changeInTime="0"
-			changeOutTime="0"
-			throwTime="1000"
-			throwTimeCorner="1400"
-		/>
-
-		<Projectile
-			bodyTemplate="FlashbangGrenade"
-			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-
-			soundExplosion="flash_expl"
-			soundHitFloor="grenade_hit_floor"
-			soundVoiceOnLaunch="VOX_TRPR_GEAR_FLASH"
-
-			friendlyFire="false"
-			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="200"
-
-			physicsDetonationForce="30"
-			audibleLaunchSoundRadius="0"
-			audibleDetonationSoundRadius="25">
-
-			<FX
-				particles="Flashbang"
-				entity1="ExplosionLight"
-				entity2="explosion_mark"
-				randRotation2="true"
-				entity3="FX_dust_small"
-				anim2D="">
-			</FX>
-
-			<EffectRange radiusMeters="2">
-				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="3500"/>
-				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
-				<SuppressEffect amount="20"/>
-			</EffectRange>
-
-			<EffectRange radiusMeters="3.5">
-				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="1750"/>
-				<SuppressEffect amount="20"/>
-			</EffectRange>
-		</Projectile>
-	</Grenade>
-
-	<Grenade name="SWAT Flashbang Kit" inventoryBinding="SupportGear1"
-			quantity="3"
-
-			tooltip="@grenade_flashbang_kit_name"
-			description="@grenade_flashbang_desc"
-			img="data/models/equipment/flashbang_kit_ui.dds"
-			img_tooltip="data/models/equipment/flashbang_ui_ttip.tga"
-			movie="data/movies/flashbang.ogv"
-
-			animationSet="grenade"
-			soundUse="grenade_use"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
-		<ConcealmentModifier add="-2"/>
-		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
-
-		<ModifiableParams
-			changeInTime="0"
-			changeOutTime="0"
-			throwTime="1000"
-			throwTimeCorner="1400"
-		/>
-
-		<Projectile
-			bodyTemplate="FlashbangGrenade"
-			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-
-			soundExplosion="flash_expl"
-			soundHitFloor="grenade_hit_floor"
-			soundVoiceOnLaunch="VOX_TRPR_GEAR_FLASH"
-
-			friendlyFire="false"
-			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="200"
-
-			physicsDetonationForce="30"
-			audibleLaunchSoundRadius="0"
-			audibleDetonationSoundRadius="25">
-
-			<FX
-				particles="Flashbang"
-				entity1="ExplosionLight"
-				entity2="explosion_mark"
-				randRotation2="true"
-				entity3="FX_dust_small"
-				anim2D="">
-			</FX>
-
-			<EffectRange radiusMeters="2">
-				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="3500"/>
-				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
-				<SuppressEffect amount="20"/>
-			</EffectRange>
-
-			<EffectRange radiusMeters="3.5">
-				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="1750"/>
-				<SuppressEffect amount="20"/>
-			</EffectRange>
-		</Projectile>
-	</Grenade>
-
-	<ExplosiveCharge name="SWAT Slap Charge" inventoryBinding="UtilityPouch"
-			quantity="1"
-
-			tooltip="@slap_charge_name"
-			description="@slap_charge_desc"
-			img="data/models/equipment/slap_charge_ui.dds"
-			img_tooltip="data/models/equipment/slap_charge_ui_ttip.tga"
-			movie="data/movies/slap_charge.ogv"
-
-			animationSet="generic_device"
-			soundUse="equip_charge"
-			crouchOnUse="true"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/humans/attachments/backpack_slap_charge.khm" attachSlot="vest_back_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/backpack_slap_charge.dds"/>
-		<ConcealmentModifier add="-1"/>
-		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
-
-		<ModifiableParams
-			changeInTime="500"
-			changeOutTime="600"
-			efficiencyPercent="100"
-			deployTime="2500"
-
-			area1WidthMeters="0.75"
-			area1LengthMeters="0.5"
-			area1Damage="50"
-			area1StunTime="3000"
-
-			area2WidthMeters="1.25"
-			area2LengthMeters="2"
-			area2Damage="25"
-			area2StunTime="2000"
-
-			audibleSoundRadius="30"
-			audibleSoundRadiusForPlacing="1.0"
-			physicsDetonationForce="25"
-			damageType="2"
-		/>
-
-		<Params
-			bodyTemplate="SlapChargeBody"
-			explosionSound="expl_slap_charge">
-
-			<FX
-				particles="Slap_Charge"
-				entity1="ExplosionLight"
-				entity2="scorch_mark_slapcharge"
-				entity3="FX_dust_small">
-			</FX>
-		</Params>
-	</ExplosiveCharge>
-
-	<ExplosiveCharge name="SWAT Slap Charge Kit" inventoryBinding="SupportGear1"
-			quantity="3"
-
-			tooltip="@slap_charge_kit_name"
-			description="@slap_charge_desc"
-			img="data/models/equipment/slapcharge_kit_ui.dds"
-			img_tooltip="data/models/equipment/slap_charge_ui_ttip.tga"
-			movie="data/movies/slap_charge.ogv"
-
-			animationSet="generic_device"
-			soundUse="equip_charge"
-			crouchOnUse="true"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
-		<ConcealmentModifier add="-2" />
-
-		<ModifiableParams
-			changeInTime="500"
-			changeOutTime="600"
-			efficiencyPercent="100"
-			deployTime="2500"
-
-			area1WidthMeters="0.75"
-			area1LengthMeters="0.5"
-			area1Damage="50"
-			area1StunTime="3000"
-
-			area2WidthMeters="1.25"
-			area2LengthMeters="2"
-			area2Damage="25"
-			area2StunTime="2000"
-
-			audibleSoundRadius="30"
-			audibleSoundRadiusForPlacing="1.0"
-			physicsDetonationForce="25"
-			damageType="2"
-		/>
-
-		<Params
-			bodyTemplate="SlapChargeBody"
-			explosionSound="expl_slap_charge">
-
-			<FX
-				particles="Slap_Charge"
-				entity1="ExplosionLight"
-				entity2="scorch_mark_slapcharge"
-				entity3="FX_dust_small">
-			</FX>
-		</Params>
-	</ExplosiveCharge>
-
-	<Grenade name="SWAT Stinger" inventoryBinding="UtilityPouch"
-			quantity="2"
-
-			tooltip="@grenade_stinger_name"
-			description="@grenade_stinger_desc"
-			img="data/models/equipment/stinger_ui.dds"
-			img_tooltip="data/models/equipment/stinger_ui_ttip.tga"
-			movie="data/movies/stinger.ogv"
-
-			animationSet="grenade"
-			soundUse="grenade_use"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/stinger.dds"/>
-		<ConcealmentModifier add="-1"/>
-		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
-
-		<ModifiableParams
-			changeInTime="0"
-			changeOutTime="0"
-			throwTime="1000"
-			throwTimeCorner="1400"
-		/>
-
-		<Projectile
-			bodyTemplate="StingerGrenade"
-			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
-
-			soundExplosion="frag_expl"
-			soundHitFloor="grenade_hit_floor"
-			soundVoiceOnLaunch="VOX_TRPR_GEAR_STINGER"
-
-			friendlyFire="true"
-			triggerOnImpact="false"
-			triggerTimeAfterTargetHitMsec="1000"
-
-			physicsDetonationForce="40"
-			audibleLaunchSoundRadius="0"
-			audibleDetonationSoundRadius="20">
-
-			<FX
-				particles="Stinger"
-				entity1="ExplosionLight"
-				entity2="explosion_mark"
-				randRotation2="true"
-				entity3="FX_dust_small"
-				anim2D="">
-			</FX>
-
-			<EffectRange radiusMeters="1">
-				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
-				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
-			</EffectRange>
-
-			<EffectRange radiusMeters="5">
-				<ScatterEffect chancePercent="100"/>
-				<StunEffect chancePercent="100" innerRangeTimeMSec="250" outerRangeTimeMSec="250"/>
-				<SuppressEffect amount="30"/>
-			</EffectRange>
-		</Projectile>
-	</Grenade>
-
-	<Lockpick name="SWAT Lockpick" inventoryBinding="SupportGear2"
-			tooltip="@support_gear_lockpic_name"
-
-			animationSet="generic_device"
-			soundUse="lockpick_use"
-			crouchOnUse="true"
-		>
-
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<ModifiableParams
-			efficiencyPercent="100"
-			changeInTime="500"
-			changeOutTime="600"
-			audibleSoundRadius="1.5"
-		/>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
-	</Lockpick>
-
-	<LockpickMachine name="SWAT Lockpick Machine" inventoryBinding="UtilityPouch" unlockCost="6"
-			tooltip="@utility_pouch_lockpick_machine_name"
-			description="@utility_pouch_lockpick_machine_desc"
-			img="data/models/equipment/lockpick_machine_ui.dds"
-			img_tooltip="data/models/equipment/lockpick_machine_ui_ttip.tga"
-			movie="data/movies/lockpick_machine.ogv"
-
-			animationSet="generic_device"
-			soundUse="lockpick_mach_use"
-			crouchOnUse="true"
-		>
-		<RenderObject3D model="data/models/humans/attachments/backpack_spy_cam.khm" attachSlot="vest_back_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/backpack_spy_cam.dds"/>
-		<ConcealmentModifier add="-1" />
-
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<ModifiableParams
-			efficiencyPercent="300"
-			changeInTime="500"
-			changeOutTime="600"
-			audibleSoundRadius="2.0"
-		/>
-		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
-	</LockpickMachine>
-
-	<Crowbar name="SWAT Crowbar" inventoryBinding="SupportGear3"
-			animationSet="crowbar"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/equipment/crowbar.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/crowbar.dds">
-			<Specular shininess="32" intensity="4.0"/>
-		</RenderObject3D>
-
-		<ModifiableParams
-			changeInTime="1456"
-			changeOutTime="1808"
-			efficiencyPercent="100"
-			audibleSoundRadius="12.0"
-		/>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
-	</Crowbar>
-
-	<DynamicHammer name="SWAT Dynamic Hammer" inventoryBinding="SupportGear1" unlockCost="1"
-			tooltip="@utility_dynamic_hammer_name"
-			description="@utility_dynamic_hammer_desc"
-			img="data/models/equipment/hammer_dynamic_ui.dds"
-			img_tooltip="data/models/equipment/hammer_dynamic_ui_ttip.tga"
-			movie="data/movies/dynamic_hammer.ogv"
-
-			animationSet="dynamic_hammer"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/equipment/hammer_dynamic.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/hammer_dynamic.dds">
-			<Specular shininess="32" intensity="4.0"/>
-		</RenderObject3D>
-
-		<ModifiableParams
-			changeInTime="1648"
-			changeOutTime="1808"
-			efficiencyPercent="100"
-			audibleSoundRadius="12.0"
-
-			hitTime="1000"
-		/>
-		<MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-2"/>
-		<ConcealmentModifier add="-3" />
-	</DynamicHammer>
-
-	<SpyCamera name="SWAT Spy Camera" inventoryBinding="SupportGear1"
-			tooltip="@support_gear_spy_camera_name"
-			description="@support_gear_spy_camera_desc"
-			img="data/models/equipment/spy_camera_ui.dds"
-			img_tooltip="data/models/equipment/spy_camera_ui_ttip.tga"
-			movie="data/movies/spy_camera.ogv"
-
-			animationSet="generic_device"
-			crouchOnUse="true"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/humans/attachments/backpack_spy_cam.khm" attachSlot="vest_back_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/backpack_spy_cam.dds"/>
-		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="0"/>
-		<ConcealmentModifier add="-1" />
-		<ModifiableParams
-			fovDegrees="45"
-			fovRadiusMeters="0"
-			changeInTime="500"
-			changeOutTime="600"
-			audibleSoundRadius="1.5"
-		/>
-	</SpyCamera>
-
-	<TECTorch name="SWAT TEC Torch" inventoryBinding="UtilityPouch" unlockCost="2"
-			tooltip="@gear_torch_name"
-			description="@gear_torch_desc"
-			img="data/models/equipment/tec_torch_ui.dds"
-			img_tooltip="data/models/equipment/tec_torch_ui_ttip.tga"
-			movie="data/movies/tec_torch.ogv"
-			quantity="1"
-
-			animationSet="tec_torch"
-			crouchOnUse="false"
-		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
-		<RenderObject3D model="data/models/equipment/tec_torch.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/tec_torch.dds"/>
-		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
-		<ConcealmentModifier add="-1" />
-		<ModifiableParams
-			efficiencyPercent="100"
-			changeInTime="1000"
-			changeOutTime="1000"
-			audibleSoundRadius="6"
-		/>
-	</TECTorch>
+	<Bind eqp="Smoke Grenade">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+	
+	<Bind eqp="Smoke Grenade Kit">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+
+	<Bind eqp="Flashbang">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+	
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+	
+	<Bind eqp="Flashbang Kit">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind> 
+
+	<Bind eqp="Slap Charge">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+
+	<Bind eqp="Slap Charge Kit">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+
+	<Bind eqp="Stinger">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+
+	<Bind eqp="Dynamic Hammer">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+		<to name="SwatLeader"/>
+		<to name="SwatSapper"/>
+		<to name="SwatMilitia"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+	
+	<Bind eqp="Spy Camera">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
+
+	<Bind eqp="TEC Torch">
+		<to name="Assault"/>
+		<to name="Support"/>
+		<to name="Marksman"/>
+		<to name="Medic"/>
+		<to name="Grenadier"/>
+		<to name="BlackOps"/>
+
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+	</Bind>
 </Equipment>
