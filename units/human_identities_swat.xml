@@ -7,19 +7,125 @@
 		<Portrait tex="data/textures/portraits/ranger1.dds" customName="CUSTOM NAME" unit="Rangers" gender="0" voicePack="male_very_american"/>
 	-->
 	
-	<Portrait tex="data/textures/portraits/cia44.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia45.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia46.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia47.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia44.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia45.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia46.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia47.dds" 		unit="SWAT" 	gender="1" 	voicePack="male_very_american"/>
+	<!-- we need to copy the dk1 portraits later -->
+
+	<Portrait tex="data/textures/portraits/cia1.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia2.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia3.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia4.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia5.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia6.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia7.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia8.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
+
+	<!--<Portrait tex="data/textures/portraits/cia1.dds" customName="Diana Dragomir" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia2.dds" customName="Chip Hinshaw" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia3.dds" customName="Jaime Soto" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia4.dds" customName="Nate Eskey" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia5.dds" customName="Graham Connolly" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia6.dds" customName="Robin Batchelor" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia7.dds" customName="Cristian Radu" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia8.dds" customName="Todd Willenbring" unit="SWAT" gender="1" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia9.dds" customName="Dean Reynolds" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia10.dds" customName="Jason Hopkins" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia11.dds" customName="Darran Hirose" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia12.dds" customName="Todd Rossel" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia13.dds" customName="Jimmy Lovelace" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia14.dds" customName="Dominic Peters" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia15.dds" customName="Jmanis Catharg" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia16.dds" customName="Brandon Benjamin" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia17.dds" customName="Steve Harvey" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia18.dds" customName="Scott Graves" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia19.dds" customName="Chris Logan" unit="SWAT" gender="0" voicePack="male_very_american"/>
+	<Portrait tex="data/textures/portraits/cia20.dds" customName="Geoff Byers" unit="SWAT" gender="0" voicePack="male_very_american"/>>-->
 	
 	<!-- NAMES (these can be linked to a unit as well, if unit="name" is specified -->
 	
-	<Name name="Anthony"    unit="SWAT"		gender="0"/>
-	<Name name="Fluffy"    	unit="SWAT" 	gender="0"/>
-	<Name name="MK"    		unit="SWAT" 	gender="0"/>
+	<!--<Name name="Anthony" unit="SWAT" gender="0"/>
+	<Name name="Fluffy"  unit="SWAT" gender="0"/>
+	<Name name="MK"      unit="SWAT" gender="0"/>-->
+
+
+
+	<UnitNames unit0="SWAT">
+		<Gender value="1">
+			<Name n="FAITH"/>
+			<Name n="ROSE"/>
+			<Name n="LIZZIE"/>
+			<Name n="HOPE"/>
+			<Name n="TINA"/>
+			<Name n="SANDY"/>
+			<Name n="SHANNON"/>
+			<Name n="FLORES"/>
+			<Name n="DIZZY"/>
+			<Name n="IBANEZ"/>
+			<Name n="CAT"/>
+			<Name n="DIETRICH"/>
+			<Name n="FERRO"/>
+			<Name n="VASQUEZ"/>
+			<Name n="NEWT"/>
+			<Name n="RIPLEY"/>
+			<Name n="CONNOR"/>
+			<Name n="JULIETTE"/>
+			<Name n="GARCIA"/>
+			<Name n="KATE"/>
+			<Name n="RUNNER"/>
+			<Name n="BISHOP"/>
+			<Name n="HIT GIRL"/>
+			<Name n="DOLORES"/>
+			<Name n="BLUE"/>
+			<Name n="RED"/>
+			<Name n="PEANUT"/>
+			<Name n="LEIA"/>
+			<Name n="COLT"/>
+			<Name n="UHURA"/>
+			<Name n="PADME"/>
+			<Name n="PRINCESS"/>
+			<Name n="JYN"/>
+			<Name n="ERSO"/>
+			<Name n="REY"/>
+			<Name n="CARA"/>
+			<Name n="FENNEC"/>
+		</Gender>
+		<Gender value="0">
+			<Name n="FAITH"/>
+			<Name n="ROSE"/>
+			<Name n="LIZZIE"/>
+			<Name n="HOPE"/>
+			<Name n="TINA"/>
+			<Name n="SANDY"/>
+			<Name n="SHANNON"/>
+			<Name n="FLORES"/>
+			<Name n="DIZZY"/>
+			<Name n="IBANEZ"/>
+			<Name n="CAT"/>
+			<Name n="DIETRICH"/>
+			<Name n="FERRO"/>
+			<Name n="VASQUEZ"/>
+			<Name n="NEWT"/>
+			<Name n="RIPLEY"/>
+			<Name n="CONNOR"/>
+			<Name n="JULIETTE"/>
+			<Name n="GARCIA"/>
+			<Name n="KATE"/>
+			<Name n="RUNNER"/>
+			<Name n="BISHOP"/>
+			<Name n="HIT GIRL"/>
+			<Name n="DOLORES"/>
+			<Name n="BLUE"/>
+			<Name n="RED"/>
+			<Name n="PEANUT"/>
+			<Name n="LEIA"/>
+			<Name n="COLT"/>
+			<Name n="UHURA"/>
+			<Name n="PADME"/>
+			<Name n="PRINCESS"/>
+			<Name n="JYN"/>
+			<Name n="ERSO"/>
+			<Name n="REY"/>
+			<Name n="CARA"/>
+			<Name n="FENNEC"/>
+		</Gender>
+	</UnitNames>
 	
 </HumanIdentities>

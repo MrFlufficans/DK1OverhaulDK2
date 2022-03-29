@@ -1,19 +1,20 @@
 <Units>
 	
 	<!-- Actual SWAT Unit -->
-	<!--<Unit
+	<Unit
 		name="SWAT"
-		nameUI="SWAT"
+		nameUI="NCPD SWAT"
 		description="Swat Boys"
 		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
+		flagColor="c45b47"
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
-			<Class name="SWAT_Pointmen" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="SWAT_Assaulter" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="SWAT_Breacher" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="SWAT_Stealth" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="SWAT_Shield" 	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Pointman" 		nameUI="Pointman"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Assaulter" 		nameUI="Assaulter"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Breacher" 		nameUI="Breacher"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Stealth" 			nameUI="Stealth"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Shield" 			nameUI="Shield"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 		</Classes>
 
 		<TrooperRanks>
@@ -47,7 +48,7 @@
 			<Rank xpNeeded="140100" badgeTex=""/>
 			<Rank xpNeeded="156420" badgeTex=""/>
 		</Ranks>
-	</Unit>-->
+	</Unit>
 
 	<!-- Testing Unit for Fluffy Don't Edit	-->
 	<!--

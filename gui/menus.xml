@@ -119,31 +119,14 @@
 	</Button>
 
 
-	<StaticText text="EARLY ACCESS 0.0" font="header_3" origin="1000-560" align="c" textColor="9caec6"/>
-	<Item name="Extra Buttons" origin="1000 -640" align="lbsv">
-		<StaticImage name="Options Background" origin="0 0">
-			<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="332" sizeY="76"/>
-		</StaticImage>
-		<Button name="Options" origin="0 0" sizeX="320" sizeY="72">
-			<RenderObject2D texture="data/textures/gui/square.tga" sizeX="320" sizeY="64" color="f0e3cc" blendMode="none"/>
-			<ButtonText text="What's New" font="header_3" origin="0 0" align="c" textColor="40392b"/>
-			<OnHover>
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="320" sizeY="64" color="40392b" blendMode="none"/>
-				<ButtonText text="What's New" font="header_3" origin="0 0" align="c" textColor="f0e3cc"/>
-			</OnHover>
-			<OnClick>
-				<RenderObject2D texture="data/textures/gui/square.tga" sizeX="314" sizeY="58" color="40392b" blendMode="none"/>
-				<ButtonText text="What's New" font="header_3" origin="0 0" align="c" sizeX="0.9" sizeY="0.9" textColor="f0e3cc"/>
-				<Action type="OpenURL" target="https://steamcommunity.com/app/1239080/allnews/"/>
-			</OnClick>
-		</Button>
-	</Item>
-	
 	<!-- Fluffy's Mod Credits Button -->
-	<!--<StaticImage name="Fluffy Options Background" origin="0 200">
+	<StaticText text="MOD VERSION: indev" font="header_3" origin="1050-670" align="c" textColor="9caec6"/>
+
+	<!--
+	<StaticImage name="Fluffy Options Background" origin="800 -670">
 		<RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b80" sizeX="76" sizeY="76"/>
 	</StaticImage>
-	<Button name="Fluffy Options" origin="0 200" sizeX="72" sizeY="72" tooltip="New Button BABE!">
+	<Button name="Fluffy Options" origin="800 -670" sizeX="72" sizeY="72" tooltip="New Button BABE!">
 		<RenderObject2D texture="data/textures/gui/menu_options_normal.dds" blendMode="none"/>
 		<OnHover>
 			<RenderObject2D texture="data/textures/gui/menu_options_hover.dds" blendMode="none"/>
@@ -361,6 +344,21 @@
     		    <Action type="Hide" target="WIP_Dialog_Box"/>
     		</OnClick>
     	</Button>
+
+		<Button name="MessageBox_Feedback_Button" origin="-775 22" align="rb"> <!-- feedback Button -->
+    	    <ButtonText align="l" origin="20 0" text="SEE MORE" font="header_2" textColor="5279a5"/>
+    		<OnHover>
+    		    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1"/>
+    		    <ButtonText align="l" origin="20 0" text="SEE MORE" font="header_2" textColor="000000"/>
+    		</OnHover>
+
+    		<OnClick>
+    		    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85"/>
+    		    <Action type="Hide" target="WIP_Dialog_Box"/>
+				<!--<Action type="Show" target="FF_Credits_Controller"/>-->
+    		</OnClick>
+    	</Button>
+		
 	</Item>
     <!-- End: WIP Dialog Box -->
 

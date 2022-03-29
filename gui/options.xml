@@ -80,42 +80,43 @@
 		<Button name="Menu_Credits_Back" align="lb" origin="-1200 -4">
 			<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="5279a5"/>
 			<OnHover>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="d1d1d1" flipX="false"/>
 				<ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="211e1d"/>
 			</OnHover>
 			<OnClick>
-				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="false"/>
+				<RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="293F4C85" flipX="false"/>
 				<Action type="Hide" target="Menu_Credits_Main"/>
 			</OnClick>
 		</Button>
+		
 		<Item name="Socials" origin="1200 28" align="rb">
 			<Button name="Facebook" align="r" origin="0 0" >
-				<RenderObject2D texture="data/textures/gui/social_facebook.dds" color="f0e3cc80"/>
+				<RenderObject2D texture="data/textures/gui/social_facebook.dds" color="293F4CB3"/>
 				<OnHover>
-					<RenderObject2D texture="data/textures/gui/social_facebook.dds" color="f0e3cc"/>
+					<RenderObject2D texture="data/textures/gui/social_facebook.dds" color="293F4C"/>
 				</OnHover>
 				<OnClick>
-					<RenderObject2D texture="data/textures/gui/social_facebook.dds" color="f0e3cc" scaleX="0.9" scaleY="0.9"/>
+					<RenderObject2D texture="data/textures/gui/social_facebook.dds" color="293F4C" scaleX="0.9" scaleY="0.9"/>
 					<Action type="OpenURL" target="https://www.facebook.com/KillHouseGames/"/>
 				</OnClick>
 			</Button>
 			<Button name="Twitter" align="r" origin="-90 0" >
-				<RenderObject2D texture="data/textures/gui/social_twitter.dds" color="f0e3cc80"/>
+				<RenderObject2D texture="data/textures/gui/social_twitter.dds" color="293F4CB3"/>
 				<OnHover>
-					<RenderObject2D texture="data/textures/gui/social_twitter.dds" color="f0e3cc"/>
+					<RenderObject2D texture="data/textures/gui/social_twitter.dds" color="293F4C"/>
 				</OnHover>
 				<OnClick>
-					<RenderObject2D texture="data/textures/gui/social_twitter.dds" color="f0e3cc" scaleX="0.9" scaleY="0.9"/>
+					<RenderObject2D texture="data/textures/gui/social_twitter.dds" color="293F4C" scaleX="0.9" scaleY="0.9"/>
 					<Action type="OpenURL" target="https://twitter.com/inthekillhouse"/>
 				</OnClick>
 			</Button>
 			<Button name="Discord" align="r" origin="-180 0" >
-				<RenderObject2D texture="data/textures/gui/social_discord.dds" color="f0e3cc80"/>
+				<RenderObject2D texture="data/textures/gui/social_discord.dds" color="293F4CB3"/>
 				<OnHover>
-					<RenderObject2D texture="data/textures/gui/social_discord.dds" color="f0e3cc"/>
+					<RenderObject2D texture="data/textures/gui/social_discord.dds" color="293F4C"/>
 				</OnHover>
 				<OnClick>
-					<RenderObject2D texture="data/textures/gui/social_discord.dds" color="f0e3cc" scaleX="0.9" scaleY="0.9"/>
+					<RenderObject2D texture="data/textures/gui/social_discord.dds" color="293F4C" scaleX="0.9" scaleY="0.9"/>
 					<Action type="OpenURL" target="https://discord.com/invite/doorkickers"/>
 				</OnClick>
 			</Button>
@@ -423,9 +424,9 @@
 					<!-- save plan -->
 					<Checkbox name="Options_KeepPlans" origin="0 -180" stealFocus="true" defaultState="CheckedState" tooltip="@menu_options_keepplan_ttip">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 
@@ -482,9 +483,9 @@
 					<!-- disable RGB -->
 					<Checkbox name="Options_EnableRGB" origin="0 -360" stealFocus="true" defaultState="UncheckedState" tooltip="@menu_options_enablergb_ttip">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>>>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 
@@ -498,9 +499,9 @@
 
 					<Checkbox name="Options_LockMouseToScreenInBorderless" origin="0 -420" stealFocus="true" defaultState="UncheckedState">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>>>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 
@@ -593,9 +594,9 @@
 					<!-- Reverb -->
 					<Checkbox name="Options_DynamicReverb" origin="0 -180" stealFocus="true" defaultState="CheckedState">
 						<UncheckedState tooltip="@menu_options_dynreverb_ttip">
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>>>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 
@@ -609,9 +610,9 @@
 
 					<Checkbox name="Options_MuteInBackground" origin="0 -240" stealFocus="true" defaultState="CheckedState">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>>>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 
@@ -845,9 +846,9 @@
 					<!-- vsync mode -->
 					<Checkbox name="Options_VSync" origin="0 -120" stealFocus="true" defaultState="CheckedState">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>>>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 
@@ -891,9 +892,9 @@
 
 					<Checkbox name="Options_TextureQuality" origin="0 -240" defaultState="CheckedState" hidden="false">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>>>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 						<CheckedState>
@@ -936,9 +937,9 @@
 
 					<Checkbox name="Options_ShadowsQuality" origin="0 -360" defaultState="CheckedState" hidden="false">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>>>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 						<CheckedState>
@@ -951,9 +952,9 @@
 
 					<Checkbox name="Options_VFXQuality" origin="0 -420" defaultState="CheckedState" hidden="false" tooltip="@menu_options_vfxquality_ttip">
 						<UncheckedState>
-							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga"/>
+							<RenderObject2D texture="data/textures/gui/menu_checkbox_empty.tga" color="23466eE0"/>>>
 							<OnHover>
-								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga"/>
+								<RenderObject2D texture="data/textures/gui/menu_checkbox_empty_hover.tga" color="23466e"/>
 							</OnHover>
 						</UncheckedState>
 						<CheckedState>
