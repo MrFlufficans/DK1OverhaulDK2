@@ -6,6 +6,7 @@
 		nameUI="NCPD SWAT"
 		description="Swat Boys"
 		flagTex="data/textures/gui/squads/rangers_bg_01.dds"
+		flagColor="c45b47"
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
