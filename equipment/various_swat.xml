@@ -5,7 +5,7 @@
 	
 	<Bind eqp="Chem Light">
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -62,7 +62,7 @@
 
 	<Bind eqp="CS Gas Grenade">
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -134,7 +134,7 @@
 
 	<Bind eqp="9-Bang">
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -215,7 +215,7 @@
 		<to name="BlackOps"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -229,7 +229,7 @@
 		<to name="BlackOps"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -243,7 +243,7 @@
 		<to name="BlackOps"/>
 	
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -257,7 +257,7 @@
 		<to name="BlackOps"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind> 
@@ -271,7 +271,7 @@
 		<to name="BlackOps"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -285,7 +285,7 @@
 		<to name="BlackOps"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -299,7 +299,7 @@
 		<to name="BlackOps"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -316,7 +316,7 @@
 		<to name="SwatMilitia"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -330,7 +330,7 @@
 		<to name="BlackOps"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
@@ -344,7 +344,7 @@
 		<to name="BlackOps"/>
 
 		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulte"/>
+		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
 	</Bind>
