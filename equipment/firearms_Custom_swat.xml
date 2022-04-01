@@ -1,21 +1,30 @@
-<Equipment>   
+<Equipment>
 
 	<!--========================================================-->
-    <!--                 	Custom Guns                        -->
-    <!--========================================================-->
+  <!--                 	SWAT weapons                        	-->
+  <!--========================================================-->
 
-	<Bind eqp="KSGSWAT">
-		<to name="SWAT_Breacher"/>
-		
+	<Bind to="SWAT_Assaulter">
+		<eqp name="SWAT_HoneyBadger"/>
+		<eqp name="SWAT_FiveSeven"/>
+		<eqp name="SWAT_FiveSevenSup"/>
 	</Bind>
-	
-	<Firearm name="KSGSWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
+
+	<Bind to="SWAT_Breacher">
+		<eqp name="SWAT_KSGSUP"/>
+		<eqp name="SWAT_KSG"/>
+		<eqp name="SWAT_FiveSeven"/>
+		<eqp name="SWAT_FiveSevenSup"/>
+	</Bind>
+
+	<Firearm name="SWAT_KSG" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
 			tooltip="KSG Shotgun"
 			description="KSG"
 			img="data/models/weapons/KSG_ui.dds"
 
 			animationSet="shotgun_pump"
 		>
+
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
 		<ModifiableParams
@@ -30,12 +39,12 @@
 			changeOutTime="0"
 			readyTime="450"
 			guardTime="200"
-			
+
 			accuracyStart="100"
 			accuracyEnd="10"
 			accuracyStartDist="0"
 			accuracyEndDist="100"
-			
+
 			suppressionScale="0.14"
 		/>
 
@@ -43,7 +52,7 @@
 			caliberInfoText="@firearm_caliber_12gauge_name"
 			operationInfoText="@firearm_operation_pumpaction_name"
 			ejectingShellEntity="BulletCasingShotgun"
-			suppressedSwitch="KSGSWATSUP"
+			suppressedSwitch="SWAT_KSGSUP"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="6.0"
 			ai_rangeMax="14.0"
@@ -55,7 +64,7 @@
 		</AmmoTypes>
 
 		<ScopeTypes>
-			<Scope name="SWATKSGIronsights"/>
+			<Scope name="SWAT_KSGIronsights"/>
 			<Scope name="M68CCO"/>
 			<Scope name="Holosight"/>
 		</ScopeTypes>
@@ -73,7 +82,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="870br_eqp"/>
 			<Unequip name="870br_neqp"/>
 			<Reload name="870br_reld"/>
@@ -84,19 +93,15 @@
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="KSGSWATSUP">
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
 
-	<Firearm name="KSGSWATSUP" inventoryBinding="PrimaryWeaponMuzzle" category="shotgun" unlockCost="0"
+	<Firearm name="SWAT_KSGSUP" inventoryBinding="PrimaryWeaponMuzzle" category="shotgun" unlockCost="0"
 			tooltip="KSGSup"
 			description="KSGSup"
 			img="data/models/weapons/KSGSup_ui.dds"
 
 			animationSet="shotgun_pump"
 		>
-        <ClassBinding name="SWAT_Breacher"/>
+
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
 		<RenderObject3D model="data/models/weapons/attachments/KSG_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSG_Sup.dds"/>
@@ -112,12 +117,12 @@
 			changeOutTime="0"
 			readyTime="450"
 			guardTime="200"
-			
+
 			accuracyStart="100"
 			accuracyEnd="10"
 			accuracyStartDist="0"
 			accuracyEndDist="100"
-			
+
 			suppressionScale="0.14"
 		/>
 
@@ -125,7 +130,7 @@
 			caliberInfoText="@firearm_caliber_12gauge_name"
 			operationInfoText="@firearm_operation_pumpaction_name"
 			ejectingShellEntity="BulletCasingShotgun"
-			suppressedSwitch="KSGSWAT"
+			suppressedSwitch="SWAT_KSG"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="6.0"
@@ -138,7 +143,7 @@
 		</AmmoTypes>
 
 		<ScopeTypes>
-			<Scope name="SWATKSGIronsights"/>
+			<Scope name="SWAT_KSGIronsights"/>
 			<Scope name="M68CCO"/>
 			<Scope name="Holosight"/>
 		</ScopeTypes>
@@ -156,7 +161,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="870br_eqp"/>
 			<Unequip name="870br_neqp"/>
 			<Reload name="870br_reld"/>
@@ -167,15 +172,13 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="HoneyBadgerSWAT" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="SWAT_HoneyBadger" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="Honey Badger PDW"
 			description=""
 			img="data/models/weapons/m4_ui.dds"
 
 			animationSet="rifle"
 		>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="Medic"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/HoneyBadger.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/HoneyBadger.dds"/>
 
@@ -216,8 +219,8 @@
 			<Ammo name="556FMJMk318_M4"/>
 		</AmmoTypes>
 
-	    <ScopeTypes>
-			<Scope name="SWATHBIrons"/>
+		<ScopeTypes>
+			<Scope name="SWAT_HBIrons"/>
 			<Scope name="M68CCO"/>
 			<Scope name="Holosight"/>
 			<Scope name="M150RCO"/>
@@ -240,7 +243,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -251,20 +254,16 @@
 		</Sounds>
 	</Firearm>
 
-<Firearm name="FiveSevenSWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+	<Firearm name="SWAT_FiveSeven" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="Five-seveN Pistol"
 			description="FiveSeven"
 			img="data/models/weapons/m9_ui.dds"
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
-		
+
 		<ModifiableParams
 			numPellets="1"
 			roundsPerMagazine="15"
@@ -277,7 +276,7 @@
 			changeOutTime="1000"
 			readyTime="100"
 			guardTime="50"
-			
+
 			accuracyStart="90"
 			accuracyEnd="85"
 			accuracyStartDist="0"
@@ -289,7 +288,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="FiveSevenSupSWAT"
+			suppressedSwitch="SWAT_FiveSevenSup"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
 			ai_rangeMax="15.0"
@@ -320,7 +319,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="pistol_eqp"/>
 			<Unequip name="pistol_neqp"/>
 			<Reload name="pistol_reld"/>
@@ -331,21 +330,17 @@
 		</Sounds>
 	</Firearm>
 
-	<Firearm name="FiveSevenSupSWAT" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
+	<Firearm name="SWAT_FiveSevenSup" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
 			tooltip="Five-seveN Pistol Sup"
 			description="FiveSevenSup"
 			img="data/models/weapons/m9_ui.dds"
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
 		<RenderObject3D model="data/models/weapons/attachments/FiveSeven_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/FiveSeven_Sup.dds"/>
-		
+
 		<ModifiableParams
 			numPellets="1"
 			roundsPerMagazine="15"
@@ -358,7 +353,7 @@
 			changeOutTime="1300"
 			readyTime="140"
 			guardTime="50"
-			
+
 			accuracyStart="80"
 			accuracyEnd="70"
 			accuracyStartDist="0"
@@ -370,7 +365,7 @@
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
-			suppressedSwitch="FiveSevenSWAT"
+			suppressedSwitch="SWAT_FiveSeven"
 			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="3.0"
@@ -403,7 +398,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="pistol_eqp"/>
 			<Unequip name="pistol_neqp"/>
 			<Reload name="pistol_reld"/>

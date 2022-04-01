@@ -1,11 +1,11 @@
-<Equipment>   
+<Equipment>
 
-	<!--========================================================-->
-    <!--                 	Vanilla Guns                        -->
+	  <!--========================================================-->
+    <!--                 	Vanilla Guns                          -->
     <!--========================================================-->
 
 
- 	
+
 	 <Firearm name="M500PP" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
 			tooltip="@firearm_m500pp_name"
 			description="@firearm_m500pp_desc"
@@ -83,7 +83,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-	
+
 	<Firearm name="M1014" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="8"
 			tooltip="@firearm_m1014_name"
 			description="@firearm_m1014_desc"
@@ -151,7 +151,7 @@
     <!--Shotguns End-->
 
     <!--SMG's-->
-	
+
 	<Bind eqp="MP5A">
 		<to name="Assault"/>
 		<to name="Medic"/>
@@ -478,7 +478,7 @@
 		</Sounds>
 	</Firearm>
 
-	
+
 	<Bind eqp="MK 18">
 		<to name="Assault"/>
 		<to name="Medic"/>

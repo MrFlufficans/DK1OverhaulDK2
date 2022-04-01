@@ -2,12 +2,12 @@
 	<!--Mac 10-->
 	<Firearm name="Mac10" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
 			tooltip="Mac-10"
-			
+
 			animationSet="rifle"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/mini_uzi.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mini_uzi.dds"/>
-		
+
 		<ModifiableParams
 			numPellets="1"
 			roundsPerMagazine="32"
@@ -20,7 +20,7 @@
 			changeOutTime="500"
 			readyTime="300"
 			guardTime="200"
-			
+
 			accuracyStart="70"
 			accuracyEnd="50"
 			accuracyStartDist="0"
@@ -40,7 +40,7 @@
 		<AmmoTypes>
 			<Ammo name="9x19FMJ_MiniUzi"/>
 		</AmmoTypes>
-		
+
 		<ScopeTypes/>
 
 		<AttackTypes>
@@ -58,7 +58,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -71,9 +71,9 @@
 
 	<!--Revolver-->
 
-    <Firearm name="Revolver" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="5"
+  <Firearm name="Revolver" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="5"
 			tooltip=".38 Special Revolver"
-			
+
 			animationSet="pistol"
 		>
 		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
@@ -91,7 +91,7 @@
 			changeOutTime="1200"
 			readyTime="150"
 			guardTime="100"
-			
+
 			accuracyStart="75"
 			accuracyEnd="10"
 			accuracyStartDist="0"
@@ -111,7 +111,7 @@
 		<AmmoTypes>
 			<Ammo name="762x25FMJ_TT 33 Pistol"/>
 		</AmmoTypes>
-		
+
 		<ScopeTypes/>
 
 		<AttackTypes>
@@ -127,7 +127,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="pistol_eqp"/>
 			<Unequip name="pistol_neqp"/>
 			<Reload name="pistol_reld"/>
@@ -140,7 +140,7 @@
 
 	<!--MP5K For Grenadier Glenns-->
 
-    <Firearm name="MP5K_PDW_Glenn" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="5"
+  <Firearm name="MP5K_PDW_Glenn" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="5"
 			tooltip="@firearm_mp5kpdw_name"
 			description="@firearm_mp5kpdw_desc"
 			img="data/models/weapons/mp5k_pdw_ui.dds"
@@ -211,7 +211,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="smg_eqp"/>
 			<Unequip name="smg_neqp"/>
 			<Reload name="smg_reld"/>
@@ -274,7 +274,7 @@
 		<ScopeTypes>
 			<Scope name="IronSights"/>
 		</ScopeTypes>
-	
+
 		<AttackTypes>
 			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="4"/>
 			<AttackType name="Rangers_RapidFireMed" rangeMeters="15"/>
@@ -289,7 +289,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
 		</MuzzleFlash>
 
-		<Sounds> 
+		<Sounds>
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -299,4 +299,5 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
+	
 </Equipment>

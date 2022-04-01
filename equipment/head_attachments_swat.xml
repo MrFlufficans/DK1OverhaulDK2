@@ -1,12 +1,13 @@
 <Equipment>
 
-<Bind eqp="PoliceCap">
+<Bind eqp="SWAT_PoliceCap">
 	<to name="SWAT_Pointman"/>
 	<to name="SWAT_Assaulter"/>
 	<to name="SWAT_Stealth"/>
+	<to name="SWAT_Breacher"/>
 </Bind>
 
-<Helmet name="PoliceCap" inventoryBinding="Helmet" unlockCost="0"
+	<Helmet name="SWAT_PoliceCap" inventoryBinding="Helmet" unlockCost="0"
 			tooltip="PoliceCap"
 			description=""
 			img="data/models/humans/attachments/cia_cap_ui.dds"
@@ -20,16 +21,19 @@
 		</Params>
 	</Helmet>
 
-<!-- WIP -->
-<Helmet name="HelmetACH" inventoryBinding="Helmet" unlockCost="0"
+	<!-- WIP -->
+	<Bind eqp="SWAT_HelmetACH">
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulter"/>
+		<to name="SWAT_Stealth"/>
+		<to name="SWAT_Breacher"/>
+	</Bind>
+
+	<Helmet name="SWAT_HelmetACH" inventoryBinding="Helmet" unlockCost="0"
 			tooltip="@helmet_rangers_ach_name"
 			description=""
 			img="data/models/humans/attachments/ach_helmet_ui.dds"
 		>
-		    <ClassBinding name="SWAT_Pointman"/>
-		    <ClassBinding name="SWAT_Assaulter"/>
-		    <ClassBinding name="SWAT_Breacher"/>
-		    <ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="-2"/>
 		<ConcealmentModifier add="0" />
 
@@ -38,15 +42,18 @@
 		</Params>
 	</Helmet>
 
-	<Helmet name="HelmetFAST" inventoryBinding="Helmet" unlockCost="4"
+	<Bind eqp="SWAT_HelmetFAST">
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulter"/>
+		<to name="SWAT_Stealth"/>
+		<to name="SWAT_Breacher"/>
+	</Bind>
+
+	<Helmet name="SWAT_HelmetFAST" inventoryBinding="Helmet" unlockCost="4"
 			tooltip="@helmet_rangers_fast_name"
 			description=""
 			img="data/models/humans/attachments/ranger_helmet_ui.dds"
 		>
-		    <ClassBinding name="SWAT_Pointman"/>
-		    <ClassBinding name="SWAT_Assaulter"/>
-		    <ClassBinding name="SWAT_Breacher"/>
-		    <ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="0" />
 
@@ -55,29 +62,4 @@
 		</Params>
 	</Helmet>
 
-	<Bind eqp="NVG">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Grenadier"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-
-	<Bind eqp="NVG_02">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Grenadier"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
 </Equipment>

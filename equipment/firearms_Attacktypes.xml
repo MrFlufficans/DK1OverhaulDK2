@@ -1,21 +1,18 @@
-<FirearmAttackTypes>	
-    
+<FirearmAttackTypes>
+
     <!--For the rifles-->
-    <AttackType name="SWAT_RapidFire">
-		<ModifiableParams
-			minAimTime="450"
-			maxAimTime="450"
-
-			minShots="2"
-			maxShots="-1"
-			resetTime="300"
-
-			accuracyAdd="-65"
-			followupShotAccuracyAdd="20"
-
-			critChanceAdd="0"
-		/>
-	</AttackType>
+  <AttackType name="SWAT_RapidFire">
+      <ModifiableParams
+        minAimTime="450"
+        maxAimTime="450"
+        minShots="2"
+        maxShots="-1"
+        resetTime="300"
+        accuracyAdd="-65"
+        followupShotAccuracyAdd="20"
+        critChanceAdd="0"
+        />
+    </AttackType>
 
 	<AttackType name="SWAT_RapidFireMed">
 		<ModifiableParams
@@ -61,18 +58,18 @@
 
     <!--Pistols -->
 
-    	<AttackType name="SWAT_EmergencyFire45">
-		<ModifiableParams
-			minAimTime="200"
-			maxAimTime="200"
-			minShots="1"
-			maxShots="-1"
-			resetTime="200"
-			accuracyAdd="-60"
-			followupShotAccuracyAdd="-5"
-			critChanceAdd="0"
-		/>
-	</AttackType>
+  <AttackType name="SWAT_EmergencyFire45">
+    <ModifiableParams
+      minAimTime="200"
+      maxAimTime="200"
+      minShots="1"
+      maxShots="-1"
+      resetTime="200"
+      accuracyAdd="-60"
+      followupShotAccuracyAdd="-5"
+      critChanceAdd="0"
+      />
+  </AttackType>
 
 	<AttackType name="SWAT_DoubleTap45">
 		<ModifiableParams

@@ -2,14 +2,8 @@
 	<!--============================================-->
 	<!--               Custom Equipment 			-->
 	<!--============================================-->
-	
-	<Bind eqp="Chem Light">
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-	<Grenade name="Chem Light" inventoryBinding="UtilityPouch"
+
+	<Grenade name="SWAT_Chem Light" inventoryBinding="UtilityPouch"
 			quantity="11"
 
 			tooltip="Chem Light WIP"
@@ -48,7 +42,7 @@
 
 			<!-- spawn these when exploding -->
 			<FX
-				entity1="glowstick_glow" 
+				entity1="glowstick_glow"
 				entity2="glowstick_ground"
 				anim2D="">
 			</FX>
@@ -60,14 +54,7 @@
 		</Projectile>
 	</Grenade>
 
-	<Bind eqp="CS Gas Grenade">
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-
-	<Grenade name="CS Gas Grenade" inventoryBinding="UtilityPouch"
+	<Grenade name="SWAT_CS Gas Grenade" inventoryBinding="UtilityPouch"
 			quantity="2"
 
 			tooltip="2x CS Gas Grenade"
@@ -132,14 +119,7 @@
 		</Projectile>
 	</Grenade>
 
-	<Bind eqp="9-Bang">
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-
-	<Grenade name="9-Bang" inventoryBinding="UtilityPouch"
+	<Grenade name="SWAT_9Bang" inventoryBinding="UtilityPouch"
 			quantity="2"
 
 			tooltip="2x 9-Bang"
@@ -200,152 +180,25 @@
 		</Projectile>
 	</Grenade>
 
-
-
 	<!--============================================-->
 	<!--               Vanilla Equipment			-->
 	<!--============================================-->
 
-	<Bind eqp="Smoke Grenade">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
+	<Bind to="SWAT">
+		<eqp name="Smoke Grenade"/>
+		<eqp name="Smoke Grenade Kit"/>
+		<eqp name="Flashbang"/>
+		<eqp name="Flashbang Kit"/>
+		<eqp name="Slap Charge"/>
+		<eqp name="Slap Charge Kit"/>
+		<eqp name="Stinger"/>
+		<eqp name="Dynamic Hammer"/>
+		<eqp name="Spy Camera"/>
+		<eqp name="TEC Torch"/>
 
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-	
-	<Bind eqp="Smoke Grenade Kit">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
+		<eqp name="SWAT_9Bang"/>
+		<eqp name="SWAT_Chem Light"/>
+		<eqp name="SWAT_CS Gas Grenade"/>
 	</Bind>
 
-	<Bind eqp="Flashbang">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-	
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-	
-	<Bind eqp="Flashbang Kit">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind> 
-
-	<Bind eqp="Slap Charge">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-
-	<Bind eqp="Slap Charge Kit">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-
-	<Bind eqp="Stinger">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-
-	<Bind eqp="Dynamic Hammer">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-		<to name="SwatLeader"/>
-		<to name="SwatSapper"/>
-		<to name="SwatMilitia"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-	
-	<Bind eqp="Spy Camera">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
-
-	<Bind eqp="TEC Torch">
-		<to name="Assault"/>
-		<to name="Support"/>
-		<to name="Marksman"/>
-		<to name="Medic"/>
-		<to name="Grenadier"/>
-		<to name="BlackOps"/>
-
-		<to name="SWAT_Pointman"/>
-		<to name="SWAT_Assaulter"/>
-		<to name="SWAT_Breacher"/>
-		<to name="SWAT_Stealth"/>
-	</Bind>
 </Equipment>
