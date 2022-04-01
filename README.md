@@ -1,7 +1,6 @@
-# Door Kickers 1 Expansion Pack for Door Kickers 2
+# Door Kickers 1 Overhaul for Door Kickers 2
 
-There isn't much of anything here at the moment, Just needed to setup all the required files before I start testing,
-The conversion is still a WIP
+This Mod berings all of the context from dk1 to dk2, keep in mind its still very WIP
 
 
 

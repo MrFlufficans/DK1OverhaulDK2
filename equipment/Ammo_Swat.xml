@@ -48,4 +48,30 @@
         <ArmorPenetration start="2" end="2" startDist="0" endDist="100"/>
       </Params>
     </Ammo>
+
+    <Ammo name="300AACBLACKOUT"
+			tooltip=".300 AAC Blackout"
+			description=".300 AAC Blackout"
+			img="data/models/weapons/attachments/m855_ammo_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+		<!-- defines base ROF and sound of weapon -->
+		<Params roundsPerSecond="12"
+				audibleSoundRadius="100"
+				physicsImpactForce="2.0"
+				damageType="0"
+				silenced="0">
+
+			<!-- the damage value is linearly interpolated in the given range, between min/max damage -->
+			<Damage start="23" end="19" startDist="0" endDist="100"/>
+
+			<!-- base value, can be modified by AttackType/Abilities/Doctrine/etc. -->
+			<CriticalChancePercent start="30" end="15" startDist="0" endDist="25"/>
+
+			<!-- i.e. divides distance range in (end - start) discrete intervals for AP -->
+			<ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+		</Params>
+	</Ammo>
+
 </Equipment>

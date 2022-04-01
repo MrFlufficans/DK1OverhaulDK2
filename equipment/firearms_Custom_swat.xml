@@ -4,7 +4,7 @@
   <!--                 	SWAT weapons                        	-->
   <!--========================================================-->
 
-	<Bind to="SWAT_Assaulter">
+	<Bind to="SWAT">
 		<eqp name="SWAT_HoneyBadger"/>
 		<eqp name="SWAT_FiveSeven"/>
 		<eqp name="SWAT_FiveSevenSup"/>
@@ -13,8 +13,14 @@
 	<Bind to="SWAT_Breacher">
 		<eqp name="SWAT_KSGSUP"/>
 		<eqp name="SWAT_KSG"/>
-		<eqp name="SWAT_FiveSeven"/>
-		<eqp name="SWAT_FiveSevenSup"/>
+	</Bind>
+
+	<Bind eqp="SWAT_KSG">
+		<to name="12GA00BUCK_KSG"/>
+
+		<to name="SWATKSGIronsights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
 	</Bind>
 
 	<Firearm name="SWAT_KSG" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
@@ -93,7 +99,13 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="SWAT_KSGSUP">
+		<to name="12GA00BUCK_KSG"/>
 
+		<to name="SWATKSGIronsights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+	</Bind>
 	<Firearm name="SWAT_KSGSUP" inventoryBinding="PrimaryWeaponMuzzle" category="shotgun" unlockCost="0"
 			tooltip="KSGSup"
 			description="KSGSup"
@@ -138,21 +150,6 @@
 			ai_stopWhenShooting="false"
 		/>
 
-		<AmmoTypes>
-			<Ammo name="12GA00BUCK_KSG"/>
-		</AmmoTypes>
-
-		<ScopeTypes>
-			<Scope name="SWAT_KSGIronsights"/>
-			<Scope name="M68CCO"/>
-			<Scope name="Holosight"/>
-		</ScopeTypes>
-
-		<AttackTypes>
-			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
-			<AttackType name="Rangers_PumpAimedFireLong" rangeMeters="12"/>
-			<AttackType name="Rangers_PumpAimedFireLongXX" rangeMeters="100"/>
-		</AttackTypes>
 
 		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
 			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
@@ -172,6 +169,13 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="SWAT_HoneyBadger">
+		<to name="300AACBLACKOUT"/>
+
+		<to name="SWAT_HBIrons"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+	</Bind>
 	<Firearm name="SWAT_HoneyBadger" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="Honey Badger PDW"
 			description=""
@@ -254,6 +258,11 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="SWAT_FiveSeven">
+		<to name="5_7_28_Five_SeveN"/>
+
+		<to name="Ironsights"/>
+	</Bind>
 	<Firearm name="SWAT_FiveSeven" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="Five-seveN Pistol"
 			description="FiveSeven"
@@ -330,6 +339,11 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="SWAT_FiveSevenSup">
+		<to name="5_7_28_Five_SeveN"/>
+
+		<to name="Ironsights"/>
+	</Bind>
 	<Firearm name="SWAT_FiveSevenSup" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
 			tooltip="Five-seveN Pistol Sup"
 			description="FiveSevenSup"
@@ -372,16 +386,6 @@
 			ai_rangeMax="15.0"
 			ai_stopWhenShooting="false"
 		/>
-
-		<AmmoTypes>
-			<Ammo name="919FMJM882_SupHandgun"/>
-			<Ammo name="919FMJM1152_SupHandgun"/>
-			<Ammo name="919JHPM1153_SupHandgun"/>
-		</AmmoTypes>
-
-		<ScopeTypes>
-			<Scope name="IronSights_Pistol"/>
-		</ScopeTypes>
 
 		<AttackTypes>
 			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="3" priority="0"/>
