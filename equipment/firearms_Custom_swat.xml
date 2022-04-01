@@ -7,6 +7,11 @@
 	<Bind eqp="KSGSWAT">
 		<to name="SWAT_Breacher"/>
 		
+		<to name="12GA00BUCK_KSG"/> 
+		
+		<to name="SWATKSGIronsights"/> 
+		<to name="M68CCO"/> 
+		<to name="Holosight"/> 
 	</Bind>
 	
 	<Firearm name="KSGSWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
@@ -50,16 +55,6 @@
 			ai_stopWhenShooting="false"
 		/>
 
-		<AmmoTypes>
-			<Ammo name="12GA00BUCK_KSG"/>
-		</AmmoTypes>
-
-		<ScopeTypes>
-			<Scope name="SWATKSGIronsights"/>
-			<Scope name="M68CCO"/>
-			<Scope name="Holosight"/>
-		</ScopeTypes>
-
 		<AttackTypes>
 			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
 			<AttackType name="Rangers_PumpAimedFireLong" rangeMeters="12"/>
@@ -87,6 +82,12 @@
 	<Bind eqp="KSGSWATSUP">
 		<to name="SWAT_Breacher"/>
 		<to name="SWAT_Stealth"/>
+
+		<to name="12GA00BUCK_KSG"/>
+		
+		<to name="SWATKSGIronsights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
 	</Bind>
 
 	<Firearm name="KSGSWATSUP" inventoryBinding="PrimaryWeaponMuzzle" category="shotgun" unlockCost="0"
@@ -96,7 +97,6 @@
 
 			animationSet="shotgun_pump"
 		>
-        <ClassBinding name="SWAT_Breacher"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
 		<RenderObject3D model="data/models/weapons/attachments/KSG_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSG_Sup.dds"/>
@@ -133,21 +133,6 @@
 			ai_stopWhenShooting="false"
 		/>
 
-		<AmmoTypes>
-			<Ammo name="12GA00BUCK_KSG"/>
-		</AmmoTypes>
-
-		<ScopeTypes>
-			<Scope name="SWATKSGIronsights"/>
-			<Scope name="M68CCO"/>
-			<Scope name="Holosight"/>
-		</ScopeTypes>
-
-		<AttackTypes>
-			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
-			<AttackType name="Rangers_PumpAimedFireLong" rangeMeters="12"/>
-			<AttackType name="Rangers_PumpAimedFireLongXX" rangeMeters="100"/>
-		</AttackTypes>
 
 		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
 			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
@@ -167,6 +152,21 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="HoneyBadgerSWAT">
+		<to name="SWAT_Assaulter"/>
+
+		<to name="556FMJM855_M4"/>
+		<to name="556FMJM855A1_M4"/>
+		<to name="556FMJMk318_M4"/>
+
+		
+		<to name="SWATKSGIronsights"/>
+		<to name="SWATHBIrons"/>
+		<to name="Holosight"/>
+		<to name="M150RCO"/>
+		<to name="SpecterDR"/>
+	</Bind>
+
 	<Firearm name="HoneyBadgerSWAT" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="Honey Badger PDW"
 			description=""
@@ -174,8 +174,6 @@
 
 			animationSet="rifle"
 		>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="Medic"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/HoneyBadger.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/HoneyBadger.dds"/>
 
@@ -210,22 +208,6 @@
 			hasLaser="true"
 		/>
 
-		<AmmoTypes>
-			<Ammo name="556FMJM855_M4"/>
-			<Ammo name="556FMJM855A1_M4"/>
-			<Ammo name="556FMJMk318_M4"/>
-		</AmmoTypes>
-
-	    <ScopeTypes>
-			<Scope name="SWATHBIrons"/>
-			<Scope name="M68CCO"/>
-			<Scope name="Holosight"/>
-			<Scope name="M150RCO"/>
-			<Scope name="SpecterDR"/>
-			<Scope name="LPVO_6X"/>
-			<Scope name="LPVO_8X"/>
-		</ScopeTypes>
-
 		<AttackTypes>
 			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="4"/>
 			<AttackType name="Rangers_RapidFireMed" rangeMeters="15"/>
@@ -251,17 +233,21 @@
 		</Sounds>
 	</Firearm>
 
-<Firearm name="FiveSevenSWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+	<Bind eqp="FiveSevenSWAT">
+		<to name="SWAT"/>
+
+		<to name="5_7_28_Five_SeveN"/>
+	
+		<to name="IronSights_Pistol"/>
+	</Bind>
+	
+	<Firearm name="FiveSevenSWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="Five-seveN Pistol"
 			description="FiveSeven"
 			img="data/models/weapons/m9_ui.dds"
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
 		
@@ -331,6 +317,14 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="FiveSevenSupSWAT">
+		<to name="SWAT"/>
+
+		<to name="919FMJM882_SupHandgun"/>
+	
+		<to name="IronSights_Pistol"/>
+	</Bind>
+	
 	<Firearm name="FiveSevenSupSWAT" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
 			tooltip="Five-seveN Pistol Sup"
 			description="FiveSevenSup"
@@ -338,10 +332,6 @@
 
 			animationSet="pistol"
 		>
-		<ClassBinding name="SWAT_Pointman"/>
-		<ClassBinding name="SWAT_Assaulter"/>
-		<ClassBinding name="SWAT_Breacher"/>
-		<ClassBinding name="SWAT_Stealth"/>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
 		<RenderObject3D model="data/models/weapons/attachments/FiveSeven_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/FiveSeven_Sup.dds"/>
@@ -377,16 +367,6 @@
 			ai_rangeMax="15.0"
 			ai_stopWhenShooting="false"
 		/>
-
-		<AmmoTypes>
-			<Ammo name="919FMJM882_SupHandgun"/>
-			<Ammo name="919FMJM1152_SupHandgun"/>
-			<Ammo name="919JHPM1153_SupHandgun"/>
-		</AmmoTypes>
-
-		<ScopeTypes>
-			<Scope name="IronSights_Pistol"/>
-		</ScopeTypes>
 
 		<AttackTypes>
 			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="3" priority="0"/>
