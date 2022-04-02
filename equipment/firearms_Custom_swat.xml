@@ -15,6 +15,7 @@
 		<eqp name="SWAT_KSG"/>
 	</Bind>
 
+	<!-- KSG -->
 	<Bind eqp="SWAT_KSG">
 		<to name="12GA00BUCK_KSG"/>
 
@@ -22,7 +23,6 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-
 	<Firearm name="SWAT_KSG" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
 			tooltip="KSG Shotgun"
 			description="KSG"
@@ -99,6 +99,7 @@
 		</Sounds>
 	</Firearm>
 
+	<!-- KSG Sup -->
 	<Bind eqp="SWAT_KSGSUP">
 		<to name="12GA00BUCK_KSG"/>
 
@@ -169,6 +170,7 @@
 		</Sounds>
 	</Firearm>
 
+	<!-- HoneyBadger -->
 	<Bind eqp="SWAT_HoneyBadger">
 		<to name="300AACBLACKOUT"/>
 
@@ -258,6 +260,7 @@
 		</Sounds>
 	</Firearm>
 
+	<!-- FiveSeven -->
 	<Bind eqp="SWAT_FiveSeven">
 		<to name="5_7_28_Five_SeveN"/>
 
@@ -339,6 +342,7 @@
 		</Sounds>
 	</Firearm>
 
+	<!-- FiveSeven Sup -->
 	<Bind eqp="SWAT_FiveSevenSup">
 		<to name="5_7_28_Five_SeveN"/>
 
