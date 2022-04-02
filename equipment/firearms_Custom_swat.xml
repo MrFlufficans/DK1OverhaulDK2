@@ -262,7 +262,7 @@
 
 	<!-- FiveSeven -->
 	<Bind eqp="SWAT_FiveSeven">
-		<to name="5_7_28_Five_SeveN"/>
+		<to name="5_7FiveSeven"/>
 
 		<to name="Ironsights"/>
 	</Bind>
@@ -344,7 +344,7 @@
 
 	<!-- FiveSeven Sup -->
 	<Bind eqp="SWAT_FiveSevenSup">
-		<to name="5_7_28_Five_SeveN"/>
+		<to name="5_7Five_SevenSUP"/>
 
 		<to name="Ironsights"/>
 	</Bind>

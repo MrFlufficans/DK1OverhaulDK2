@@ -31,7 +31,7 @@
     <!--                      Five Seven                        -->
     <!--========================================================-->
 
-    <Ammo name="5_7_28_Five_SeveN"
+    <Ammo name="5_7FiveSeven"
       tooltip="@ammo_5_7_FS_name"
       description="@ammo_5_7_FS_Desc"
       img="data/models/weapons/attachments/m1911fmj_ammo_ui.dds"
@@ -49,6 +49,24 @@
       </Params>
     </Ammo>
 
+    <Ammo name="5_7Five_SevenSUP"
+      tooltip="@ammo_5_7_FS_name"
+      description="@ammo_5_7_FS_Desc"
+      img="data/models/weapons/attachments/m1911fmj_ammo_ui.dds"
+      >
+      <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+      <Params	roundsPerSecond="6"
+        audibleSoundRadius="4"
+        physicsImpactForce="4.0"
+        damageType="0"
+        silenced="1">
+        <Damage start="23" end="19" startDist="0" endDist="100"/>
+        <CriticalChancePercent start="35" end="29" startDist="0" endDist="100"/>
+        <ArmorPenetration start="2" end="2" startDist="0" endDist="100"/>
+      </Params>
+    </Ammo>
+
     <Ammo name="300AACBLACKOUT"
 			tooltip=".300 AAC Blackout"
 			description=".300 AAC Blackout"
@@ -58,10 +76,10 @@
 
 		<!-- defines base ROF and sound of weapon -->
 		<Params roundsPerSecond="12"
-				audibleSoundRadius="100"
+				audibleSoundRadius="10"
 				physicsImpactForce="2.0"
 				damageType="0"
-				silenced="0">
+				silenced="1">
 
 			<!-- the damage value is linearly interpolated in the given range, between min/max damage -->
 			<Damage start="23" end="19" startDist="0" endDist="100"/>
