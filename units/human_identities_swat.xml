@@ -1,12 +1,12 @@
 <HumanIdentities>
-	<!-- 
+	<!--
 		When generating troops, one portrait is picked randomly by matching the Unit.
 		 Then, a name is picked for it, matching gender + unit (if defined).
-		
+
 		You can link a certain name to a portrait, by declaring a portrait like:
 		<Portrait tex="data/textures/portraits/ranger1.dds" customName="CUSTOM NAME" unit="Rangers" gender="0" voicePack="male_very_american"/>
 	-->
-	
+
 	<!-- we need to copy the dk1 portraits later -->
 
 	<Portrait tex="data/textures/portraits/cia1.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
@@ -38,9 +38,9 @@
 	<Portrait tex="data/textures/portraits/cia18.dds" customName="Scott Graves" unit="SWAT" gender="0" voicePack="male_very_american"/>
 	<Portrait tex="data/textures/portraits/cia19.dds" customName="Chris Logan" unit="SWAT" gender="0" voicePack="male_very_american"/>
 	<Portrait tex="data/textures/portraits/cia20.dds" customName="Geoff Byers" unit="SWAT" gender="0" voicePack="male_very_american"/>>-->
-	
+
 	<!-- NAMES (these can be linked to a unit as well, if unit="name" is specified -->
-	
+
 	<!--<Name name="Anthony" unit="SWAT" gender="0"/>
 	<Name name="Fluffy"  unit="SWAT" gender="0"/>
 	<Name name="MK"      unit="SWAT" gender="0"/>-->
@@ -127,5 +127,5 @@
 			<Name n="FENNEC"/>
 		</Gender>
 	</UnitNames>
-	
+
 </HumanIdentities>
