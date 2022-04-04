@@ -1,3 +1,4 @@
+<!-- Binding everything like this is easy as fuck -->
 <Equipment>
   <Bind to="SWAT">
     <eqp name="EmptyUtility"/>
