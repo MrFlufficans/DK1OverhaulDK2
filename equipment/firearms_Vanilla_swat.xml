@@ -1,9 +1,13 @@
-<Equipment>   
+<Equipment>
 
 	<!--========================================================-->
     <!--                 	Vanilla Guns                        -->
     <!--========================================================-->
 
+
+		<Bind eqp="M500PP_SWAT">
+			<to name="919FMJM882_Mp5ASMG"/> <!--                 	to fix a erorr                      -->
+		</Bind>
 
 	 <Firearm name="M500PP_SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
 			tooltip="@firearm_m500pp_name"
@@ -78,7 +82,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-	
+
 	<Firearm name="M1014_SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="8"
 			tooltip="@firearm_m1014_name"
 			description="@firearm_m1014_desc"
@@ -146,7 +150,7 @@
     <!--Shotguns End-->
 
     <!--SMG's-->
-	
+
 	<Bind eqp="MP5A_SWAT">
 		<to name="SWAT_Assaulter"/>
 
@@ -473,10 +477,10 @@
 		</Sounds>
 	</Firearm>
 
-	
+
 	<Bind eqp="MK 18_SWAT">
 		<to name="SWAT_Assaulter"/>
-	
+
 		<to name="556FMJM855_MK18"/>
 		<to name="556FMJM855A1_MK18"/>
 		<to name="556FMJMk318_MK18"/>
@@ -647,7 +651,7 @@
     <Bind eqp="M9 Pistol_SWAT">
 		<!-- human classes -->
 		<to name="SWAT"/>
-	
+
 
 		<!-- ammo, the first one is the default
 			Note: instead of binding ammo to pistols (which would be the logical way), we do it the other way, to be able to keep track of the defaults and have a 1-to-many equivalence which is easier to use in code
