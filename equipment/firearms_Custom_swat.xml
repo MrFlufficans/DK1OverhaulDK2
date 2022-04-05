@@ -264,7 +264,7 @@
 	<Bind eqp="SWAT_FiveSeven">
 		<to name="5_7FiveSeven"/>
 
-		<to name="Ironsights"/>
+		<to name="IronSights_Pistol"/>
 	</Bind>
 	<Firearm name="SWAT_FiveSeven" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="Five-seveN Pistol"
@@ -307,14 +307,6 @@
 			ai_stopWhenShooting="false"
 		/>
 
-		<AmmoTypes>
-			<Ammo name="5_7_28_Five_SeveN"/>
-		</AmmoTypes>
-
-		<ScopeTypes>
-			<Scope name="IronSights_Pistol"/>
-		</ScopeTypes>
-
 		<AttackTypes>
 			<AttackType name="Rangers_EmergencyFire9mil" rangeMeters="1.5"/>
 			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="4" priority="0"/>
@@ -344,9 +336,9 @@
 
 	<!-- FiveSeven Sup -->
 	<Bind eqp="SWAT_FiveSevenSup">
-		<to name="5_7Five_SevenSUP"/>
+		<to name="5_7FiveSeven"/>
 
-		<to name="Ironsights"/>
+		<to name="IronSights_Pistol"/>
 	</Bind>
 	<Firearm name="SWAT_FiveSevenSup" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
 			tooltip="Five-seveN Pistol Sup"
