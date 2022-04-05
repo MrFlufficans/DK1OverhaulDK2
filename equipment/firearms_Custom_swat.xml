@@ -168,6 +168,8 @@
 	<Bind eqp="SWAT_HoneyBadger">
 		<to name="300AACBLACKOUT"/>
 
+		<to name="SWAT_Assaulter"/>
+
 		<to name="SWAT_HBIrons"/>
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
@@ -257,7 +259,7 @@
 	<!-- FiveSeven -->
 	<Bind eqp="SWAT_FiveSeven">
 		<to name="5_7FiveSeven"/>
-
+		<to name="SWAT"/>
 		<to name="IronSights_Pistol"/>
 	</Bind>
 	<Firearm name="SWAT_FiveSeven" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
@@ -331,6 +333,8 @@
 	<!-- FiveSeven Sup -->
 	<Bind eqp="SWAT_FiveSevenSup">
 		<to name="5_7FiveSeven"/>
+
+		<to name="SWAT"/>
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
