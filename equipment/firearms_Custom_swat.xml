@@ -4,12 +4,6 @@
   <!--                 	SWAT weapons                        	-->
   <!--========================================================-->
 
-	<Bind to="SWAT">
-		<eqp name="SWAT_HoneyBadger"/>
-		<eqp name="SWAT_FiveSeven"/>
-		<eqp name="SWAT_FiveSevenSup"/>
-	</Bind>
-
 	<Bind to="SWAT_Breacher">
 		<eqp name="SWAT_KSGSUP"/>
 		<eqp name="SWAT_KSG"/>
