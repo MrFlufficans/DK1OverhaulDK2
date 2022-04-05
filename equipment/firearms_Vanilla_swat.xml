@@ -6,7 +6,12 @@
 
 
 		<Bind eqp="M500PP_SWAT">
-			<to name="919FMJM882_Mp5ASMG"/> <!--                 	to fix a erorr                      -->
+			<to name="SWAT_Breacher"/>
+			<to name="12GA00BUCK_M500"/>
+
+			<to name="IronSights"/>
+			<to name="M68CCO"/>
+			<to name="Holosight"/>
 		</Bind>
 
 	 <Firearm name="M500PP_SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
