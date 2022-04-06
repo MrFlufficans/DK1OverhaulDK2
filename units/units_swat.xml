@@ -1,5 +1,5 @@
 <Units>
-	
+
 	<!-- Actual SWAT Unit -->
 	<Unit
 		name="SWAT"
@@ -10,28 +10,28 @@
 		rndNameEntry="@#squadnamerangers">
 
 		<Classes>
-			<Class name="SWAT_Pointman" 		nameUI="Pointman"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="SWAT_Assaulter" 		nameUI="Assaulter"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="SWAT_Breacher" 		nameUI="Breacher"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="SWAT_Stealth" 			nameUI="Stealth"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
-			<Class name="SWAT_Shield" 			nameUI="Shield"	numSlots="4" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Pointman" 		nameUI="Pointman"		numSlots="4"	supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Assaulter" 		nameUI="Assaulter"	numSlots="4"	supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Breacher" 		nameUI="Breacher"		numSlots="4"	supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Stealth" 			nameUI="Stealth"		numSlots="4"	supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
+			<Class name="SWAT_Shield" 			nameUI="Shield"			numSlots="4"	supply="100" iconTex="data/textures/gui/deploy/class_icon_assaulter.dds"/>
 		</Classes>
 
 		<TrooperRanks>
-			<Rank name="Rookie"             xpNeeded="0" 	    badgeTex="data/textures/gui/customization/trooper_rank_01.dds"/>
+			<Rank name="Rookie"             xpNeeded="0" 	    	badgeTex="data/textures/gui/customization/trooper_rank_01.dds"/>
 			<Rank name="Police Officer I"   xpNeeded="700" 	    badgeTex="data/textures/gui/customization/trooper_rank_02.dds"/>
-			<Rank name="Police Officer II"  xpNeeded="2300" 	badgeTex="data/textures/gui/customization/trooper_rank_03.dds"/>
-			<Rank name="Detective I"        xpNeeded="5600" 	badgeTex="data/textures/gui/customization/trooper_rank_04.dds"/>
-			<Rank name="Detective II"       xpNeeded="11800" 	badgeTex="data/textures/gui/customization/trooper_rank_05.dds"/>
-			<Rank name="Sergeant I"         xpNeeded="22400" 	badgeTex="data/textures/gui/customization/trooper_rank_06.dds"/>
-			<Rank name="Sergeant II"        xpNeeded="38400" 	badgeTex="data/textures/gui/customization/trooper_rank_07.dds"/>
-			<Rank name="Lieutenant I"       xpNeeded="60200" 	badgeTex="data/textures/gui/customization/trooper_rank_08.dds"/>
-			<Rank name="Lieutenant II"      xpNeeded="86400" 	badgeTex="data/textures/gui/customization/trooper_rank_09.dds"/>
+			<Rank name="Police Officer II"  xpNeeded="2300" 		badgeTex="data/textures/gui/customization/trooper_rank_03.dds"/>
+			<Rank name="Detective I"        xpNeeded="5600" 		badgeTex="data/textures/gui/customization/trooper_rank_04.dds"/>
+			<Rank name="Detective II"       xpNeeded="11800" 		badgeTex="data/textures/gui/customization/trooper_rank_05.dds"/>
+			<Rank name="Sergeant I"         xpNeeded="22400" 		badgeTex="data/textures/gui/customization/trooper_rank_06.dds"/>
+			<Rank name="Sergeant II"        xpNeeded="38400" 		badgeTex="data/textures/gui/customization/trooper_rank_07.dds"/>
+			<Rank name="Lieutenant I"       xpNeeded="60200" 		badgeTex="data/textures/gui/customization/trooper_rank_08.dds"/>
+			<Rank name="Lieutenant II"      xpNeeded="86400" 		badgeTex="data/textures/gui/customization/trooper_rank_09.dds"/>
 			<Rank name="Captain"            xpNeeded="126400" 	badgeTex="data/textures/gui/customization/trooper_rank_10.dds"/>
 		</TrooperRanks>
 
 		<Ranks>
-			<Rank xpNeeded="0" 		badgeTex=""/>
+			<Rank xpNeeded="0" 			badgeTex=""/>
 			<Rank xpNeeded="4000" 	badgeTex=""/>
 			<Rank xpNeeded="9000" 	badgeTex=""/>
 			<Rank xpNeeded="14980" 	badgeTex=""/>
