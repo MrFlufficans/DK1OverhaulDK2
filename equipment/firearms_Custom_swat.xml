@@ -19,7 +19,7 @@
 	</Bind>
 	<Firearm name="SWAT_KSG" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
 			tooltip="KSG Shotgun"
-			description="KSG"
+			description="@SWAT_firearm_ksg_shotgun_desc"
 			img="data/models/weapons/KSG_ui.dds"
 
 			animationSet="shotgun_pump"
@@ -93,7 +93,7 @@
 	</Bind>
 	<Firearm name="SWAT_KSGSUP" inventoryBinding="PrimaryWeaponMuzzle" category="shotgun" unlockCost="0"
 			tooltip="KSGSup"
-			description="KSGSup"
+			description="@SWAT_firearm_ksg_shotgun_desc"
 			img="data/models/weapons/KSGSup_ui.dds"
 
 			animationSet="shotgun_pump"
@@ -166,7 +166,7 @@
 	</Bind>
 	<Firearm name="SWAT_HoneyBadger" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="Honey Badger PDW"
-			description=""
+			description="@SWAT_firearm_honey_badger_desc"
 			img="data/models/weapons/m4_ui.dds"
 
 			animationSet="rifle"
@@ -242,7 +242,7 @@
 	</Bind>
 	<Firearm name="SWAT_MPX" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
 			tooltip="MPX SMG"
-			description="WIP"
+			description="@SWAT_firearm_mpx_40_smg_desc"
 			img="data/models/weapons/m4_ui.dds"
 
 			animationSet="rifle"
@@ -318,7 +318,7 @@
 	</Bind>
 	<Firearm name="SWAT_G36C" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
 			tooltip="G36C Rifle"
-			description="WIP"
+			description="@SWAT_firearm_g36c_assault_rifle_desc"
 			img="data/models/weapons/m4_ui.dds"
 
 			animationSet="rifle"
@@ -393,7 +393,7 @@
 	</Bind>
 	<Firearm name="SWAT_MCX.300" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
 			tooltip="MCX Rifle"
-			description="WIP"
+			description="@SWAT_firearm_mcx300_carbine_desc"
 			img="data/models/weapons/m4_ui.dds"
 
 			animationSet="rifle"
@@ -465,7 +465,7 @@
 	</Bind>
 	<Firearm name="SWAT_FiveSeven" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="Five-seveN Pistol"
-			description="FiveSeven"
+			description="@SWAT_firearm_fs_ap_pistol_desc"
 			img="data/models/weapons/m9_ui.dds"
 
 			animationSet="pistol"
