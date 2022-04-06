@@ -29,7 +29,7 @@
 		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
 		<ModifiableParams
 			numPellets="9"
-			roundsPerMagazine="5"
+			roundsPerMagazine="14"
 			closedBolt="1"
 
 			cyclicReload="1"
@@ -58,16 +58,6 @@
 			ai_rangeMax="14.0"
 			ai_stopWhenShooting="false"
 		/>
-
-		<AmmoTypes>
-			<Ammo name="12GA00BUCK_KSG"/>
-		</AmmoTypes>
-
-		<ScopeTypes>
-			<Scope name="SWAT_KSGIronsights"/>
-			<Scope name="M68CCO"/>
-			<Scope name="Holosight"/>
-		</ScopeTypes>
 
 		<AttackTypes>
 			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
@@ -113,7 +103,7 @@
 		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
 		<RenderObject3D model="data/models/weapons/attachments/KSG_Sup.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSG_Sup.dds"/>
 		<ModifiableParams
-			numPellets="9"
+			numPellets="14"
 			roundsPerMagazine="5"
 			closedBolt="1"
 
@@ -204,8 +194,8 @@
 		/>
 
 		<Params
-			caliberInfoText="@firearm_caliber_556x45_name"
-			operationInfoText="@firearm_operation_semifull_name"
+			caliberInfoText=""
+			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
 			ai_rangeMin="1.0"
@@ -280,8 +270,8 @@
 		/>
 
 		<Params
-			caliberInfoText="@firearm_caliber_556x45_name"
-			operationInfoText="@firearm_operation_semifull_name"
+			caliberInfoText=""
+			operationInfoText="@firearm_operation_semi3rdburst_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
 			ai_rangeMin="1.0"
@@ -357,7 +347,7 @@
 
 		<Params
 			caliberInfoText="@firearm_caliber_556x45_name"
-			operationInfoText="@firearm_operation_semifull_name"
+			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
 			ai_rangeMin="1.0"
@@ -432,7 +422,7 @@
 
 		<Params
 			caliberInfoText="@firearm_caliber_556x45_name"
-			operationInfoText="@firearm_operation_semifull_name"
+			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
 			ai_rangeMin="1.0"
