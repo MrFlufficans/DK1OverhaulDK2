@@ -8,7 +8,7 @@
 @SWAT_firearm_m590_shotgun_desc=The standard and dependable pump-action\nshotgun in Police inventory, the M590 comes\nwith great mag capacity but suffers in CQB\nspaces due to the long and unwieldy barrel.\n\nAs with all shotguns, keep in mind shot\ndispersion and target background.
 @SWAT_firearm_joint_combat_shotgun_desc=A Semi-Automatic shotgun in the familiar\ntube-fed design, the JCS is fun to shoot and\ngreat for pure short range firepower.\n\nNot the shortest boomstick around, though,\nso you'll need to support the breacher with\nanother trooper. Also, the mag goes empty\nfaster than you'd think.
 @SWAT_firearm_g17_pistol_desc=A high capacity 9mm sidearm, the perfect\ncompanion when you know how to hit the\nsoft spots.\n\nLow in the hand and shooting 'just' 9mm, the\nG17 offers great recoil control to deliver\nmultiple shots.
-
+e
 
 @SWAT_firearm_ksg_shotgun_desc=A very avant-garde design for a pump-action\nshotgun, the KSG uses twin tubular magazines to hold a whooping 14 shells.\n\nThe bullpup form maximizes maneuverability and accuracy, at the expense of awkward\nreloads and access to the ejection port.\n\nCannot use Ejection Port Reload doctrine.
 @SWAT_firearm_honey_badger_desc=A great mix of ballistic performance, small\nsize and excellent sound suppression, the\nHoney Badger might gain a permanent spot in the hands of Tier 1 Special Forces.\n\nArmor penetration is not great though, only\nmarginally better than pistol-caliber SMGs.\n\nSound Travel Range: 3.5m

@@ -80,7 +80,6 @@
 
 	<Bind eqp="M1014_SWAT">
 		<to name="SWAT_Breacher"/>
-
 		<to name="12GA00BUCK_M1014"/>
 
 		<to name="IronSights"/>
