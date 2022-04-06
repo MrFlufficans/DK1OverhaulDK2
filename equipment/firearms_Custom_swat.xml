@@ -465,7 +465,7 @@
 	</Bind>
 	<Firearm name="SWAT_FiveSeven" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="Five-seveN Pistol"
-			description="FiveSeven"
+			description="@SWAT_firearm_fs_ap_pistol_desc"
 			img="data/models/weapons/m9_ui.dds"
 
 			animationSet="pistol"
