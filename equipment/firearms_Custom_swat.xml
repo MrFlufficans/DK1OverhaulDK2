@@ -194,7 +194,7 @@
 		/>
 
 		<Params
-			caliberInfoText=""
+			caliberInfoText="@firearm_caliber_300BLKsubsonic_name"
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
@@ -241,7 +241,7 @@
 		<to name="Holosight"/>
 	</Bind>
 	<Firearm name="SWAT_MPX" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
-			tooltip="MPX.40 SMG"
+			tooltip="MPX SMG"
 			description="WIP"
 			img="data/models/weapons/m4_ui.dds"
 
@@ -270,7 +270,7 @@
 		/>
 
 		<Params
-			caliberInfoText=""
+			caliberInfoText="@firearm_caliber_40sw_name"
 			operationInfoText="@firearm_operation_semi3rdburst_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
@@ -392,7 +392,7 @@
 		<to name="Holosight"/>
 	</Bind>
 	<Firearm name="SWAT_MCX.300" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
-			tooltip="MCX.300 Rifle"
+			tooltip="MCX Rifle"
 			description="WIP"
 			img="data/models/weapons/m4_ui.dds"
 
@@ -421,7 +421,7 @@
 		/>
 
 		<Params
-			caliberInfoText="@firearm_caliber_556x45_name"
+			caliberInfoText="@firearm_caliber_300BLK_name"
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
