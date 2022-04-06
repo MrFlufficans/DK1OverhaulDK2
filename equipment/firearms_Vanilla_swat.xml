@@ -15,8 +15,8 @@
 		</Bind>
 
 	 <Firearm name="M500PP_SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
-			tooltip="@firearm_m500pp_name"
-			description="@firearm_m500pp_desc"
+			tooltip="M590 Shotgun"
+			description="@SWAT_firearm_m590_shotgun_desc"
 			img="data/models/weapons/m500_ui.dds"
 
 			animationSet="shotgun_pump"
@@ -90,7 +90,7 @@
 
 	<Firearm name="M1014_SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="8"
 			tooltip="@firearm_m1014_name"
-			description="@firearm_m1014_desc"
+			description="@SWAT_firearm_joint_combat_shotgun_desc"
 			img="data/models/weapons/m1014_ui.dds"
 
 			animationSet="shotgun_m1014"
@@ -826,7 +826,7 @@
 	</Bind>
 	<Firearm name="G17 Pistol_SWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="@firearm_g17_name"
-			description="@firearm_g17_desc"
+			description="@SWAT_firearm_g17_pistol_desc"
 			img="data/models/weapons/g22_ui.dds"
 
 			animationSet="pistol"
