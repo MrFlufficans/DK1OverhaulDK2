@@ -1,11 +1,11 @@
 <Equipment>
 
 	<!--========================================================-->
-    <!--                 	Vanilla Guns                        -->
-    <!--========================================================-->
+  <!--                 	Vanilla Guns                        	-->
+  <!--========================================================-->
 
 
-		<Bind eqp="M500PP_SWAT">
+	<Bind eqp="SWAT_M500PP">
 			<to name="SWAT_Breacher"/>
 			<to name="12GA00BUCK_M500"/>
 
@@ -13,8 +13,7 @@
 			<to name="M68CCO"/>
 			<to name="Holosight"/>
 		</Bind>
-
-	 <Firearm name="M500PP_SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
+	<Firearm name="SWAT_M500PP" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="6"
 			tooltip="M590 Shotgun"
 			description="@SWAT_firearm_m590_shotgun_desc"
 			img="data/models/weapons/m500_ui.dds"
@@ -78,7 +77,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="M1014_SWAT">
+	<Bind eqp="SWAT_M1014">
 		<to name="SWAT_Breacher"/>
 		<to name="12GA00BUCK_M1014"/>
 
@@ -86,8 +85,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-
-	<Firearm name="M1014_SWAT" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="8"
+	<Firearm name="MSWAT_1014" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="8"
 			tooltip="@firearm_m1014_name"
 			description="@SWAT_firearm_joint_combat_shotgun_desc"
 			img="data/models/weapons/m1014_ui.dds"
@@ -151,11 +149,8 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
-    <!--Shotguns End-->
 
-    <!--SMG's-->
-
-	<Bind eqp="MP5A_SWAT">
+	<Bind eqp="SWAT_MP5A">
 		<to name="SWAT_Assaulter"/>
 
 
@@ -168,7 +163,7 @@
 		<to name="Holosight"/>
 		<to name="M150RCO"/>
 	</Bind>
-	<Firearm name="MP5A_SWAT" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="SWAT_MP5A" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="Mp5A3"
 			description="@SWAT_firearm_mp5a3_smg_desc"
 			img="data/models/weapons/mp5a3_ui.dds"
@@ -234,7 +229,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="MP5SD_SWAT">
+	<Bind eqp="SWAT_MP5SD">
 		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Stealth"/>
 
@@ -247,7 +242,7 @@
 		<to name="Holosight"/>
 		<to name="M150RCO"/>
 	</Bind>
-	<Firearm name="MP5SD_SWAT" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+	<Firearm name="SWAT_MP5SD" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
 			tooltip="Mp5SD3 SMG"
 			description="@firearm_mp5sd_desc"
 			img="data/models/weapons/mp5sd3_ui.dds"
@@ -312,10 +307,8 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
-    <!--SMG's end-->
 
-    <!--Rifles-->
-	<Bind eqp="M4 Carbine_SWAT">
+	<Bind eqp="SWAT_M4 Carbine">
 		<to name="SWAT_Assaulter"/>
 
 		<to name="556FMJM855_M4"/>
@@ -330,7 +323,7 @@
 		<to name="LPVO_6X"/>
 		<to name="LPVO_8X"/>
 	</Bind>
-	<Firearm name="M4 Carbine_SWAT" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="SWAT_M4 Carbine" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
 			tooltip="@firearm_m4_carabine_name"
 			description="@SWAT_firearm_m4_carabine_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -397,7 +390,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="M4Sup_SWAT">
+	<Bind eqp="SWAT_M4Sup">
 		<to name="SWAT_Assaulter"/>
 		<to name="SWAT_Stealth"/>
 
@@ -413,7 +406,7 @@
 		<to name="LPVO_6X"/>
 		<to name="LPVO_8X"/>
 	</Bind>
-	<Firearm name="M4Sup_SWAT" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+	<Firearm name="SWAT_M4Sup" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
 			tooltip="@firearm_m4Sup_carabine_name"
 			description="@SWAT_firearm_m4_carabine_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -561,27 +554,17 @@
 		</Sounds>
 	</Firearm>
 
-
-    <!--Rifles end-->
-
-    <!--Pistols-->
-
-    <Bind eqp="M9 Pistol_SWAT">
-		<!-- human classes -->
-		<to name="SWAT"/>
-
-
-		<!-- ammo, the first one is the default
-			Note: instead of binding ammo to pistols (which would be the logical way), we do it the other way, to be able to keep track of the defaults and have a 1-to-many equivalence which is easier to use in code
-		-->
-		<to name="919FMJM882_Handgun"/>
-		<to name="919FMJM1152_Handgun"/>
-		<to name="919JHPM1153_Handgun"/>
-
-		<!-- scopes, the first one is the default -->
-		<to name="IronSights_Pistol"/>
-	</Bind>
-	<Firearm name="M9 Pistol_SWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+	<Bind eqp="SWAT_M9 Pistol">
+			<!-- human classes -->
+			<to name="SWAT"/>
+			<!-- Ammo -->
+			<to name="919FMJM882_Handgun"/>
+			<to name="919FMJM1152_Handgun"/>
+			<to name="919JHPM1153_Handgun"/>
+			<!-- scopes, the first one is the default -->
+			<to name="IronSights_Pistol"/>
+		</Bind>
+	<Firearm name="SWAT_M9 Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="@firearm_m9_name"
 			description="@firearm_m9_desc"
 			img="data/models/weapons/m9_ui.dds"
@@ -649,8 +632,7 @@
 		</Sounds>
 	</Firearm>
 
-	<!-- M9sup Pistol -->
-	<Bind eqp="M9Sup Pistol_SWAT">
+	<Bind eqp="SWAT_M9Sup Pistol">
 		<to name="SWAT"/>
 
 		<to name="919FMJM882_SupHandgun"/>
@@ -659,7 +641,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="M9Sup Pistol_SWAT" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
+	<Firearm name="SWAT_M9Sup Pistol" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
 			tooltip="@firearm_m9sup_name"
 			description="@firearm_m9sup_desc"
 			img="data/models/weapons/m9_ui.dds"
@@ -727,7 +709,7 @@
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="G17 Pistol_SWAT">
+	<Bind eqp="SWAT_G17 Pistol">
 		<to name="SWAT"/>
 
 		<to name="919FMJM882_G19X Pistol"/>
@@ -737,7 +719,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G17 Pistol_SWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+	<Firearm name="SWAT_G17 Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="@firearm_g17_name"
 			description="@SWAT_firearm_g17_pistol_desc"
 			img="data/models/weapons/g22_ui.dds"
@@ -804,14 +786,13 @@
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="G2240 Pistol_SWAT">
+	<Bind eqp="SWAT_G2240 Pistol">
 		<to name="SWAT"/>
 		<to name="40FMJ180GR_G2240 Pistol"/>
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-
-	<Firearm name="G2240 Pistol_SWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+	<Firearm name="SWAT_G2240 Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
 			tooltip="@firearm_g2240_name"
 			description="@firearm_g2240_desc"
 			img="data/models/weapons/g22_ui.dds"
@@ -878,14 +859,14 @@
 		</Sounds>
 	</Firearm>
 
-	<Bind eqp="1911 Pistol_SWAT">
+	<Bind eqp="SWAT_1911 Pistol">
 		<to name="SWAT"/>
 
 		<to name="45FMJM1911_1911 Pistol"/>
 
 		<to name="IronSights_Pistol1911"/>
 	</Bind>
-	<Firearm name="1911 Pistol_SWAT" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
+	<Firearm name="SWAT_1911 Pistol" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="6"
 			tooltip="@firearm_1911_pistol_name"
 			description="@SWAT_firearm_1911_pistol_desc"
 			img="data/models/weapons/1911_ui.dds"
@@ -952,5 +933,4 @@
 		</Sounds>
 	</Firearm>
 
-    <!--PistolsEnd-->
 </Equipment>
