@@ -457,6 +457,372 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="SWAT_P90">
+		<to name="300AACBLACKOUT"/>
+
+		<to name="SWAT_Assaulter"/>
+
+		<to name="SWAT_HBIrons"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+	</Bind>
+	<Firearm name="SWAT_P90" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+			tooltip="P90 PDW"
+			description="@SWAT_firearm_p90_pdw_desc"
+			img="data/models/weapons/m4_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="50"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1800"
+			reloadEmptyTime="2500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="350"
+			guardTime="180"
+
+			accuracyStart="230"
+			accuracyEnd="200"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_57x28_name"
+			operationInfoText="@firearm_operation_fullauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="40.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="4"/>
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="15"/>
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="40"/>
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="556sup_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="SWAT_S12k">
+		<to name="12GA00BUCK_KSG"/>
+
+		<to name="SWATKSGIronsights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+	</Bind>
+	<Firearm name="SWAT_S12k" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
+			tooltip="S12K Tactical Shotgun"
+			description="@SWAT_firearm_s12k_tactical_shotgun_desc"
+			img="data/models/weapons/KSG_ui.dds"
+
+			animationSet="shotgun_pump"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
+		<ModifiableParams
+			numPellets="9"
+			roundsPerMagazine="7"
+			closedBolt="1"
+
+			cyclicReload="1"
+			reloadTime="500"
+			reloadEmptyTime="1000"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="450"
+			guardTime="200"
+
+			accuracyStart="100"
+			accuracyEnd="10"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+
+			suppressionScale="0.14"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_12gauge_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingShotgun"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="6.0"
+			ai_rangeMax="14.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
+			<AttackType name="Rangers_PumpAimedFireLong" rangeMeters="12"/>
+			<AttackType name="Rangers_PumpAimedFireLongXX" rangeMeters="100"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_02" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_03" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="870br_eqp"/>
+			<Unequip name="870br_neqp"/>
+			<Reload name="870br_reld"/>
+			<ReloadEmpty name="870br_reld"/>
+			<Fire name="870br_fire"/>
+			<ShellDrop name="shotgun_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="SWAT_Vector">
+		<to name="300AACBLACKOUT"/>
+
+		<to name="SWAT_Assaulter"/>
+
+		<to name="SWAT_HBIrons"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+	</Bind>
+	<Firearm name="SWAT_Vector" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+			tooltip="Vector SMG"
+			description="@SWAT_firearm_vector_smg_desc"
+			img="data/models/weapons/m4_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="25"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1800"
+			reloadEmptyTime="2500"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="350"
+			guardTime="180"
+
+			accuracyStart="230"
+			accuracyEnd="200"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_45acp_name"
+			operationInfoText="@firearm_operation_fullauto2burst_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="40.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="4"/>
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="15"/>
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="40"/>
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="556sup_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="SWAT_Six12">
+		<to name="12GA00BUCK_KSG"/>
+
+		<to name="SWATKSGIronsights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+	</Bind>
+	<Firearm name="SWAT_Six12" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
+			tooltip="Six 12 Shotgun"
+			description="SWAT_firearm_six12_shotgun_desc"
+			img="data/models/weapons/KSG_ui.dds"
+
+			animationSet="shotgun_pump"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
+		<ModifiableParams
+			numPellets="9"
+			roundsPerMagazine="6"
+			closedBolt="1"
+
+			cyclicReload="1"
+			reloadTime="500"
+			reloadEmptyTime="1000"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="450"
+			guardTime="200"
+
+			accuracyStart="100"
+			accuracyEnd="10"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+
+			suppressionScale="0.14"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_12gauge_name"
+			operationInfoText="@firearm_operation_doubleactiononly_name"
+			ejectingShellEntity="BulletCasingShotgun"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="6.0"
+			ai_rangeMax="14.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
+			<AttackType name="Rangers_PumpAimedFireLong" rangeMeters="12"/>
+			<AttackType name="Rangers_PumpAimedFireLongXX" rangeMeters="100"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_02" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_03" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="870br_eqp"/>
+			<Unequip name="870br_neqp"/>
+			<Reload name="870br_reld"/>
+			<ReloadEmpty name="870br_reld"/>
+			<Fire name="870br_fire"/>
+			<ShellDrop name="shotgun_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="SWAT_Six12SD">
+		<to name="12GA00BUCK_KSG"/>
+
+		<to name="SWATKSGIronsights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+	</Bind>
+	<Firearm name="SWAT_Six12SD" inventoryBinding="PrimaryWeapon" category="shotgun" unlockCost="0"
+			tooltip="Six 12-SD Shotgun"
+			description="@SWAT_firearm_six12sd_shotgun_desc"
+			img="data/models/weapons/KSG_ui.dds"
+
+			animationSet="shotgun_pump"
+		>
+
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/models/weapons/KSG.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/KSG.dds"/>
+		<ModifiableParams
+			numPellets="9"
+			roundsPerMagazine="6"
+			closedBolt="1"
+
+			cyclicReload="1"
+			reloadTime="500"
+			reloadEmptyTime="1000"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="450"
+			guardTime="200"
+
+			accuracyStart="100"
+			accuracyEnd="10"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+
+			suppressionScale="0.14"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_12gauge_name"
+			operationInfoText="@firearm_operation_doubleactiononly_name"
+			ejectingShellEntity="BulletCasingShotgun"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="6.0"
+			ai_rangeMax="14.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="6"/>
+			<AttackType name="Rangers_PumpAimedFireLong" rangeMeters="12"/>
+			<AttackType name="Rangers_PumpAimedFireLongXX" rangeMeters="100"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_02" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_03" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="870br_eqp"/>
+			<Unequip name="870br_neqp"/>
+			<Reload name="870br_reld"/>
+			<ReloadEmpty name="870br_reld"/>
+			<Fire name="870br_fire"/>
+			<ShellDrop name="shotgun_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 	<!-- FiveSeven -->
 	<Bind eqp="SWAT_FiveSeven">
 		<to name="5_7FiveSeven"/>
@@ -493,7 +859,7 @@
 		/>
 
 		<Params
-			caliberInfoText="@firearm_caliber_9x19_name"
+			caliberInfoText="@firearm_caliber_57x28_name"
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
@@ -607,4 +973,149 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
+
+	<Bind eqp="SWAT_tac357">
+		<to name="5_7FiveSeven"/>
+		<to name="SWAT"/>
+		<to name="IronSights_Pistol"/>
+	</Bind>
+	<Firearm name="SWAT_tac357" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+			tooltip="Tactical .357 Revolver"
+			description="@SWAT_firearm_tactical_357_revolver_desc"
+			img="data/models/weapons/m9_ui.dds"
+
+			animationSet="pistol"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="8"
+			closedBolt="0"
+
+			cyclicReload="0"
+			reloadTime="1400"
+			reloadEmptyTime="1800"
+			changeInTime="800"
+			changeOutTime="1000"
+			readyTime="100"
+			guardTime="50"
+
+			accuracyStart="90"
+			accuracyEnd="85"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText=""
+			operationInfoText=""
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_EmergencyFire9mil" rangeMeters="1.5"/>
+			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="4" priority="0"/>
+			<AttackType name="Rangers_ControlledPair9mil" rangeMeters="8" priority="0"/>
+			<AttackType name="Rangers_PistolAimedFire9mil" rangeMeters="15"/>
+			<AttackType name="Rangers_PistolAimedFireLong9mil" rangeMeters="30"/>
+			<AttackType name="Rangers_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="m9_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="SWAT_Magnum44">
+		<to name="5_7FiveSeven"/>
+		<to name="SWAT"/>
+		<to name="IronSights_Pistol"/>
+	</Bind>
+	<Firearm name="SWAT_Magnum44" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+			tooltip="Magnum 44 Revolver"
+			description="@SWAT_firearm_magnum_44_revolver_desc"
+			img="data/models/weapons/m9_ui.dds"
+
+			animationSet="pistol"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<RenderObject3D model="data/models/weapons/FiveSeven.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/FiveSeven.dds" skipGOSSAO="true"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="6"
+			closedBolt="0"
+
+			cyclicReload="0"
+			reloadTime="1400"
+			reloadEmptyTime="1800"
+			changeInTime="800"
+			changeOutTime="1000"
+			readyTime="100"
+			guardTime="50"
+
+			accuracyStart="90"
+			accuracyEnd="85"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText=""
+			operationInfoText=""
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_EmergencyFire9mil" rangeMeters="1.5"/>
+			<AttackType name="Rangers_DoubleTap9mil" rangeMeters="4" priority="0"/>
+			<AttackType name="Rangers_ControlledPair9mil" rangeMeters="8" priority="0"/>
+			<AttackType name="Rangers_PistolAimedFire9mil" rangeMeters="15"/>
+			<AttackType name="Rangers_PistolAimedFireLong9mil" rangeMeters="30"/>
+			<AttackType name="Rangers_PistolAimedFireLong9milXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds>
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="m9_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 </Equipment>
