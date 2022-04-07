@@ -4,13 +4,11 @@
   <!--                 	SWAT weapons                        	-->
   <!--========================================================-->
 
-	<Bind to="SWAT_Breacher">
-		<eqp name="SWAT_KSGSUP"/>
-		<eqp name="SWAT_KSG"/>
-	</Bind>
 
 	<!-- KSG -->
 	<Bind eqp="SWAT_KSG">
+		<to name="SWAT_Breacher"/>
+
 		<to name="12GA00BUCK_KSG"/>
 
 		<to name="SWATKSGIronsights"/>
@@ -85,7 +83,10 @@
 
 	<!-- KSG Sup -->
 	<Bind eqp="SWAT_KSGSUP">
-		<to name="12GA00BUCK_KSG"/>
+		<to name="SWAT_Breacher"/>
+		<to name="SWAT_Stealth"/>
+
+		<to name="12GA00BUCK_KSGSUP"/>
 
 		<to name="SWATKSGIronsights"/>
 		<to name="M68CCO"/>
@@ -156,7 +157,7 @@
 
 
 	<Bind eqp="SWAT_HoneyBadger">
-		<to name="300AACBLACKOUT"/>
+		<to name="300AACBLACKOUT_HB"/>
 
 		<to name="SWAT_Stealth"/>
 
@@ -232,7 +233,7 @@
 
 
 	<Bind eqp="SWAT_MPX">
-		<to name="300AACBLACKOUT"/>
+		<to name="919FMJM1152_MPX"/>
 
 		<to name="SWAT_Assaulter"/>
 
@@ -533,6 +534,8 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_S12k">
+		<to name="SWAT_Breacher"/>
+
 		<to name="12GA00BUCK_KSG"/>
 
 		<to name="SWATKSGIronsights"/>
@@ -680,6 +683,8 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_Six12">
+		<to name="SWAT_Breacher"/>
+
 		<to name="12GA00BUCK_KSG"/>
 
 		<to name="SWATKSGIronsights"/>
@@ -752,6 +757,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_Six12SD">
+		<to name="SWAT_Breacher"/>
 		<to name="12GA00BUCK_KSG"/>
 
 		<to name="SWATKSGIronsights"/>

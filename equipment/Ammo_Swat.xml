@@ -1,7 +1,5 @@
 <Equipment>
-    <!--========================================================-->
-    <!--                    KSG                                 -->
-    <!--========================================================-->
+
     <Ammo name="12GA00BUCK_KSG"
       tooltip="@ammo_12GA00BUCK_name"
       description="@ammo_12GA00BUCK_KSG_desc"
@@ -10,7 +8,7 @@
       <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
 
       <!-- defines base ROF and sound of weapon -->
-      <Params roundsPerSecond="4.5"
+      <Params roundsPerSecond="1.3"
         audibleSoundRadius="50"
         physicsImpactForce="3.0"
         damageType="0"
@@ -27,9 +25,35 @@
       </Params>
     </Ammo>
 
-    <!--========================================================-->
-    <!--                      Five Seven                        -->
-    <!--========================================================-->
+    <Ammo name="12GA00BUCK_KSGSUP"
+      tooltip="@ammo_12GA00BUCK_name"
+      description=""
+      img="data/models/weapons/attachments/m257_buckshot_ammo_ui.dds"
+      >
+      <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+      <!-- defines base ROF and sound of weapon -->
+      <Params roundsPerSecond="1.3"
+        audibleSoundRadius="10"
+        physicsImpactForce="2.5"
+        damageType="0"
+        silenced="1">
+
+        <!-- the damage value is linearly interpolated in the given range, between min/max damage -->
+        <Damage start="10" end="3" startDist="0" endDist="50"/>
+
+        <!-- base value, can be modified by AttackType/Abilities/Doctrine/etc. -->
+        <CriticalChancePercent start="10" end="5" startDist="0" endDist="25"/>
+
+        <!-- i.e. divides distance range in (end - start) discrete intervals for AP -->
+        <ArmorPenetration start="6" end="3" startDist="0" endDist="20"/>
+      </Params>
+    </Ammo>
+
+
+
+
+
 
     <Ammo name="5_7FiveSeven"
       tooltip="@ammo_5_7_FS_name"
