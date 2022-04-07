@@ -158,7 +158,7 @@
 	<Bind eqp="SWAT_HoneyBadger">
 		<to name="300AACBLACKOUT"/>
 
-		<to name="SWAT_Assaulter"/>
+		<to name="SWAT_Stealth"/>
 
 		<to name="SWAT_HBIrons"/>
 		<to name="M68CCO"/>
