@@ -309,7 +309,7 @@
 
 
 	<Bind eqp="SWAT_G36C">
-		<to name="300AACBLACKOUT"/>
+		<to name="556FMJM855_G36C"/>
 
 		<to name="SWAT_Assaulter"/>
 
@@ -384,7 +384,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_MCX.300">
-		<to name="300AACBLACKOUT"/>
+		<to name="556FMJM855_MCX.300"/>
 
 		<to name="SWAT_Assaulter"/>
 
@@ -422,7 +422,7 @@
 		/>
 
 		<Params
-			caliberInfoText="@firearm_caliber_300BLK_name"
+			caliberInfoText="@firearm_caliber_556x45_name"
 			operationInfoText="@firearm_operation_semiauto_name"
 			ejectingShellEntity="BulletCasingLarge"
 			magazineEntity="m4_mag"
@@ -459,7 +459,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_P90">
-		<to name="300AACBLACKOUT"/>
+		<to name="300AACBLACKOUT_HB"/>
 
 		<to name="SWAT_Assaulter"/>
 
@@ -536,7 +536,7 @@
 	<Bind eqp="SWAT_S12k">
 		<to name="SWAT_Breacher"/>
 
-		<to name="12GA00BUCK_KSG"/>
+		<to name="300AACBLACKOUT_HB"/>
 
 		<to name="SWATKSGIronsights"/>
 		<to name="M68CCO"/>
@@ -608,7 +608,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_Vector">
-		<to name="300AACBLACKOUT"/>
+		<to name="300AACBLACKOUT_HB"/>
 
 		<to name="SWAT_Assaulter"/>
 
@@ -685,7 +685,7 @@
 	<Bind eqp="SWAT_Six12">
 		<to name="SWAT_Breacher"/>
 
-		<to name="12GA00BUCK_KSG"/>
+		<to name="300AACBLACKOUT_HB"/>
 
 		<to name="SWATKSGIronsights"/>
 		<to name="M68CCO"/>
@@ -758,7 +758,7 @@
 
 	<Bind eqp="SWAT_Six12SD">
 		<to name="SWAT_Breacher"/>
-		<to name="12GA00BUCK_KSG"/>
+		<to name="300AACBLACKOUT_HB"/>
 
 		<to name="SWATKSGIronsights"/>
 		<to name="M68CCO"/>
@@ -981,7 +981,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_tac357">
-		<to name="5_7FiveSeven"/>
+		<to name="300AACBLACKOUT_HB"/>
 		<to name="SWAT"/>
 		<to name="IronSights_Pistol"/>
 	</Bind>
@@ -1053,7 +1053,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_Magnum44">
-		<to name="5_7FiveSeven"/>
+		<to name="300AACBLACKOUT_HB"/>
 		<to name="SWAT"/>
 		<to name="IronSights_Pistol"/>
 	</Bind>
@@ -1072,7 +1072,7 @@
 			roundsPerMagazine="6"
 			closedBolt="0"
 
-			cyclicReload="0"
+			cyclicReload="1"
 			reloadTime="1400"
 			reloadEmptyTime="1800"
 			changeInTime="800"
