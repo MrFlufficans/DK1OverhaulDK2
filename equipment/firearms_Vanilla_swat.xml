@@ -1094,4 +1094,156 @@
 		</Sounds>
 	</Firearm>
 
+	<Bind eqp="SWAT_HK45">
+		<to name="SWAT"/>
+
+		<to name="45FMJM1911_1911 Pistol"/>
+		<to name="45JHP185GR_Pistol"/>
+		<to name="45JHP160GR_Pistol"/>
+
+		<to name="IronSights_Pistol"/>
+	</Bind>
+	<Firearm name="SWAT_HK45" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="5"
+			tooltip="HK45"
+			description="@SWAT_firearm_hk45_pistol_desc"
+			img="data/models/weapons/hs45_ui.dds"
+			animationSet="pistol"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1.6" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+		<RenderObject3D model="data/models/weapons/hk45ct.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/hk45ct.dds" skipGOSSAO="true"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="8"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1400"
+			reloadEmptyTime="1550"
+			changeInTime="750"
+			changeOutTime="1100"
+			readyTime="90"
+			guardTime="40"
+
+			accuracyStart="120"
+			accuracyEnd="85"
+			accuracyStartDist="7"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_45acp_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CIA_HKDoubleTap45" rangeMeters="3.5" priority="0"/>
+			<AttackType name="CIA_HKControlledPair45" rangeMeters="7" priority="0"/>
+			<AttackType name="CIA_HKPistolAimedFire45" rangeMeters="15"/>
+			<AttackType name="Rangers_PistolAimedFireLong45" rangeMeters="33"/>
+			<AttackType name="Rangers_PistolAimedFireLong45XX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="1911_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="SWAT_HK45sup">
+		<to name="SWAT"/>
+
+		<to name="45FMJM1911_SuppressedPistol"/>
+		<to name="45JHP185GR_SuppressedPistol"/>
+		<to name="45JHP160GR_SuppressedPistol"/>
+
+		<to name="IronSights_Pistol"/>
+	</Bind>
+	<Firearm name="SWAT_HK45sup" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="0"
+			tooltip="HK45-SD"
+			description="@SWAT_firearm_hk45sd_pistol_desc"
+			img="data/models/weapons/hs45_ui.dds"
+
+			animationSet="pistol"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1.6" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-2"/>
+		<RenderObject3D model="data/models/weapons/hk45ct.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/hk45ct.dds" skipGOSSAO="true"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="8"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="1500"
+			reloadEmptyTime="1600"
+			changeInTime="1000"
+			changeOutTime="1300"
+			readyTime="110"
+			guardTime="40"
+
+			accuracyStart="120"
+			accuracyEnd="85"
+			accuracyStartDist="7"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_45acp_name"
+			operationInfoText="@firearm_operation_semiauto_name"
+			ejectingShellEntity="BulletCasingSmall"
+			magazineEntity="pm63_mag"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="3.0"
+			ai_rangeMax="15.0"
+			ai_stopWhenShooting="false"
+		/>
+
+		<AttackTypes>
+			<AttackType name="CIA_HKDoubleTap45" rangeMeters="4.5" priority="0"/>
+			<AttackType name="CIA_HKControlledPair45" rangeMeters="10" priority="0"/>
+			<AttackType name="CIA_HKPistolAimedFire45Sup" rangeMeters="16"/>
+			<AttackType name="Rangers_PistolAimedFireLong45" rangeMeters="33"/>
+			<AttackType name="Rangers_PistolAimedFireLong45XX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="pistol_eqp"/>
+			<Unequip name="pistol_neqp"/>
+			<Reload name="pistol_reld"/>
+			<ReloadEmpty name="pistol_reldempt"/>
+			<Fire name="45sup_fire"/>
+			<ShellDrop name="pistol_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 </Equipment>

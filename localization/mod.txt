@@ -15,6 +15,8 @@
 @SWAT_firearm_mk17_long_barrel_desc=When long range semi-auto fire is needed,\nthere's nothing quite like the big old 7.62\nto hit them with. When these rounds connect targets go down, but practical rate of fire is limited by the strong recoil.\n\nThe Mk 17 has AR-like controls in operation, but the long barrel hinders short range maneuverability and efficiency.
 @SWAT_firearm_g17_pistol_desc=A high capacity 9mm sidearm, the perfect\ncompanion when you know how to hit the\nsoft spots.\n\nLow in the hand and shooting 'just' 9mm, the G17 offers great recoil control to deliver\nmultiple shots.
 @SWAT_firearm_1911_pistol_desc=Want an increase in stopping power? Look no further than the venerable .45 ACP.\n\nThe trusty, hard hitting 1911 will take down\nmost bad guys in one shot, and provides\nquick followup shots to additional targets.\n\nMind the magazine size, though!
+@SWAT_firearm_hk45_pistol_desc=The powerful .45 ACP and all the modern\ndesign features, whats not to like? The HK\nboasts extreme accuracy and high magazine\ncapacity - for a 45 that is.\n\nNot the best pistol for recoil control and\nfollow-up shots, but a solid performer in\nany situation.
+@SWAT_firearm_hk45sd_pistol_desc=The slow moving .45 slug is the ideal\ncartridge to suppress, and an accurate\npistol doubles its value.\n\nA great conversation starter if there ever\nwas one.\n\nSound Travel Range: 6m
 
 
 @SWAT_firearm_ksg_shotgun_desc=A very avant-garde design for a pump-action\nshotgun, the KSG uses twin tubular magazines to hold a whooping 14 shells.\n\nThe bullpup form maximizes maneuverability and accuracy, at the expense of awkward reloads and access to the ejection port.
