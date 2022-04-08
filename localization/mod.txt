@@ -7,7 +7,7 @@
 
 
 @SWAT_firearm_mp5a3_smg_desc=Very accurate and quick on the target at\nCQB ranges, the classic Mp5 is a favorite\nof SWAT teams all around the world.\n\n9MM burst fire out of a SMG barrel is\nplenty of stopping power, but the reload\ncontrols are somewhat archaic.
-@SWAT_firearm_mp5sd3_smg_desc=The quietest submachinegun at your disposal, the Mp5SD uses barrel ports and an integral\nsuppressor to lower the velocity of the\nround down to subsonic levels.\n\nYou'll still hear the sound of the bolt\ncycling, but you won't know it's a weapon.\n\nSound Travel Range: 2.5m
+@SWAT_firearm_mp5sd3_smg_desc=The quietest submachinegun at your disposal, the Mp5SD uses barrel ports and an integral suppressor to lower the velocity of the\nround down to subsonic levels.\n\nYou'll still hear the sound of the bolt\ncycling, but you won't know it's a weapon.\n\nSound Travel Range: 2.5m
 #@SWAT_firearm_mp5a3_sd_smg_desc=Mounting a 7 inch suppressor on your Mp5A3\nmight not be the best way to maintain CQB\nmaneuverability, but will lower shot sound\nlevels by a decent number of decibels.\n\nThe weapon loses some accuracy but in\npractical terms effects are negligible.\n\nSound Travel Range: 10m
 @SWAT_firearm_m4_carabine_desc=Battle proven beyond doubt, the M4 is quick\non the target and accurate at all practical\nranges.\n\nThe 14.5 inch barrel doesn't make for the\nmost maneuverable weapon in CQB spaces, but ensures reliable bullet fragmentation and stopping power.
 @SWAT_firearm_m590_shotgun_desc=The standard and dependable pump-action\nshotgun in Police inventory, the M590 comes with great mag capacity but suffers in CQB spaces due to the long and unwieldy barrel.\n\nAs with all shotguns, keep in mind shot\ndispersion and target background.
