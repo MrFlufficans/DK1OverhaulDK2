@@ -18,26 +18,6 @@
 	<Portrait tex="data/textures/portraits/cia7.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
 	<Portrait tex="data/textures/portraits/cia8.dds" unit="SWAT" gender="1" voicePack="male_very_american"/>
 
-	<!--<Portrait tex="data/textures/portraits/cia1.dds" customName="Diana Dragomir" unit="SWAT" gender="1" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia2.dds" customName="Chip Hinshaw" unit="SWAT" gender="1" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia3.dds" customName="Jaime Soto" unit="SWAT" gender="1" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia4.dds" customName="Nate Eskey" unit="SWAT" gender="1" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia5.dds" customName="Graham Connolly" unit="SWAT" gender="1" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia6.dds" customName="Robin Batchelor" unit="SWAT" gender="1" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia7.dds" customName="Cristian Radu" unit="SWAT" gender="1" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia8.dds" customName="Todd Willenbring" unit="SWAT" gender="1" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia9.dds" customName="Dean Reynolds" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia10.dds" customName="Jason Hopkins" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia11.dds" customName="Darran Hirose" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia12.dds" customName="Todd Rossel" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia13.dds" customName="Jimmy Lovelace" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia14.dds" customName="Dominic Peters" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia15.dds" customName="Jmanis Catharg" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia16.dds" customName="Brandon Benjamin" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia17.dds" customName="Steve Harvey" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia18.dds" customName="Scott Graves" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia19.dds" customName="Chris Logan" unit="SWAT" gender="0" voicePack="male_very_american"/>
-	<Portrait tex="data/textures/portraits/cia20.dds" customName="Geoff Byers" unit="SWAT" gender="0" voicePack="male_very_american"/>>-->
 
 	<!-- NAMES (these can be linked to a unit as well, if unit="name" is specified -->
 
@@ -47,85 +27,96 @@
 
 
 
-	<UnitNames unit0="SWAT">
+<UnitNames unit0="SWAT">
 		<Gender value="1">
-			<Name n="FAITH"/>
-			<Name n="ROSE"/>
-			<Name n="LIZZIE"/>
-			<Name n="HOPE"/>
-			<Name n="TINA"/>
-			<Name n="SANDY"/>
-			<Name n="SHANNON"/>
-			<Name n="FLORES"/>
-			<Name n="DIZZY"/>
-			<Name n="IBANEZ"/>
-			<Name n="CAT"/>
-			<Name n="DIETRICH"/>
-			<Name n="FERRO"/>
-			<Name n="VASQUEZ"/>
-			<Name n="NEWT"/>
-			<Name n="RIPLEY"/>
-			<Name n="CONNOR"/>
-			<Name n="JULIETTE"/>
-			<Name n="GARCIA"/>
-			<Name n="KATE"/>
-			<Name n="RUNNER"/>
-			<Name n="BISHOP"/>
-			<Name n="HIT GIRL"/>
-			<Name n="DOLORES"/>
-			<Name n="BLUE"/>
-			<Name n="RED"/>
-			<Name n="PEANUT"/>
-			<Name n="LEIA"/>
-			<Name n="COLT"/>
-			<Name n="UHURA"/>
-			<Name n="PADME"/>
-			<Name n="PRINCESS"/>
-			<Name n="JYN"/>
-			<Name n="ERSO"/>
-			<Name n="REY"/>
-			<Name n="CARA"/>
-			<Name n="FENNEC"/>
+			<Name n="Chip Hinshaw"/>
+			<Name n="Jaime Soto"/>
+			<Name n="Nate Eskey"/>
+			<Name n="Graham Connolly"/>
+			<Name n="Robin Batchelor"/>
+			<Name n="Cristian Radu"/>
+			<Name n="Todd Willenbring"/>
+			<Name n="Dean Reynolds"/>
+			<Name n="Jason Hopkins"/>
+			<Name n="Darran Hirose"/>
+			<Name n="Todd Rossel"/>
+			<Name n="Jimmy Lovelace"/>
+			<Name n="Dominic Peters"/>
+			<Name n="Jmanis Catharg"/>
+			<Name n="Brandon Benjamin"/>
+			<Name n="Steve Harvey"/>
+			<Name n="Scott Graves"/>
+			<Name n="Chris Logan"/>
+			<Name n="Geoff Byers"/>
+			<Name n="Aaron Lewis"/>
+			<Name n="Jack Lane"/>
+			<Name n="Lucian Istrate"/>
+			<Name n="Nils-Anders Nottseter"/>
+			<Name n="Marius Bekk"/>
+			<Name n="Gary Carrillo"/>
+			<Name n="Toke Allure"/>
+			<Name n="Andrew Eskridge"/>
+			<Name n="John Corna"/>
+			<Name n="Tristin Pitts"/>
+			<Name n="Kenneth Flolo"/>
+			<Name n="David Chan"/>
+			<Name n="Omar Ajab"/>
+			<Name n="Ben Tan"/>
+			<Name n="Kevin McKenzie"/>
+			<Name n="David-Lawrence Gell"/>
+			<Name n="Neil Hargreaves"/>
+			<Name n="Bryan Barnes"/>
+			<Name n="Seth Bull"/>
+			<Name n="Jon Trew"/>
+			<Name n="Jay Cranston"/>
+			<Name n="Trond Kaarikstad"/>
+			<Name n="Ricky Rogers"/>
+			<Name n="Justin Winsor"/>
+			<Name n="Logan S. Wolf"/>
+			<Name n="Reece Checkley"/>
+			<Name n="Steve Parish"/>
+			<Name n="Carl-Fredrik Lidgren"/>
+			<Name n="Andrew Noland"/>
+			<Name n="Robert Butler"/>
+			<Name n="Evan Gnott"/>
+			<Name n="Thomas Gorin"/>
+			<Name n="Jeff Takeda"/>
+			<Name n="Fabian Wolf"/>
+			<Name n="Mike Mason"/>
+			<Name n="Kristoffer Luneng"/>
+			<Name n="Asgeir Ingvarsson "/>
+			<Name n="Matt Richards"/>
+			<Name n="Oliver H. Brennecke"/>
+			<Name n="Henry Fung"/>
+			<Name n="Tom Hana"/>
+			<Name n="James Baikie"/>
+			<Name n="Mario Oelze"/>
+			<Name n="Michael Charge"/>
+			<Name n="Andrew Eskridge"/>
+			<Name n="Alexander Beutler"/>
+			<Name n="Ed Fox"/>
+			<Name n="Eric Cedeno"/>
+			<Name n="Darren Kerr"/>
+			<Name n="Cedric Da Fonseca"/>
+			<Name n="Andre Andersen"/>
+			<Name n="Jeremy Nicholson"/>
+			<Name n="Jean-Francois Soucy"/>
+			<Name n="Michael Noga"/>
+			<Name n="Radian Haryono"/>
+
+
+
+			<Name n="Anthony"/>
+			<Name n="Fluffy"/>
+			<Name n="MK"/>
+			<Name n="DPS"/>
+			<Name n="Sly"/>
 		</Gender>
 		<Gender value="0">
-			<Name n="FAITH"/>
-			<Name n="ROSE"/>
-			<Name n="LIZZIE"/>
-			<Name n="HOPE"/>
-			<Name n="TINA"/>
-			<Name n="SANDY"/>
-			<Name n="SHANNON"/>
-			<Name n="FLORES"/>
-			<Name n="DIZZY"/>
-			<Name n="IBANEZ"/>
-			<Name n="CAT"/>
-			<Name n="DIETRICH"/>
-			<Name n="FERRO"/>
-			<Name n="VASQUEZ"/>
-			<Name n="NEWT"/>
-			<Name n="RIPLEY"/>
-			<Name n="CONNOR"/>
-			<Name n="JULIETTE"/>
-			<Name n="GARCIA"/>
-			<Name n="KATE"/>
-			<Name n="RUNNER"/>
-			<Name n="BISHOP"/>
-			<Name n="HIT GIRL"/>
-			<Name n="DOLORES"/>
-			<Name n="BLUE"/>
-			<Name n="RED"/>
-			<Name n="PEANUT"/>
-			<Name n="LEIA"/>
-			<Name n="COLT"/>
-			<Name n="UHURA"/>
-			<Name n="PADME"/>
-			<Name n="PRINCESS"/>
-			<Name n="JYN"/>
-			<Name n="ERSO"/>
-			<Name n="REY"/>
-			<Name n="CARA"/>
-			<Name n="FENNEC"/>
+			<Name n="Diana Dragomir"/>
+			<Name n="Kim Jardin"/>
+			<Name n="Angela Hairston"/>
+			<Name n="Jens Gudmundsson"/>
 		</Gender>
-	</UnitNames>
-
+	</UnitNames>-->
 </HumanIdentities>
