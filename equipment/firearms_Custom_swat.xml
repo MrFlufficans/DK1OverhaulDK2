@@ -50,7 +50,6 @@
 			caliberInfoText="@firearm_caliber_12gauge_name"
 			operationInfoText="@firearm_operation_pumpaction_name"
 			ejectingShellEntity="BulletCasingShotgun"
-			suppressedSwitch="SWAT_KSGSUP"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="6.0"
 			ai_rangeMax="14.0"
@@ -128,8 +127,6 @@
 			caliberInfoText="@firearm_caliber_12gauge_name"
 			operationInfoText="@firearm_operation_pumpaction_name"
 			ejectingShellEntity="BulletCasingShotgun"
-			suppressedSwitch="SWAT_KSG"
-			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
 			ai_rangeMin="1.0"
 			ai_rangeOptimal="6.0"
 			ai_rangeMax="14.0"
@@ -165,7 +162,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-	<Firearm name="SWAT_HoneyBadger" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+	<Firearm name="SWAT_HoneyBadger" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="Honey Badger PDW"
 			description="@SWAT_firearm_honey_badger_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -241,7 +238,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-	<Firearm name="SWAT_MPX" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+	<Firearm name="SWAT_MPX" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="MPX SMG"
 			description="@SWAT_firearm_mpx_40_smg_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -283,8 +280,8 @@
 		/>
 
 		<AttackTypes>
-			<AttackType name="Rangers_CarbineAutoFire" rangeMeters="4"/>
-			<AttackType name="Rangers_RapidFireMed" rangeMeters="15"/>
+			<AttackType name="Rangers_SMGAutoFire" rangeMeters="12"/>
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="20"/>
 			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="40"/>
 			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
 		</AttackTypes>
@@ -301,7 +298,7 @@
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
 			<ReloadEmpty name="rifle_reldempt"/>
-			<Fire name="556sup_fire"/>
+			<Fire name="mk18_fire"/>
 			<ShellDrop name="rifle_shell_drop"/>
 			<Empty name="gen_empty"/>
 		</Sounds>
@@ -317,7 +314,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-	<Firearm name="SWAT_G36C" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+	<Firearm name="SWAT_G36C" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="G36C Rifle"
 			description="@SWAT_firearm_g36c_assault_rifle_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -392,7 +389,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-	<Firearm name="SWAT_MCX.300" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+	<Firearm name="SWAT_MCX.300" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="MCX Rifle"
 			description="@SWAT_firearm_mcx300_carbine_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -459,7 +456,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_P90">
-		<to name="300AACBLACKOUT_HB"/>
+		<to name="556FMJM855_P90"/>
 
 		<to name="SWAT_Assaulter"/>
 
@@ -467,7 +464,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-	<Firearm name="SWAT_P90" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+	<Firearm name="SWAT_P90" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="P90 PDW"
 			description="@SWAT_firearm_p90_pdw_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -536,7 +533,7 @@
 	<Bind eqp="SWAT_S12k">
 		<to name="SWAT_Breacher"/>
 
-		<to name="300AACBLACKOUT_HB"/>
+		<to name="12GA00BUCK_S12k"/>
 
 		<to name="SWATKSGIronsights"/>
 		<to name="M68CCO"/>
@@ -616,7 +613,7 @@
 		<to name="M68CCO"/>
 		<to name="Holosight"/>
 	</Bind>
-	<Firearm name="SWAT_Vector" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+	<Firearm name="SWAT_Vector" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="Vector SMG"
 			description="@SWAT_firearm_vector_smg_desc"
 			img="data/models/weapons/m4_ui.dds"
@@ -685,7 +682,7 @@
 	<Bind eqp="SWAT_Six12">
 		<to name="SWAT_Breacher"/>
 
-		<to name="300AACBLACKOUT_HB"/>
+		<to name="12GA00BUCK_Six12"/>
 
 		<to name="SWATKSGIronsights"/>
 		<to name="M68CCO"/>
@@ -911,7 +908,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="SWAT_FiveSevenSup" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="6"
+	<Firearm name="SWAT_FiveSevenSup" inventoryBinding="SecondaryWeaponMuzzle" category="pistol" unlockCost="0"
 			tooltip="Five-seveN Pistol Sup"
 			description="FiveSevenSup"
 			img="data/models/weapons/m9_ui.dds"
@@ -981,7 +978,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_tac357">
-		<to name="300AACBLACKOUT_HB"/>
+		<to name=".357 Magnum_tac357"/>
 		<to name="SWAT"/>
 		<to name="IronSights_Pistol"/>
 	</Bind>
@@ -1015,8 +1012,8 @@
 		/>
 
 		<Params
-			caliberInfoText=""
-			operationInfoText=""
+			caliberInfoText=".357 Magnum"
+			operationInfoText="Double Action Revolver"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
 			ai_rangeMin="1.0"
@@ -1053,7 +1050,7 @@
 	</Firearm>
 
 	<Bind eqp="SWAT_Magnum44">
-		<to name="300AACBLACKOUT_HB"/>
+		<to name=".44 Magnum_Mag44"/>
 		<to name="SWAT"/>
 		<to name="IronSights_Pistol"/>
 	</Bind>
@@ -1087,8 +1084,8 @@
 		/>
 
 		<Params
-			caliberInfoText=""
-			operationInfoText=""
+			caliberInfoText=".44 Magnum"
+			operationInfoText="Double Action Revolver"
 			ejectingShellEntity="BulletCasingSmall"
 			magazineEntity="pm63_mag"
 			ai_rangeMin="1.0"
