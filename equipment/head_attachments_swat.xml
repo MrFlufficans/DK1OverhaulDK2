@@ -1,11 +1,11 @@
 <Equipment>
 
-<Bind eqp="SWAT_PoliceCap">
-	<to name="SWAT_Pointman"/>
-	<to name="SWAT_Assaulter"/>
-	<to name="SWAT_Stealth"/>
-	<to name="SWAT_Breacher"/>
-</Bind>
+	<Bind eqp="SWAT_PoliceCap">
+		<to name="SWAT_Pointman"/>
+		<to name="SWAT_Assaulter"/>
+		<to name="SWAT_Stealth"/>
+		<to name="SWAT_Breacher"/>
+	</Bind>
 
 	<Helmet name="SWAT_PoliceCap" inventoryBinding="Helmet" unlockCost="0"
 			tooltip="PoliceCap"

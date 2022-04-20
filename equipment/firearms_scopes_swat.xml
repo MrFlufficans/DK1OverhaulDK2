@@ -1,12 +1,11 @@
 <Equipment>
-    <Scope name="SWAT_KSGIronsights"
+  <Scope name="SWAT_KSGIronsights"
 			inventoryBinding="PrimaryWeaponScope"
 			tooltip="@scope_ironsights_name"
 			description="@scope_ironsights_desc"
 			img="data/models/weapons/attachments/iron_sights_ui.dds"
 		>
-        <RenderObject3D model="data/models/weapons/attachments/KSG Iron Sight.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSGIronSights.dds"/>
-
+      <RenderObject3D model="data/models/weapons/attachments/KSG Iron Sight.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/KSGIronSights.dds"/>
 		<Params/>
 	</Scope>
 
@@ -16,8 +15,7 @@
 			description="@scope_ironsights_desc"
 			img="data/models/weapons/attachments/iron_sights_ui.dds"
 		>
-        <RenderObject3D model="data/models/weapons/attachments/HoneyBadgerIrons.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/HoneyBadgerIrons.dds"/>
-
+      <RenderObject3D model="data/models/weapons/attachments/HoneyBadgerIrons.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/HoneyBadgerIrons.dds"/>
 		<Params/>
 	</Scope>
 </Equipment>

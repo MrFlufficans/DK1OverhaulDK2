@@ -13,7 +13,7 @@
         critChanceAdd="0"
         />
     </AttackType>
-
+ 
 	<AttackType name="SWAT_RapidFireMed">
 		<ModifiableParams
 			minAimTime="450"
