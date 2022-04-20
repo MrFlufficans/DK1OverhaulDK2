@@ -1,15 +1,13 @@
 <Entities>
-	
+
 
 	<!-- Actual Classes -->
-	
+
 	<Entity name="SWAT_Pointman" type="Human" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_Tex.dds"/>
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_Test1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_helmet.dds" attachSlot="Bip001 Head">
-			<Specular shininess="8" intensity="1.3"/>
-		</RenderObject3D>
-		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>		
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="SWAT"
@@ -24,18 +22,15 @@
 			</Mobility>
 
 			<Equipment>
-	
+
 			</Equipment>
 		</Human>
 	</Entity>
 
     <Entity name="SWAT_Assaulter" type="Human" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_Tex.dds"/>
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/SWAT_Test1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_vest.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/ranger_assaulter_helmet.dds" attachSlot="Bip001 Head">
-			<Specular shininess="8" intensity="1.3"/>
-		</RenderObject3D>
-		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>		
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="SWAT"
@@ -50,20 +45,17 @@
 			</Mobility>
 
 			<Equipment>
-		
+
 			</Equipment>
 		</Human>
 	</Entity>
 
     <Entity name="SWAT_Breacher" type="Human" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/SWAT_Tex.dds"/>
+		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/SWAT_Test1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/ranger_support_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm" attachSlot="vest_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/ranger_support_helmet.khm" diffuseTex="data/models/humans/attachments/ranger_support_helmet.dds" attachSlot="Bip001 Head">
-			<Specular shininess="8" intensity="1.3"/>
-		</RenderObject3D>
-		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>		
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="SWAT"
@@ -78,20 +70,18 @@
 			</Mobility>
 
 			<Equipment>
-	
+
 			</Equipment>
 		</Human>
 	</Entity>
 
 	<Entity name="SWAT_Stealth" type="Human" editorAutoHeight="false">
-		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/SWAT_Tex.dds"/>
+		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/SWAT_Test1.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/ranger_support_vest.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
 		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm" attachSlot="vest_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds"/>
-		<RenderObject3D model="data/models/humans/attachments/ranger_support_helmet.khm" diffuseTex="data/models/humans/attachments/ranger_support_helmet.dds" attachSlot="Bip001 Head">
-			<Specular shininess="8" intensity="1.3"/>
-		</RenderObject3D>
-		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>		
+
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100"/>
 		<Human type="GoodGuy"
 			unit="SWAT"
@@ -110,5 +100,5 @@
 			</Equipment>
 		</Human>
 	</Entity>
-	
+
 </Entities>
