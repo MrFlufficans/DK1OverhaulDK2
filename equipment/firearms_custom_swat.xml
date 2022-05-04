@@ -317,7 +317,7 @@
 	<Firearm name="SWAT_G36C" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
 			tooltip="G36C Rifle"
 			description="@SWAT_firearm_g36c_assault_rifle_desc"
-			img="data/models/weapons/m4_ui.dds"
+			img="data/models/weapons/G36C_ui.dds"
 
 			animationSet="rifle"
 		>
