@@ -374,7 +374,7 @@
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
 			<ReloadEmpty name="rifle_reldempt"/>
-			<Fire name="556sup_fire"/>
+			<Fire name="mk18_fire"/>
 			<ShellDrop name="rifle_shell_drop"/>
 			<Empty name="gen_empty"/>
 		</Sounds>
